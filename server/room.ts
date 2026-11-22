@@ -30,7 +30,7 @@ interface Member {
 class Room {
   /** Ordre d'arrivée conservé : c'est l'ordre de passation du rôle d'hôte. */
   members = new Map<string, Member>();
-  config: MatchConfig = { level: 'mix', format: 'classique' };
+  config: MatchConfig = { level: 'mix', format: 'classique', scoring: 'points' };
   match: Match | null = null;
   lastActivity = Date.now();
   hostTimer: NodeJS.Timeout | null = null;
@@ -122,7 +122,7 @@ export class Rooms {
   setConfig(playerId: string, config: MatchConfig) {
     const room = this.roomOf(playerId);
     if (!room || room.hostId !== playerId || room.playing) return;
-    room.config = { level: config.level, format: config.format };
+    room.config = { level: config.level, format: config.format, scoring: config.scoring ?? 'points' };
     room.touch();
     this.broadcast(room);
   }

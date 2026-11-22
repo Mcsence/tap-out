@@ -1305,6 +1305,23 @@ kbd {
   color: var(--red);
 }
 
+/* Décision des juges : la note du round en gros, les points en dessous */
+.card-note {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.card-pts {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b8579;
+  letter-spacing: 0;
+}
+
 .scorecard tr.is-leader td.col-total {
   color: #8a6c0e;
 }

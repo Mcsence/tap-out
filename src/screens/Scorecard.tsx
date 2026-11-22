@@ -11,6 +11,7 @@ export function Scorecard({ snap }: { snap: MatchSnapshot }) {
   const rounds = snap.round.count;
   const nextLevel = roundLevels(snap.config)[done];
   const solo = snap.kind === 'solo';
+  const judges = snap.config.scoring === 'juges';
 
   useEffect(() => {
     if (!solo) return;
@@ -35,7 +36,9 @@ export function Scorecard({ snap }: { snap: MatchSnapshot }) {
       <div className="scorecard">
         <div className="scorecard-head">
           <span className="display">Tap Out</span>
-          <span className="label">Carte officielle · après {done} round{done > 1 ? 's' : ''}</span>
+          <span className="label">
+            {judges ? 'Décision des juges · 10-9 par round' : 'Aux points'} · après {done} round{done > 1 ? 's' : ''}
+          </span>
         </div>
         <div className="scorecard-scroll">
           <table>
@@ -71,10 +74,28 @@ export function Scorecard({ snap }: { snap: MatchSnapshot }) {
                   <td className="col-name">{s.pseudo}</td>
                   {s.roundScores.map((v, i) => (
                     <td key={i} className={i < done ? (i === done - 1 ? 'is-current' : '') : 'is-future'}>
-                      {i < done ? fmt(v) : '—'}
+                      {i >= done ? (
+                        '—'
+                      ) : judges ? (
+                        <>
+                          <span className="card-note display">{s.cards[i]}</span>
+                          <small className="card-pts">{fmt(v)} pts</small>
+                        </>
+                      ) : (
+                        fmt(v)
+                      )}
                     </td>
                   ))}
-                  <td className="col-total display">{fmt(s.score)}</td>
+                  <td className="col-total display">
+                    {judges ? (
+                      <>
+                        {s.cardsTotal}
+                        <small className="card-pts">{fmt(s.score)} pts</small>
+                      </>
+                    ) : (
+                      fmt(s.score)
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>

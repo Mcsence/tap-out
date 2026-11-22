@@ -35,6 +35,8 @@ interface Player {
   pseudo: string;
   score: number;
   roundScores: number[];
+  /** Notes des juges des rounds terminés (10, 9 ou 8). */
+  cards: number[];
   correct: number;
   answered: number;
   /** Temps cumulé (une absence de réponse compte pour 20 s), pour le départage. */
@@ -54,6 +56,8 @@ interface Result {
 }
 
 export const playerRoom = (playerId: string) => `player:${playerId}`;
+
+const sum = (values: number[]) => values.reduce((a, b) => a + b, 0);
 
 /**
  * Une partie, pilotée entièrement par le serveur : il tire les questions,
@@ -143,6 +147,7 @@ export class Match {
       pseudo,
       score: 0,
       roundScores: this.rounds.map(() => 0),
+      cards: [],
       correct: 0,
       answered: 0,
       totalMs: 0,
@@ -250,6 +255,8 @@ export class Match {
       prevRank: this.prevRanks.get(p.id) ?? null,
       score: p.score,
       roundScores: [...p.roundScores],
+      cards: [...p.cards],
+      cardsTotal: sum(p.cards),
       correct: p.correct,
       answered: p.answered,
       fastestMs: p.fastestMs,
@@ -257,14 +264,33 @@ export class Match {
     }));
   }
 
+  private get judges(): boolean {
+    return this.config.scoring === 'juges';
+  }
+
+  /** Classement : aux points, ou d'abord au total des cartes des juges (puis aux points). */
   private ranked(): Player[] {
     const played = Math.max(1, this.questionsPlayed());
-    return [...this.players.values()].sort((a, b) =>
-      compareStandings(
-        { score: a.score, correct: a.correct, avgMs: a.totalMs / played },
-        { score: b.score, correct: b.correct, avgMs: b.totalMs / played },
-      ),
+    return [...this.players.values()].sort(
+      (a, b) =>
+        (this.judges ? sum(b.cards) - sum(a.cards) : 0) ||
+        compareStandings(
+          { score: a.score, correct: a.correct, avgMs: a.totalMs / played },
+          { score: b.score, correct: b.correct, avgMs: b.totalMs / played },
+        ),
     );
+  }
+
+  /**
+   * Notes des juges d'un round : 10 au(x) meilleur(s) du round, 9 aux autres,
+   * 8 à ceux qui marquent moins de la moitié des points du meilleur (domination).
+   */
+  private scoreRound(r: number) {
+    const best = Math.max(...[...this.players.values()].map((p) => p.roundScores[r]));
+    for (const p of this.players.values()) {
+      const pts = p.roundScores[r];
+      p.cards[r] = best === 0 || pts === best ? 10 : pts * 2 < best ? 8 : 9;
+    }
   }
 
   // ── Enchaînement des phases ────────────────────────────────────────────
@@ -297,13 +323,14 @@ export class Match {
       }
       this.results.set(p.id, { choice: a?.choice ?? null, correct, points });
     }
-    this.trackLeader();
+    // Aux points, le leader peut changer à chaque question ; aux juges, à la fin de chaque round.
+    if (!this.judges) this.trackLeader();
     this.setPhase('reveal', TIMING.revealMs, () => this.advance());
   }
 
   private trackLeader() {
     const leader = this.ranked()[0];
-    if (!leader || leader.score === 0) return; // personne n'a encore marqué
+    if (!leader || (!this.judges && leader.score === 0)) return; // personne n'a encore marqué
     if (this.leaderId !== null && this.leaderId !== leader.id) this.leaderChanges += 1;
     this.leaderId = leader.id;
   }
@@ -315,7 +342,9 @@ export class Match {
       this.enterQuestion();
       return;
     }
-    // Fin du round : on fige les places pour afficher leur évolution.
+    // Fin du round : notes des juges, puis on fige les places pour afficher leur évolution.
+    this.scoreRound(this.roundIdx);
+    if (this.judges) this.trackLeader();
     this.prevRanks = this.lastRanks;
     this.lastRanks = new Map(this.ranked().map((p, i) => [p.id, i + 1]));
     if (this.roundIdx + 1 < this.rounds.length) {

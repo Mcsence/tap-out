@@ -1,5 +1,11 @@
 import { useState } from 'react';
-import { ROOM_MAX_PLAYERS, ROOM_MIN_PLAYERS, type MatchConfig, type RoomSnapshot } from '../../shared/protocol';
+import {
+  ROOM_MAX_PLAYERS,
+  ROOM_MIN_PLAYERS,
+  SCORING_INFO,
+  type MatchConfig,
+  type RoomSnapshot,
+} from '../../shared/protocol';
 import { FightPicker, describeFight } from '../components/FightPicker';
 import { OctagonBackdrop } from '../components/Octagon';
 import { socket } from '../lib/socket';
@@ -100,17 +106,18 @@ export function WaitingRoom({ room, onLeave }: { room: RoomSnapshot; onLeave: ()
       </section>
 
       {room.isHost && !playing ? (
-        <FightPicker value={room.config} onChange={setConfig} />
+        <FightPicker value={room.config} onChange={setConfig} withScoring />
       ) : (
         <p className="lobby-fight">
           <span className="label">Combat choisi par l'hôte</span>
-          <strong>{describeFight(room.config)}</strong>
+          <strong>{describeFight(room.config, true)}</strong>
+          <span className="choice-text">{SCORING_INFO[room.config.scoring ?? 'points'].text}</span>
         </p>
       )}
 
       <footer className="config-foot">
         <div className="config-summary">
-          {room.isHost && !playing && <p className="config-ladder">{describeFight(room.config)}</p>}
+          {room.isHost && !playing && <p className="config-ladder">{describeFight(room.config, true)}</p>}
           <p className="config-record">
             {playing
               ? 'Combat en cours…'

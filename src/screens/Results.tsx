@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { FORMAT_INFO, GAME_LEVEL_LABEL, type MatchSnapshot, type RoomSnapshot, type Standing } from '../../shared/protocol';
+import {
+  FORMAT_INFO,
+  GAME_LEVEL_LABEL,
+  SCORING_INFO,
+  type MatchSnapshot,
+  type RoomSnapshot,
+  type Standing,
+} from '../../shared/protocol';
 import { OctagonBackdrop } from '../components/Octagon';
 import { RankMove } from '../components/RankMove';
 import { fmt, secs } from '../lib/format';
@@ -16,6 +23,8 @@ interface Corner {
   fastestMs: number | null;
   avgMs: number;
   roundScores: number[];
+  /** Notes des juges par round (salons en décision des juges). */
+  cards?: number[];
 }
 
 const fromStanding = (s: Standing, title: string, total: number): Corner => ({
@@ -27,6 +36,7 @@ const fromStanding = (s: Standing, title: string, total: number): Corner => ({
   fastestMs: s.fastestMs,
   avgMs: s.avgMs,
   roundScores: s.roundScores,
+  cards: s.cards,
 });
 
 const fromRecord = (r: PersonalRecord, name: string): Corner => ({
@@ -49,6 +59,7 @@ interface Props {
 export function Results({ snap, room, onLeave }: Props) {
   const standings = snap.standings ?? [];
   const solo = snap.kind === 'solo';
+  const judges = !solo && snap.config.scoring === 'juges';
   const winner = standings[0];
   const me = standings.find((s) => s.pseudo === snap.me.pseudo) ?? winner;
   const [busy, setBusy] = useState(false);
@@ -95,8 +106,16 @@ export function Results({ snap, room, onLeave }: Props) {
     }
   } else {
     line = snap.wireToWire ? 'And still…' : 'And new…';
-    beltLabel = 'Champion du salon';
+    beltLabel = judges
+      ? `Décision des juges${standings[1] && standings[1].cardsTotal === winner.cardsTotal ? ' · départagé aux points' : ''} · ${fmt(winner.score)} pts`
+      : 'Champion du salon';
   }
+  // Aux juges, la ceinture affiche les cartes comme une annonce officielle : « 30-28 ».
+  const beltScore = solo
+    ? `${fmt(me.score)} pts`
+    : judges
+      ? `${winner.cardsTotal}-${standings[1]?.cardsTotal ?? winner.cardsTotal}`
+      : `${fmt(winner.score)} pts`;
 
   const left = fromStanding(solo ? me : winner, solo ? 'Cette partie' : '1re place', snap.totalQuestions);
   const right: Corner | null = solo
@@ -114,20 +133,21 @@ export function Results({ snap, room, onLeave }: Props) {
       <p className="kicker">
         <span className="kicker-bar" />
         Résultat officiel · {FORMAT_INFO[snap.config.format].label} · {GAME_LEVEL_LABEL[snap.config.level]}
+        {!solo && ` · ${SCORING_INFO[snap.config.scoring ?? 'points'].label}`}
       </p>
 
       <section className="announce" aria-live="polite">
         <p className="announce-line">{line}</p>
         <h1 className="display announce-name">{solo ? me.pseudo : winner.pseudo}</h1>
         <div className={`belt ${solo && !outcome?.isNew ? 'belt-plain' : ''}`}>
-          <span className="display belt-score">{fmt(solo ? me.score : winner.score)} pts</span>
+          <span className="display belt-score">{beltScore}</span>
           <span className="label belt-label">{beltLabel}</span>
         </div>
       </section>
 
-      {!solo && <Podium standings={standings} />}
+      {!solo && <Podium standings={standings} judges={judges} />}
 
-      <TaleOfTheTape left={left} right={right} />
+      <TaleOfTheTape left={left} right={right} judges={judges} />
 
       {!solo && standings.length > 3 && (
         <ol className="results-rest">
@@ -136,7 +156,7 @@ export function Results({ snap, room, onLeave }: Props) {
               <span className="display">{s.rank}</span>
               <span>{s.pseudo}</span>
               <RankMove rank={s.rank} prevRank={s.prevRank} />
-              <span className="display">{fmt(s.score)}</span>
+              <span className="display">{judges ? `${s.cardsTotal} · ${fmt(s.score)} pts` : fmt(s.score)}</span>
             </li>
           ))}
         </ol>
@@ -180,14 +200,14 @@ export function Results({ snap, room, onLeave }: Props) {
   );
 }
 
-function Podium({ standings }: { standings: Standing[] }) {
+function Podium({ standings, judges }: { standings: Standing[]; judges: boolean }) {
   const order = [standings[1], standings[0], standings[2]].filter(Boolean);
   return (
     <ol className="podium" aria-label="Podium">
       {order.map((s) => (
         <li key={s.pseudo} className={`podium-step podium-${s.rank}`}>
           <span className="podium-name">{s.pseudo}</span>
-          <span className="display podium-score">{fmt(s.score)}</span>
+          <span className="display podium-score">{judges ? `${s.cardsTotal} pts juges` : fmt(s.score)}</span>
           <span className="display podium-rank">{s.rank}</span>
         </li>
       ))}
@@ -196,14 +216,25 @@ function Podium({ standings }: { standings: Standing[] }) {
 }
 
 /** Face à face façon pesée : les stats de deux coins, la meilleure valeur en or. */
-function TaleOfTheTape({ left, right }: { left: Corner; right: Corner | null }) {
+function TaleOfTheTape({ left, right, judges = false }: { left: Corner; right: Corner | null; judges?: boolean }) {
   type Row = { label: string; l: string; r: string; better: 'l' | 'r' | null };
   const cmp = (a: number | null, b: number | null, higherIsBetter: boolean): 'l' | 'r' | null => {
     if (a === null || b === null || a === b) return null;
     return (a > b) === higherIsBetter ? 'l' : 'r';
   };
+  const total = (c: Corner | null) => (c?.cards ?? []).reduce((a, b) => a + b, 0);
 
   const rows: Row[] = [
+    ...(judges && right
+      ? [
+          {
+            label: 'Cartes des juges',
+            l: (left.cards ?? []).join('-') + ` = ${total(left)}`,
+            r: (right.cards ?? []).join('-') + ` = ${total(right)}`,
+            better: cmp(total(left), total(right), true),
+          },
+        ]
+      : []),
     { label: 'Total', l: `${fmt(left.score)}`, r: right ? fmt(right.score) : '—', better: right ? cmp(left.score, right.score, true) : null },
     {
       label: 'Bonnes réponses',

@@ -38,9 +38,22 @@ export const FORMAT_INFO: Record<Format, { label: string; rounds: number; perRou
   'main-event': { label: 'Main Event', rounds: 5, perRound: 5 },
 };
 
+/** Comment le vainqueur est désigné : total des points, ou cartes des juges (10-9 par round). */
+export type Scoring = 'points' | 'juges';
+export const SCORINGS: Scoring[] = ['points', 'juges'];
+export const SCORING_INFO: Record<Scoring, { label: string; text: string }> = {
+  points: { label: 'Aux points', text: 'Le plus de points sur toute la partie l’emporte.' },
+  juges: {
+    label: 'Décision des juges',
+    text: 'Chaque round est noté 10-9 comme un vrai combat (10-8 en cas de domination). Le total des cartes l’emporte.',
+  },
+};
+
 export interface MatchConfig {
   level: GameLevel;
   format: Format;
+  /** Absent = aux points. La décision des juges n'existe qu'en salon. */
+  scoring?: Scoring;
 }
 
 /** Niveau de chaque round. En Mix : Facile, Moyen, Difficile, puis Expert pour les « championship rounds ». */
@@ -53,7 +66,9 @@ export function roundLevels(config: MatchConfig): Level[] {
 
 export function isMatchConfig(value: unknown): value is MatchConfig {
   const v = value as MatchConfig;
-  return !!v && GAME_LEVELS.includes(v.level) && FORMATS.includes(v.format);
+  return (
+    !!v && GAME_LEVELS.includes(v.level) && FORMATS.includes(v.format) && (v.scoring === undefined || SCORINGS.includes(v.scoring))
+  );
 }
 
 export const PSEUDO_MIN = 2;
@@ -109,6 +124,9 @@ export interface Standing {
   prevRank: number | null;
   score: number;
   roundScores: number[];
+  /** Notes des juges des rounds terminés (10, 9 ou 8), et leur total. */
+  cards: number[];
+  cardsTotal: number;
   correct: number;
   answered: number;
   fastestMs: number | null;
