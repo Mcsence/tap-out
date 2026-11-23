@@ -463,23 +463,30 @@ function heightCm(raw: string): number | null {
   return cm && cm >= 150 && cm <= 215 ? Math.round(cm) : null;
 }
 
-function reachCm(raw: string): number | null {
-  const t = raw.replace(/<ref[\s\S]*/i, '');
-  const inch = t.match(/(\d{2}(?:\.\d+)?)(\+1\/2)?\s*(?:\|\s*)?(?:in\b|inches|″|")/i);
-  let cm: number | null = inch ? (Number(inch[1]) + (inch[2] ? 0.5 : 0)) * 2.54 : null;
-  if (cm === null) {
-    const c = t.match(/\b(1[5-9]\d|2[0-2]\d)\s*cm/);
-    cm = c ? Number(c[1]) : null;
-  }
-  return cm && cm >= 150 && cm <= 225 ? Math.round(cm) : null;
+/** 3 événements proches, avec la bonne réponse à une position aléatoire une fois les 4 numéros triés. */
+function spreadEvents(event: number, near: number[], rand: () => number): number[] {
+  const below = Math.floor(rand() * 4);
+  const lows = pick(near.filter((e) => e < event), near.length, rand);
+  const highs = pick(near.filter((e) => e > event), near.length, rand);
+  const takeLow = Math.min(below, lows.length);
+  const takeHigh = Math.min(3 - takeLow, highs.length);
+  return [...lows.slice(0, takeLow + (3 - takeLow - takeHigh)), ...highs.slice(0, takeHigh)];
 }
 
-const BELTS: Record<string, string> = {
-  black: 'Ceinture noire',
-  brown: 'Ceinture marron',
-  purple: 'Ceinture violette',
-  blue: 'Ceinture bleue',
-};
+/**
+ * 3 fausses valeurs autour de `value`, placées pour que la bonne réponse tombe au hasard
+ * en 1re, 2e, 3e ou 4e position une fois les 4 triées (et pas presque toujours au milieu).
+ */
+function spread(value: number, offsets: number[], rand: () => number, valid: (v: number) => boolean): number[] {
+  const below = Math.floor(rand() * 4); // combien de fausses valeurs sous la bonne
+  const lows = pick(offsets, offsets.length, rand).map((o) => value - o).filter(valid);
+  const highs = pick(offsets, offsets.length, rand).map((o) => value + o).filter(valid);
+  // Si un côté manque de valeurs possibles (ex. 0 défaite), on complète par l'autre.
+  const takeLow = Math.min(below, lows.length, 3);
+  const takeHigh = Math.min(3 - takeLow, highs.length);
+  const result = [...lows.slice(0, takeLow + (3 - takeLow - takeHigh)), ...highs.slice(0, takeHigh)];
+  return [...new Set(result)].slice(0, 3);
+}
 
 const WEIGHT_FR: Record<string, string> = {
   flyweight: 'Poids mouches', bantamweight: 'Poids coqs', featherweight: 'Poids plumes', lightweight: 'Poids légers',
@@ -543,7 +550,6 @@ function describe(b: Bout): string {
 }
 
 /** Niveau selon l'affiche : un combat pour le titre en main event est plus connu qu'un combat de sous-carte. */
-const boutLevel = (b: Bout): Level => (b.order === 0 && b.title ? 'difficile' : 'expert');
 
 // ── Génération ───────────────────────────────────────────────────────────
 
@@ -571,14 +577,59 @@ async function main() {
   const hand = JSON.parse(await readFile(HAND_FILE, 'utf8')) as Question[];
   const handText = hand.map((q) => `${q.question} ${q.reponses.join(' ')}`.toLowerCase()).join('\n');
 
+  // ── Niveau d'une question : type de question + notoriété des combattants + époque ──
+  // Notoriété : 2 points par combat pour le titre, 1 par main event (UFC numérotés).
+  const popularity = new Map<string, number>();
+  const lastEvent = new Map<string, number>();
+  for (const b of bouts) {
+    for (const f of [b.winner, b.loser]) {
+      popularity.set(f.name, (popularity.get(f.name) ?? 0) + (b.title ? 2 : 0) + (b.order === 0 ? 1 : 0));
+      lastEvent.set(f.name, Math.max(lastEvent.get(f.name) ?? 0, b.event));
+    }
+  }
+  /** 0 = superstar, 1 = star, 2 = connu, 3 = peu connu */
+  const fameTier = (name: string) => {
+    const p = popularity.get(name) ?? 0;
+    return p >= 12 ? 0 : p >= 6 ? 1 : p >= 2 ? 2 : 4; // un inconnu pèse plus lourd
+  };
+  /** 0 = depuis 2015 (UFC 181+), 1 = 2005-2014, 2 = avant 2005 (avant l'UFC 52) */
+  const eraTier = (event: number) => (event >= 181 ? 0 : event >= 52 ? 1 : 2);
+  /** Difficulté propre à chaque type de question. */
+  const BASE: Record<string, number> = {
+    nick: 0, surnom: 0, pays: 1, titre: 0, bat: 0, pasbat: 1, fin: 1, team: 2, rnd: 2, ko: 2, sub: 2,
+    me: 3, ev: 3, ville: 3, retraite: 3, bilan: 3, bilanufc: 3, premdef: 3, debutufc: 3, taille: 4,
+  };
+  interface Ctx {
+    subjects: string[];
+    event?: number;
+    /** Combat pour le titre en main event : un cran plus connu. */
+    titleMain?: boolean;
+    /** Combat hors main event : un cran moins connu. */
+    undercard?: boolean;
+  }
+  let ctx: Ctx = { subjects: [] };
+  const levelOf = (template: string, c: Ctx): Level => {
+    const tiers: number[] = c.subjects.map(fameTier);
+    // Un combat est aussi connu que son combattant le plus connu ; une question « qui a battu X » dépend des deux.
+    const fame = c.event !== undefined && c.subjects.length === 2 && !['bat', 'pasbat'].includes(template)
+      ? Math.max(0, Math.min(...tiers) - (c.titleMain ? 1 : 0) + (c.undercard ? 1 : 0))
+      : Math.ceil(tiers.reduce((a, b) => a + b, 0) / Math.max(1, tiers.length));
+    const event = c.event ?? Math.max(0, ...c.subjects.map((s) => lastEvent.get(s) ?? 0));
+    const score = (BASE[template] ?? 3) + fame + eraTier(event);
+    return score <= 1 ? 'facile' : score <= 3 ? 'moyen' : score <= 5 ? 'difficile' : 'expert';
+  };
+
   const out: GenQuestion[] = [];
-  const add = (q: Omit<GenQuestion, 'statut' | 'origine' | 'bonne_reponse'>) =>
-    out.push({ ...q, bonne_reponse: 0, statut: 'a_verifier', origine: 'wikipedia' });
+  const add = (q: Omit<GenQuestion, 'statut' | 'origine' | 'bonne_reponse'>) => {
+    const template = q.id.split('-')[1];
+    out.push({ ...q, niveau: levelOf(template, ctx), bonne_reponse: 0, statut: 'a_verifier', origine: 'wikipedia' });
+  };
 
   const mainEvents = new Map<number, Bout>();
   for (const b of bouts) if (b.order === 0) mainEvents.set(b.event, b);
 
   for (const b of bouts) {
+    ctx = { subjects: [b.winner.name, b.loser.name], event: b.event, titleMain: b.title && b.order === 0, undercard: b.order > 0 };
     const rand = seeded(`${b.event}-${b.order}`);
     const src = wiki(`UFC ${b.event}`);
     const card = b.order === 0 ? 'main event' : b.order === 1 ? 'co-main event' : 'carte principale';
@@ -611,7 +662,7 @@ async function main() {
           categorie: 'combats',
           niveau: 'expert',
           question: `Lors de quel événement s'est tenu le main event ${vs(b, rand)} ?`,
-          reponses: [`UFC ${b.event}`, ...pick(near, 3, rand).map((e) => `UFC ${e}`)],
+          reponses: [`UFC ${b.event}`, ...spreadEvents(b.event, near, rand).map((e) => `UFC ${e}`)],
           explication: describe(b),
           source: src,
         });
@@ -627,7 +678,7 @@ async function main() {
       add({
         id: `gen-fin-${b.event}-${b.order}`,
         categorie: 'combats',
-        niveau: boutLevel(b),
+        niveau: 'expert',
         question: `Comment s'est terminé ${vs(b, rand)}, ${card} de l'UFC ${b.event} ?`,
         reponses: [label(b.winner, b.method), label(b.loser, b.method), label(b.winner, other), label(b.loser, other)],
         explication: describe(b),
@@ -636,14 +687,17 @@ async function main() {
     }
 
     // 3. À quel round s'est terminé le combat (finitions des combats principaux).
-    if (b.order <= 1 && b.method !== 'dec') {
+    // Équilibre des réponses : la plupart des finitions arrivent au 1er round ; on en garde un peu plus de la moitié
+    // pour que « 1er round » ne soit pas la bonne réponse presque une fois sur deux.
+    const keepRound = b.round !== 1 || seeded(`rnd-${b.event}-${b.order}`)() < 0.55;
+    if (b.order <= 1 && b.method !== 'dec' && keepRound) {
       const rounds = Array.from({ length: b.maxRounds }, (_, i) => i + 1).filter((r) => r !== b.round);
       const wrong = pick(rounds, 3, rand).map(ordinal);
       if (wrong.length < 3) wrong.push('Il est allé à la décision');
       add({
         id: `gen-rnd-${b.event}-${b.order}`,
         categorie: 'combats',
-        niveau: boutLevel(b),
+        niveau: 'expert',
         question: `À quel round s'est terminé ${vs(b, rand)} (UFC ${b.event}) ?`,
         reponses: [ordinal(b.round), ...wrong],
         explication: describe(b),
@@ -654,11 +708,13 @@ async function main() {
     // 4. Quelle soumission (toute la carte principale).
     if (b.order < 5 && b.method === 'sub') {
       const sub = translate(SUBMISSIONS, b.detail);
-      if (sub) {
+      // L'étranglement arrière est la soumission la plus fréquente : on n'en garde qu'une partie.
+      const keepSub = sub !== 'Étranglement arrière' || seeded(`sub-${b.event}-${b.order}`)() < 0.6;
+      if (sub && keepSub) {
         add({
           id: `gen-sub-${b.event}-${b.order}`,
           categorie: 'combats',
-          niveau: boutLevel(b),
+          niveau: 'expert',
           question: `Par quelle soumission ${b.winner.name} a-t-${pronoun(b.weight)} battu ${b.loser.name} à l'UFC ${b.event} ?`,
           reponses: [sub, ...pick(SUB_POOL.filter((s) => s !== sub), 3, rand)],
           explication: describe(b),
@@ -670,11 +726,13 @@ async function main() {
     // 5. Quelle frappe (toute la carte principale).
     if (b.order < 5 && b.method === 'ko') {
       const strike = translate(STRIKES, b.detail);
-      if (strike) {
+      // Presque tous les K.-O. sont aux poings : on n'en garde qu'une petite part, sinon la réponse se devine.
+      const keepStrike = strike !== 'Coups de poing' || seeded(`ko-${b.event}-${b.order}`)() < 0.07;
+      if (strike && keepStrike) {
         add({
           id: `gen-ko-${b.event}-${b.order}`,
           categorie: 'combats',
-          niveau: boutLevel(b),
+          niveau: 'expert',
           question: `Avec quelle arme ${b.winner.name} a-t-${pronoun(b.weight)} mis fin au combat contre ${b.loser.name} (UFC ${b.event}) ?`,
           reponses: [strike, ...pick(STRIKE_POOL.filter((s) => s !== strike), 3, rand)],
           explication: describe(b),
@@ -724,10 +782,10 @@ async function main() {
     }
   }
   const people = [...profiles.values()];
-  const fameLevel = (p: Profile): Level => (p.fame === 2 ? 'moyen' : p.fame === 1 ? 'difficile' : 'expert');
 
   const withNick = people.filter((p) => p.nickname && !handText.includes(p.nickname.toLowerCase()));
   for (const p of withNick) {
+    ctx = { subjects: [p.name] };
     const rand = seeded(`nick-${p.page}`);
     const sameWeight = withNick.filter((o) => o !== p && o.weight === p.weight && o.nickname !== p.nickname);
     const pool = sameWeight.length >= 3 ? sameWeight : withNick.filter((o) => o !== p && o.nickname !== p.nickname);
@@ -735,7 +793,7 @@ async function main() {
     add({
       id: `gen-nick-${s}`,
       categorie: 'combattants',
-      niveau: fameLevel(p),
+      niveau: 'moyen',
       question: `${isWomen(p.weight) ? 'Quelle combattante est surnommée' : 'Quel combattant est surnommé'} « ${p.nickname} » ?`,
       reponses: [p.name, ...pick(pool.filter((o) => o.name !== p.name), 3, rand).map((o) => o.name)],
       explication: `${p.name} combat sous le surnom « ${p.nickname} ».`,
@@ -744,7 +802,7 @@ async function main() {
     add({
       id: `gen-surnom-${s}`,
       categorie: 'combattants',
-      niveau: fameLevel(p),
+      niveau: 'moyen',
       question: `Quel est le surnom de ${p.name} ?`,
       reponses: [p.nickname!, ...pick(pool, 3, rand).map((o) => o.nickname!)],
       explication: `${p.name} combat sous le surnom « ${p.nickname} ».`,
@@ -757,11 +815,12 @@ async function main() {
   for (const p of people) if (p.team) teamCount.set(p.team, (teamCount.get(p.team) ?? 0) + 1);
   const knownTeams = [...teamCount.entries()].filter(([, n]) => n >= 3).map(([t]) => t);
   for (const p of people.filter((x) => x.team && knownTeams.includes(x.team) && x.fame >= 1)) {
+    ctx = { subjects: [p.name] };
     const rand = seeded(`team-${p.page}`);
     add({
       id: `gen-team-${slug(p.page)}`,
       categorie: 'combattants',
-      niveau: p.fame === 2 ? 'difficile' : 'expert',
+      niveau: 'difficile',
       question: `Dans quelle équipe s'entraîne (ou s'entraînait) ${p.name} ?`,
       reponses: [p.team!, ...pick(knownTeams.filter((t) => t !== p.team), 3, rand)],
       explication: `${p.name} est ${isWomen(p.weight) ? 'rattachée' : 'rattaché'} à l'équipe ${p.team} selon sa fiche Wikipédia.`,
@@ -769,11 +828,9 @@ async function main() {
     });
   }
 
-  // 8. CV des combattants : naissance, mensurations, carrière, grade, université, titre.
+  // 8. CV des combattants : pays et ville de naissance, taille, fin de carrière.
   const cvPeople = people.map((p) => ({ ...p, text: fighterPages.get(p.page) ?? '', women: isWomen(p.weight) }));
   const facts = cvPeople.map((p) => {
-    const birthRaw = infobox(p.text, 'birth_date') ?? '';
-    const birthYear = Number(birthRaw.match(/\|\s*(19[4-9]\d|20[01]\d)\s*\|\s*\d{1,2}\s*\|/)?.[1] ?? birthRaw.match(/\b(19[4-9]\d|20[01]\d)\b/)?.[1] ?? 0) || null;
     const place = plain(infobox(p.text, 'birth_place') ?? '').replace(/\s*\(.*?\)\s*/g, ' ').trim();
     const segments = place.split(',').map((s) => s.trim()).filter(Boolean);
     const country = birthCountry(segments);
@@ -783,30 +840,20 @@ async function main() {
     const mmaOnly = /^(19[89]\d|20[0-2]\d)\s*[–-]\s*(19[89]\d|20[0-2]\d|present)$/i.exec(years);
     const start = mmaOnly ? Number(mmaOnly[1]) : null;
     const single = mmaOnly && /^\d{4}$/.test(mmaOnly[2]) ? mmaOnly : null;
-    const rank = plain(infobox(p.text, 'rank') ?? '');
-    const belts = [...rank.matchAll(/(black|brown|purple|blue)\s+belt\s+in\s+brazilian jiu[- ]jitsu/gi)];
-    const uniItems = listItems(infobox(p.text, 'university') ?? '');
-    const uni = uniItems.length === 1 ? uniItems[0] : '';
     return {
       ...p,
-      birthYear,
       country,
       city,
       height: heightCm(infobox(p.text, 'height') ?? ''),
-      reach: reachCm(infobox(p.text, 'reach') ?? ''),
       start,
       retired: single && Number(single[2]) <= 2024 ? Number(single[2]) : null,
-      belt: belts.length === 1 ? BELTS[belts[0][1].toLowerCase()] : null,
-      university: uni && uni.length <= 45 && !/[,;]| and /.test(uni) ? uni : null,
     };
   });
-  const lvl = (fame: number, top: Level, mid: Level): Level => (fame === 2 ? top : fame === 1 ? mid : 'expert');
   const ne = (w: boolean) => (w ? 'née' : 'né');
   const il = (w: boolean) => (w ? 'elle' : 'il');
-  const near = (value: number, steps: number[], rand: () => number) =>
-    pick(steps.flatMap((s) => [value + s, value - s]), 12, rand).filter((v, i, a) => a.indexOf(v) === i && v !== value).slice(0, 3);
 
   for (const f of facts) {
+    ctx = { subjects: [f.name] };
     const rand = seeded(`cv-${f.page}`);
     const s = slug(f.page);
     const src = wiki(f.page);
@@ -816,7 +863,7 @@ async function main() {
     // Pays : « États-Unis » serait trop souvent la réponse ; on le garde pour les combattants titrés.
     if (f.country && (f.country !== 'États-Unis' || f.fame === 2)) {
       const others = pick(COUNTRY_POOL.filter((c) => c !== f.country), 3, rand);
-      add({ id: `gen-pays-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'moyen', 'difficile'),
+      add({ id: `gen-pays-${s}`, categorie: 'cv', niveau: 'moyen',
         question: `Dans quel pays ${f.name} est-${il(f.women)} ${ne(f.women)} ?`,
         reponses: [f.country, ...others],
         explication: `${f.name} est ${ne(f.women)} à ${f.city ?? f.country} (${f.country}).`, source: src });
@@ -825,54 +872,27 @@ async function main() {
       const sameCountry = facts.filter((o) => o.country === f.country && o.city && o.city !== f.city).map((o) => o.city!);
       const others = pick([...new Set(sameCountry)], 3, rand);
       if (others.length === 3)
-        add({ id: `gen-ville-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'difficile', 'expert'),
+        add({ id: `gen-ville-${s}`, categorie: 'cv', niveau: 'difficile',
           question: `Dans quelle ville ${f.name} est-${il(f.women)} ${ne(f.women)} (${f.country}) ?`,
           reponses: [f.city, ...others],
           explication: `${f.name} est ${ne(f.women)} à ${f.city} (${f.country}).`, source: src });
     }
-    if (known && f.birthYear) {
-      add({ id: `gen-naissance-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'difficile', 'expert'),
-        question: `En quelle année ${f.name} est-${il(f.women)} ${ne(f.women)} ?`,
-        reponses: [String(f.birthYear), ...near(f.birthYear, [1, 2, 3, 4], rand).map(String)],
-        explication: `${f.name} est ${ne(f.women)} en ${f.birthYear}.`, source: src });
-    }
     if (known && f.height) {
       const m = (cm: number) => `${(cm / 100).toFixed(2).replace('.', ',')} m`;
-      add({ id: `gen-taille-${s}`, categorie: 'cv', niveau: 'expert',
-        question: `Quelle est la taille de ${f.name} ?`,
-        reponses: [m(f.height), ...near(f.height, [3, 5, 8, 10], rand).map(m)],
-        explication: `${f.name} mesure ${m(f.height)} selon sa fiche.`, source: src });
-    }
-    if (known && f.reach) {
-      add({ id: `gen-allonge-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'difficile', 'expert'),
-        question: `Quelle est l'allonge de ${f.name} ?`,
-        reponses: [`${f.reach} cm`, ...near(f.reach, [5, 8, 10, 13], rand).map((v) => `${v} cm`)],
-        explication: `${f.name} a une allonge de ${f.reach} cm.`, source: src });
-    }
-    if (known && f.start) {
-      add({ id: `gen-debut-${s}`, categorie: 'cv', niveau: 'expert',
-        question: `En quelle année ${f.name} a-t-${il(f.women)} commencé sa carrière professionnelle en MMA ?`,
-        reponses: [String(f.start), ...near(f.start, [1, 2, 3, 4], rand).filter((y) => y <= 2025).map(String)],
-        explication: `${f.name} est ${f.women ? 'devenue professionnelle' : 'devenu professionnel'} en ${f.start}.`, source: src });
+      const wrong = spread(f.height, [2, 3, 4, 5, 6, 8, 10], rand, (v) => v >= 150 && v <= 215);
+      if (wrong.length === 3)
+        add({ id: `gen-taille-${s}`, categorie: 'cv', niveau: 'expert',
+          question: `Quelle est la taille de ${f.name} ?`,
+          reponses: [m(f.height), ...wrong.map(m)],
+          explication: `${f.name} mesure ${m(f.height)} selon sa fiche.`, source: src });
     }
     if (f.retired && f.start && f.retired > f.start) {
-      add({ id: `gen-retraite-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'difficile', 'expert'),
-        question: `En quelle année ${f.name} a-t-${il(f.women)} disputé son dernier combat de MMA ?`,
-        reponses: [String(f.retired), ...near(f.retired, [1, 2, 3], rand).filter((y) => y <= 2025).map(String)],
-        explication: `${f.name} a combattu en MMA de ${f.start} à ${f.retired}.`, source: src });
-    }
-    if (known && f.belt) {
-      add({ id: `gen-ceinture-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'difficile', 'expert'),
-        question: `Quel grade ${f.name} détient-${il(f.women)} en jiu-jitsu brésilien ?`,
-        reponses: [f.belt, ...Object.values(BELTS).filter((b) => b !== f.belt)],
-        explication: `${f.name} est ${f.belt.toLowerCase()} de jiu-jitsu brésilien selon sa fiche.`, source: src });
-    }
-    if (f.university) {
-      const others = pick([...new Set(facts.map((o) => o.university).filter((u): u is string => !!u && u !== f.university))], 3, rand);
-      add({ id: `gen-universite-${s}`, categorie: 'cv', niveau: lvl(f.fame, 'difficile', 'expert'),
-        question: `Dans quelle université ${f.name} a-t-${il(f.women)} étudié ?`,
-        reponses: [f.university, ...others],
-        explication: `${f.name} est passé${f.women ? 'e' : ''} par ${f.university}.`, source: src });
+      const wrong = spread(f.retired, [1, 2, 3, 4, 5], rand, (y) => y > f.start! && y <= 2025);
+      if (wrong.length === 3)
+        add({ id: `gen-retraite-${s}`, categorie: 'cv', niveau: 'difficile',
+          question: `En quelle année ${f.name} a-t-${il(f.women)} disputé son dernier combat de MMA ?`,
+          reponses: [String(f.retired), ...wrong.map(String)],
+          explication: `${f.name} a combattu en MMA de ${f.start} à ${f.retired}.`, source: src });
     }
   }
 
@@ -882,12 +902,13 @@ async function main() {
   const asOfMonth = `${MOIS[asOf.getMonth()]} ${asOf.getFullYear()}`;
   const asOfDay = asOf.toLocaleDateString('fr-FR');
   const knownNames = new Set(people.filter((p) => p.fame >= 1).map((p) => p.name));
+  /**
+   * Bilans proposés : le nombre de victoires de la bonne réponse tombe au hasard
+   * en 1re, 2e, 3e ou 4e position une fois les 4 triées (pas toujours au milieu).
+   */
   const recordChoices = (w: number, l: number, d: number, rand: () => number) => {
-    const options: string[] = [];
-    for (const dw of [-3, -2, -1, 0, 1, 2, 3])
-      for (const dl of [-2, -1, 0, 1, 2])
-        if ((dw || dl) && w + dw >= 0 && l + dl >= 0) options.push(recordLabel(w + dw, l + dl, d));
-    return pick(options, 3, rand);
+    const wins = spread(w, [1, 2, 3, 4], rand, (v) => v >= 0);
+    return wins.map((v) => recordLabel(v, Math.max(0, l + Math.floor(rand() * 3) - 1), d));
   };
   const famousFirst = (names: string[], rand: () => number) => [
     ...pick(names.filter((n) => knownNames.has(n)), names.length, rand),
@@ -917,12 +938,12 @@ async function main() {
   for (const f of facts.filter((x) => x.fame >= 1)) {
     const rec = mmaRecord(f.text);
     if (!rec) continue;
+    ctx = { subjects: [f.name] };
     const rand = seeded(`palmares-${f.page}`);
     const s = slug(f.page);
     const src = wiki(f.page);
-    const top = f.fame === 2;
 
-    add({ id: `gen-bilan-${s}`, categorie: 'cv', niveau: top ? 'difficile' : 'expert',
+    add({ id: `gen-bilan-${s}`, categorie: 'cv', niveau: 'difficile',
       question: `En ${asOfMonth}, quel est le bilan de ${f.name} en MMA (victoires-défaites${rec.draws ? '-nuls' : ''}) ?`,
       reponses: [recordLabel(rec.wins, rec.losses, rec.draws), ...recordChoices(rec.wins, rec.losses, rec.draws, rand)],
       explication: `Au ${asOfDay}, ${f.name} compte ${n(rec.wins, 'victoire')}, ${n(rec.losses, 'défaite')}${rec.draws ? `, ${n(rec.draws, 'nul')}` : ''}${rec.nc ? ` et ${rec.nc} no contest` : ''} en MMA professionnel.`,
@@ -933,7 +954,7 @@ async function main() {
     const ul = ufc.filter((x) => x.result === 'loss').length;
     const ud = ufc.filter((x) => x.result === 'draw').length;
     if (ufc.length >= 3)
-      add({ id: `gen-bilanufc-${s}`, categorie: 'cv', niveau: top ? 'difficile' : 'expert',
+      add({ id: `gen-bilanufc-${s}`, categorie: 'cv', niveau: 'difficile',
         question: `En ${asOfMonth}, quel est le bilan de ${f.name} à l'UFC (victoires-défaites${ud ? '-nuls' : ''}) ?`,
         reponses: [recordLabel(uw, ul, ud), ...recordChoices(uw, ul, ud, rand)],
         explication: `Au ${asOfDay}, ${f.name} compte ${n(uw, 'victoire')} et ${n(ul, 'défaite')}${ud ? ` (et ${n(ud, 'nul')})` : ''} à l'UFC.`,
@@ -957,9 +978,9 @@ async function main() {
         const pool = weight ? sameWeight(onlyBeaten, weight) : [];
         if (pool.length < 3) continue;
         made++;
-        const level: Level = top && knownNames.has(winner) ? 'moyen' : top ? 'difficile' : 'expert';
+        ctx = { subjects: [f.name, winner] };
         const fight = rec.fights.find((x) => x.result === 'loss' && x.opponent === winner)!;
-        add({ id: `gen-bat-${s}-${slug(winner)}`, categorie: 'cv', niveau: level,
+        add({ id: `gen-bat-${s}-${slug(winner)}`, categorie: 'cv', niveau: 'moyen',
           question: `En ${asOfMonth}, lequel de ces combattants avait déjà battu ${f.name} ?`,
           reponses: [winner, ...famousFirst(pool, rand).slice(0, 6).sort(() => rand() - 0.5).slice(0, 3)],
           explication: `${winner} a battu ${f.name} (${fight.event}). Les trois autres ont tous perdu contre ${f.women ? 'elle' : 'lui'}.`,
@@ -976,8 +997,8 @@ async function main() {
         const pool = weight ? sameWeight(beatX, weight) : [];
         if (pool.length < 3) continue;
         made++;
-        const level: Level = top && knownNames.has(survivor) ? 'moyen' : top ? 'difficile' : 'expert';
-        add({ id: `gen-pasbat-${s}-${slug(survivor)}`, categorie: 'cv', niveau: level,
+        ctx = { subjects: [f.name, survivor] };
+        add({ id: `gen-pasbat-${s}-${slug(survivor)}`, categorie: 'cv', niveau: 'moyen',
           question: `En ${asOfMonth}, lequel de ces combattants n'avait jamais battu ${f.name} ?`,
           reponses: [survivor, ...famousFirst(pool, rand).slice(0, 5).sort(() => rand() - 0.5).slice(0, 3)],
           explication: `${survivor} a affronté ${f.name} sans jamais ${f.women ? 'la' : 'le'} battre ; les trois autres ${f.women ? "l'ont toutes" : "l'ont tous"} battu${f.women ? 'e' : ''}.`,
@@ -985,12 +1006,12 @@ async function main() {
       }
     }
 
+    ctx = { subjects: [f.name] };
     if (onlyBeaten.length >= 3) {
-
       // Première défaite en carrière (un fait qui ne bouge plus).
       const firstLoss = rec.fights.find((x) => x.result === 'loss');
       if (firstLoss && !rec.fights.some((x) => x !== firstLoss && x.date === firstLoss.date))
-        add({ id: `gen-premdef-${s}`, categorie: 'cv', niveau: top ? 'difficile' : 'expert',
+        add({ id: `gen-premdef-${s}`, categorie: 'cv', niveau: 'difficile',
           question: `Qui a infligé à ${f.name} sa première défaite en MMA professionnel ?`,
           reponses: [firstLoss.opponent, ...famousFirst(onlyBeaten.filter((n) => n !== firstLoss.opponent), rand).slice(0, 6).sort(() => rand() - 0.5).slice(0, 3)],
           explication: `${f.name} a connu sa première défaite contre ${firstLoss.opponent} (${firstLoss.event}).`,
@@ -1001,7 +1022,7 @@ async function main() {
     const debut = ufc[0];
     const otherUfc = [...new Set(ufc.slice(1).map((x) => x.opponent))].filter((n) => n !== debut?.opponent);
     if (debut && otherUfc.length >= 3 && !ufc.some((x) => x !== debut && x.date === debut.date))
-      add({ id: `gen-debutufc-${s}`, categorie: 'cv', niveau: top ? 'difficile' : 'expert',
+      add({ id: `gen-debutufc-${s}`, categorie: 'cv', niveau: 'difficile',
         question: `Contre qui ${f.name} a-t-${f.women ? 'elle' : 'il'} disputé son premier combat à l'UFC ?`,
         reponses: [debut.opponent, ...pick(otherUfc, 3, rand)],
         explication: `${f.name} a fait ses débuts à l'UFC contre ${debut.opponent} (${debut.event}), ${debut.result === 'win' ? `et ${f.women ? 'l’a emporté' : 'l’a emporté'}` : debut.result === 'loss' ? 'et a perdu' : 'sans vainqueur'}.`,
@@ -1022,6 +1043,7 @@ async function main() {
     const others = order.filter((w) => w !== weight).sort((a, b) => Math.abs(order.indexOf(a) - i) - Math.abs(order.indexOf(b) - i)).slice(0, 3);
     if (others.length < 3) continue;
     const page = bouts.find((b) => b.winner.name === name)?.winner.page ?? name;
+    ctx = { subjects: [name] };
     add({ id: `gen-titre-${slug(name)}`, categorie: 'cv', niveau: 'moyen',
       question: `Dans quelle catégorie ${name} a-t-${women ? 'elle' : 'il'} été ${women ? 'championne' : 'champion'} de l'UFC ?`,
       reponses: [WEIGHT_FR[weight], ...others.map((w) => WEIGHT_FR[w])],

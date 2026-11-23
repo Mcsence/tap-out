@@ -18,7 +18,7 @@
   {
     "id": "hist-fac-002",
     "categorie": "histoire",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quelle famille brésilienne de jiu-jitsu est à l'origine de la création de l'UFC en 1993 ?",
     "reponses": [
       "Les Gracie",
@@ -130,7 +130,7 @@
   {
     "id": "hist-fac-009",
     "categorie": "histoire",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quelle organisation japonaise de MMA a été rachetée par les propriétaires de l'UFC en 2007 ?",
     "reponses": [
       "Pride",
@@ -178,7 +178,7 @@
   {
     "id": "hist-fac-012",
     "categorie": "histoire",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel combattant américain de Louisiane est surnommé « The Diamond » ?",
     "reponses": [
       "Dustin Poirier",
@@ -194,7 +194,7 @@
   {
     "id": "hist-fac-013",
     "categorie": "histoire",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel combattant, champion chez les lourds et les mi-lourds, était surnommé « The Natural » ?",
     "reponses": [
       "Randy Couture",
@@ -210,7 +210,7 @@
   {
     "id": "hist-fac-014",
     "categorie": "histoire",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quelle combattante brésilienne est surnommée « The Lioness » ?",
     "reponses": [
       "Amanda Nunes",
@@ -226,7 +226,7 @@
   {
     "id": "hist-fac-015",
     "categorie": "histoire",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Comment s'appelle le frère aîné de Nate Diaz, lui aussi combattant de l'UFC ?",
     "reponses": [
       "Nick Diaz",
@@ -418,7 +418,7 @@
   {
     "id": "hist-moy-002",
     "categorie": "histoire",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quels combattants ont été les premiers intronisés au Hall of Fame de l'UFC, en 2003 ?",
     "reponses": [
       "Royce Gracie et Ken Shamrock",
@@ -434,7 +434,7 @@
   {
     "id": "hist-moy-003",
     "categorie": "histoire",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Dans quelle ville américaine s'est déroulé l'UFC 1 en 1993 ?",
     "reponses": [
       "Denver",
@@ -514,7 +514,7 @@
   {
     "id": "hist-moy-008",
     "categorie": "histoire",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quelle combattante a remporté en 2013 la saison 18 de The Ultimate Fighter, la première avec des femmes ?",
     "reponses": [
       "Julianna Peña",
@@ -738,7 +738,7 @@
   {
     "id": "hist-moy-022",
     "categorie": "histoire",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quel champion a battu Royce Gracie lors de son retour à l'UFC, à l'UFC 60 en 2006 ?",
     "reponses": [
       "Matt Hughes",
@@ -754,7 +754,7 @@
   {
     "id": "hist-moy-023",
     "categorie": "histoire",
-    "niveau": "moyen",
+    "niveau": "facile",
     "question": "Quel combattant a mis Conor McGregor K.-O. en janvier 2021 à l'UFC 257 ?",
     "reponses": [
       "Dustin Poirier",
@@ -806,8 +806,8 @@
     "question": "Lors de quel événement s'est déroulé le premier combat féminin de l'histoire de l'UFC, en février 2013 ?",
     "reponses": [
       "UFC 157",
-      "UFC 150",
       "UFC 160",
+      "UFC 163",
       "UFC 168"
     ],
     "bonne_reponse": 0,
@@ -834,7 +834,7 @@
   {
     "id": "hist-dif-003",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Comment s'appelait l'écurie d'entraînement fondée par Ken Shamrock ?",
     "reponses": [
       "Lion's Den",
@@ -994,7 +994,7 @@
   {
     "id": "hist-dif-013",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Dans quelle salle londonienne s'est déroulé l'UFC 38 en 2002, premier événement de l'UFC au Royaume-Uni ?",
     "reponses": [
       "Royal Albert Hall",
@@ -1010,7 +1010,7 @@
   {
     "id": "hist-dif-014",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Quel diffuseur a pris le relais de Fox aux États-Unis pour retransmettre l'UFC à partir de 2019 ?",
     "reponses": [
       "ESPN",
@@ -1026,7 +1026,7 @@
   {
     "id": "hist-dif-015",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Avec quel diffuseur américain l'UFC a-t-elle signé un contrat de sept ans en 2011 ?",
     "reponses": [
       "Fox",
@@ -1042,7 +1042,7 @@
   {
     "id": "hist-dif-016",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Contre qui Royce Gracie a-t-il fait match nul après 36 minutes de combat à l'UFC 5 en 1995 ?",
     "reponses": [
       "Ken Shamrock",
@@ -1058,7 +1058,7 @@
   {
     "id": "hist-dif-017",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Quel combattant, rendu célèbre par des vidéos de combats de rue sur Internet, a participé à la saison 10 de The Ultimate Fighter ?",
     "reponses": [
       "Kimbo Slice",
@@ -1094,9 +1094,9 @@
     "question": "En quelle année Anderson Silva a-t-il fait ses débuts à l'UFC, face à Chris Leben ?",
     "reponses": [
       "2006",
+      "2003",
       "2004",
-      "2005",
-      "2007"
+      "2005"
     ],
     "bonne_reponse": 0,
     "explication": "Anderson Silva a débuté à l'UFC en juin 2006 en mettant Chris Leben K.-O. en 49 secondes.",
@@ -1106,7 +1106,7 @@
   {
     "id": "hist-dif-020",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Quel adversaire Anderson Silva a-t-il mis K.-O. d'un célèbre coup de pied de face à l'UFC 126 en 2011 ?",
     "reponses": [
       "Vitor Belfort",
@@ -1122,7 +1122,7 @@
   {
     "id": "hist-dif-021",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Quelle rivale de Ronda Rousey a été l'entraîneuse adverse de la saison 18 de The Ultimate Fighter en 2013 ?",
     "reponses": [
       "Miesha Tate",
@@ -1170,7 +1170,7 @@
   {
     "id": "hist-dif-024",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Dans quelle ville l'UFC a-t-elle organisé son premier événement en Arabie saoudite, en juin 2024 ?",
     "reponses": [
       "Riyad",
@@ -1186,7 +1186,7 @@
   {
     "id": "hist-dif-025",
     "categorie": "histoire",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Contre qui Royce Gracie a-t-il remporté la finale du tournoi de l'UFC 2, en mars 1994 ?",
     "reponses": [
       "Patrick Smith",
@@ -1378,7 +1378,7 @@
   {
     "id": "hist-exp-012",
     "categorie": "histoire",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel sénateur américain a qualifié l'UFC de « combat de coqs humain » dans les années 1990 ?",
     "reponses": [
       "John McCain",
@@ -1398,9 +1398,9 @@
     "question": "Quel a été le premier événement organisé par Zuffa après son rachat de l'UFC en 2001 ?",
     "reponses": [
       "UFC 30",
-      "UFC 28",
       "UFC 31",
-      "UFC 33"
+      "UFC 32",
+      "UFC 34"
     ],
     "bonne_reponse": 0,
     "explication": "L'UFC 30, « Battle on the Boardwalk », s'est tenu en février 2001 à Atlantic City, premier gala de l'ère Zuffa.",
@@ -1464,7 +1464,7 @@
     "reponses": [
       "16",
       "8",
-      "12",
+      "24",
       "32"
     ],
     "bonne_reponse": 0,
@@ -1491,13 +1491,13 @@
   {
     "id": "hist-exp-019",
     "categorie": "histoire",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "En quelle année Zuffa a-t-elle racheté l'organisation rivale Strikeforce ?",
     "reponses": [
       "2011",
+      "2008",
       "2009",
-      "2010",
-      "2013"
+      "2010"
     ],
     "bonne_reponse": 0,
     "explication": "Zuffa a annoncé le rachat de Strikeforce en mars 2011 ; l'organisation a disparu début 2013.",
@@ -1511,9 +1511,9 @@
     "question": "Lors de quel événement Randy Couture a-t-il fait ses débuts à l'UFC, en 1997 ?",
     "reponses": [
       "UFC 13",
-      "UFC 11",
-      "UFC 12",
-      "UFC 15"
+      "UFC 9",
+      "UFC 10",
+      "UFC 11"
     ],
     "bonne_reponse": 0,
     "explication": "Randy Couture a débuté à l'UFC 13 en mai 1997, où il a remporté le tournoi des poids lourds.",
@@ -1587,13 +1587,13 @@
   {
     "id": "hist-exp-025",
     "categorie": "histoire",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "En quelle année l'État de New York a-t-il légalisé le MMA professionnel, ouvrant la voie à l'UFC au Madison Square Garden ?",
     "reponses": [
       "2016",
+      "2010",
       "2012",
-      "2014",
-      "2018"
+      "2014"
     ],
     "bonne_reponse": 0,
     "explication": "New York a légalisé le MMA professionnel en 2016, ce qui a permis l'UFC 205 au Madison Square Garden en novembre.",
@@ -1635,7 +1635,7 @@
   {
     "id": "champ-fac-003",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Qui a pris la ceinture des poids moyens à Dricus du Plessis en août 2025 ?",
     "reponses": [
       "Khamzat Chimaev",
@@ -1699,7 +1699,7 @@
   {
     "id": "champ-fac-007",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quelle championne de l'UFC avait auparavant remporté deux titres olympiques en judo ?",
     "reponses": [
       "Kayla Harrison",
@@ -1747,7 +1747,7 @@
   {
     "id": "champ-fac-010",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel Anglais est devenu champion des poids lourds de l'UFC en 2025, après la retraite de Jon Jones ?",
     "reponses": [
       "Tom Aspinall",
@@ -1795,7 +1795,7 @@
   {
     "id": "champ-fac-013",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel ancien champion des plumes a conquis la ceinture des poids légers en juin 2025 ?",
     "reponses": [
       "Ilia Topuria",
@@ -1827,7 +1827,7 @@
   {
     "id": "champ-fac-015",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel futur champion de l'UFC a été sacré champion olympique de lutte libre à Pékin, en 2008 ?",
     "reponses": [
       "Henry Cejudo",
@@ -1843,7 +1843,7 @@
   {
     "id": "champ-fac-016",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel est le surnom de l'Australien Alexander Volkanovski, champion des poids plumes ?",
     "reponses": [
       "The Great",
@@ -1859,7 +1859,7 @@
   {
     "id": "champ-fac-017",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel champion des poids mi-lourds à la crête iroquoise était surnommé « The Iceman » ?",
     "reponses": [
       "Chuck Liddell",
@@ -1875,7 +1875,7 @@
   {
     "id": "champ-fac-018",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel est le surnom de Demetrious Johnson, longtemps champion des poids mouches ?",
     "reponses": [
       "Mighty Mouse",
@@ -1891,7 +1891,7 @@
   {
     "id": "champ-fac-019",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel ami et partenaire d'entraînement de Khabib a remporté la ceinture des poids légers en 2022 ?",
     "reponses": [
       "Islam Makhachev",
@@ -1923,7 +1923,7 @@
   {
     "id": "champ-fac-021",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel champion des poids lourds de l'UFC était aussi pompier dans l'Ohio ?",
     "reponses": [
       "Stipe Miocic",
@@ -1939,7 +1939,7 @@
   {
     "id": "champ-fac-022",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel combattant surnommé « Suga » a remporté la ceinture des poids coqs en 2023 ?",
     "reponses": [
       "Sean O'Malley",
@@ -1955,7 +1955,7 @@
   {
     "id": "champ-fac-023",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel Britannique a pris la ceinture des welters à Kamaru Usman grâce à un high kick en 2022 ?",
     "reponses": [
       "Leon Edwards",
@@ -1971,7 +1971,7 @@
   {
     "id": "champ-fac-024",
     "categorie": "champions",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Qui est devenue en 2019 la première championne chinoise de l'histoire de l'UFC ?",
     "reponses": [
       "Zhang Weili",
@@ -2131,7 +2131,7 @@
   {
     "id": "champ-moy-009",
     "categorie": "champions",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Contre qui Tony Ferguson a-t-il remporté la ceinture intérimaire des poids légers en 2017 ?",
     "reponses": [
       "Kevin Lee",
@@ -2211,7 +2211,7 @@
   {
     "id": "champ-moy-014",
     "categorie": "champions",
-    "niveau": "moyen",
+    "niveau": "facile",
     "question": "Contre qui Ronda Rousey a-t-elle disputé son dernier combat, pour la ceinture des coqs fin 2016 ?",
     "reponses": [
       "Amanda Nunes",
@@ -2439,9 +2439,9 @@
     "question": "En quelle année Junior dos Santos a-t-il pris la ceinture des lourds à Cain Velasquez ?",
     "reponses": [
       "2011",
-      "2010",
-      "2012",
-      "2013"
+      "2008",
+      "2009",
+      "2010"
     ],
     "bonne_reponse": 0,
     "explication": "Junior dos Santos a mis Cain Velasquez K.-O. en 64 secondes lors du premier UFC on Fox, en novembre 2011.",
@@ -2547,7 +2547,7 @@
   {
     "id": "champ-dif-010",
     "categorie": "champions",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Contre qui Jiří Procházka a-t-il remporté la ceinture des mi-lourds en juin 2022 ?",
     "reponses": [
       "Glover Teixeira",
@@ -2579,7 +2579,7 @@
   {
     "id": "champ-dif-012",
     "categorie": "champions",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Qui a pris la ceinture des poids welters à Robbie Lawler en 2016 ?",
     "reponses": [
       "Tyron Woodley",
@@ -2627,7 +2627,7 @@
   {
     "id": "champ-dif-015",
     "categorie": "champions",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Qui a pris la ceinture des poids coqs à Holly Holm en mars 2016 ?",
     "reponses": [
       "Miesha Tate",
@@ -2659,7 +2659,7 @@
   {
     "id": "champ-dif-017",
     "categorie": "champions",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Contre qui Valentina Shevchenko a-t-elle remporté la ceinture vacante des poids mouches en 2018 ?",
     "reponses": [
       "Joanna Jędrzejczyk",
@@ -2707,7 +2707,7 @@
   {
     "id": "champ-dif-020",
     "categorie": "champions",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Qui est devenu en 2021 le premier champion de l'UFC né au Mexique ?",
     "reponses": [
       "Brandon Moreno",
@@ -2723,7 +2723,7 @@
   {
     "id": "champ-dif-021",
     "categorie": "champions",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Qui a pris la ceinture des mouches à Valentina Shevchenko à l'UFC 285, en 2023 ?",
     "reponses": [
       "Alexa Grasso",
@@ -2883,7 +2883,7 @@
   {
     "id": "champ-exp-006",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Qui fut le premier champion des poids coqs de l'UFC, à la fusion avec le WEC fin 2010 ?",
     "reponses": [
       "Dominick Cruz",
@@ -2899,7 +2899,7 @@
   {
     "id": "champ-exp-007",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Qui fut la première championne des poids pailles de l'UFC, en 2014 ?",
     "reponses": [
       "Carla Esparza",
@@ -3011,7 +3011,7 @@
   {
     "id": "champ-exp-014",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Qui a pris la ceinture des poids pailles à Rose Namajunas grâce à un slam à l'UFC 237, en 2019 ?",
     "reponses": [
       "Jéssica Andrade",
@@ -3027,7 +3027,7 @@
   {
     "id": "champ-exp-015",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre qui Sean Sherk a-t-il remporté la ceinture vacante des poids légers à l'UFC 64, en 2006 ?",
     "reponses": [
       "Kenny Florian",
@@ -3043,7 +3043,7 @@
   {
     "id": "champ-exp-016",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Qui a pris la ceinture des mi-lourds à Forrest Griffin à l'UFC 92, en 2008 ?",
     "reponses": [
       "Rashad Evans",
@@ -3059,7 +3059,7 @@
   {
     "id": "champ-exp-017",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre qui Renan Barão a-t-il remporté la ceinture intérimaire des poids coqs en 2012 ?",
     "reponses": [
       "Urijah Faber",
@@ -3075,7 +3075,7 @@
   {
     "id": "champ-exp-018",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre qui Deiveson Figueiredo a-t-il remporté la ceinture vacante des poids mouches en juillet 2020 ?",
     "reponses": [
       "Joseph Benavidez",
@@ -3091,7 +3091,7 @@
   {
     "id": "champ-exp-019",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre qui Cris Cyborg a-t-elle remporté la ceinture vacante des poids plumes à l'UFC 214, en 2017 ?",
     "reponses": [
       "Tonya Evinger",
@@ -3107,7 +3107,7 @@
   {
     "id": "champ-exp-020",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel champion des moyens, ancien professeur de mathématiques, était surnommé « Ace » ?",
     "reponses": [
       "Rich Franklin",
@@ -3123,7 +3123,7 @@
   {
     "id": "champ-exp-021",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre qui Fabrício Werdum a-t-il remporté la ceinture intérimaire des poids lourds en 2014 ?",
     "reponses": [
       "Mark Hunt",
@@ -3139,7 +3139,7 @@
   {
     "id": "champ-exp-022",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Qui a remporté la ceinture intérimaire des poids lourds face à Tim Sylvia à l'UFC 81, en 2008 ?",
     "reponses": [
       "Antônio Rodrigo Nogueira",
@@ -3187,7 +3187,7 @@
   {
     "id": "champ-exp-025",
     "categorie": "champions",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre qui Carlos Condit a-t-il remporté la ceinture intérimaire des welters à l'UFC 143, en 2012 ?",
     "reponses": [
       "Nick Diaz",
@@ -3219,7 +3219,7 @@
   {
     "id": "rec-fac-002",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quelle combattante a soumis Cat Zingano en 14 secondes à l'UFC 184 en 2015 ?",
     "reponses": [
       "Ronda Rousey",
@@ -3251,7 +3251,7 @@
   {
     "id": "rec-fac-004",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel champion a battu le record de défenses de titre consécutives en 2017, avec une 11e défense ?",
     "reponses": [
       "Demetrious Johnson",
@@ -3267,7 +3267,7 @@
   {
     "id": "rec-fac-005",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "À la fin de 2024, qui détenait le record de victoires consécutives à l'UFC, avec 16 succès ?",
     "reponses": [
       "Anderson Silva",
@@ -3299,7 +3299,7 @@
   {
     "id": "rec-fac-007",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Dans quel pays s'est tenu l'UFC 243 en 2019, record d'affluence de l'UFC avec 57 127 spectateurs ?",
     "reponses": [
       "Australie",
@@ -3315,7 +3315,7 @@
   {
     "id": "rec-fac-008",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record de victoires en combat de titre à l'UFC, avec 16 ?",
     "reponses": [
       "Jon Jones",
@@ -3331,7 +3331,7 @@
   {
     "id": "rec-fac-009",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record de victoires par soumission à l'UFC ?",
     "reponses": [
       "Charles Oliveira",
@@ -3347,7 +3347,7 @@
   {
     "id": "rec-fac-010",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record de victoires par K.-O. à l'UFC ?",
     "reponses": [
       "Derrick Lewis",
@@ -3363,7 +3363,7 @@
   {
     "id": "rec-fac-011",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "difficile",
     "question": "À l'UFC 300 en 2024, combien de secondes restait-il quand Max Holloway a mis K.-O. Justin Gaethje ?",
     "reponses": [
       "1 seconde",
@@ -3379,7 +3379,7 @@
   {
     "id": "rec-fac-012",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record de frappes significatives portées en carrière à l'UFC ?",
     "reponses": [
       "Max Holloway",
@@ -3395,7 +3395,7 @@
   {
     "id": "rec-fac-013",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record d'amenées au sol réussies en carrière à l'UFC ?",
     "reponses": [
       "Merab Dvalishvili",
@@ -3411,7 +3411,7 @@
   {
     "id": "rec-fac-014",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "À 43 ans, quel vétéran est redevenu champion des lourds en battant Tim Sylvia à l'UFC 68 en 2007 ?",
     "reponses": [
       "Randy Couture",
@@ -3427,7 +3427,7 @@
   {
     "id": "rec-fac-015",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Qui a mis K.-O. Cris Cyborg en 51 secondes à l'UFC 232 en 2018 ?",
     "reponses": [
       "Amanda Nunes",
@@ -3443,7 +3443,7 @@
   {
     "id": "rec-fac-016",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record de victoires consécutives chez les welters de l'UFC, avec 15 ?",
     "reponses": [
       "Kamaru Usman",
@@ -3459,7 +3459,7 @@
   {
     "id": "rec-fac-017",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Qui a mis fin en 2021 à la série de 12 victoires consécutives d'Amanda Nunes ?",
     "reponses": [
       "Julianna Peña",
@@ -3475,7 +3475,7 @@
   {
     "id": "rec-fac-018",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2009, contre qui Jon Jones a-t-il été disqualifié pour des coups de coude interdits ?",
     "reponses": [
       "Matt Hamill",
@@ -3491,13 +3491,13 @@
   {
     "id": "rec-fac-019",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "difficile",
     "question": "Combien de fois Ronda Rousey a-t-elle défendu son titre des poids coqs à l'UFC ?",
     "reponses": [
       "6",
+      "3",
       "4",
-      "5",
-      "7"
+      "5"
     ],
     "bonne_reponse": 0,
     "explication": "Rousey a défendu sa ceinture 6 fois (Carmouche, Tate, McMann, Davis, Zingano, Correia) avant de la perdre contre Holly Holm.",
@@ -3507,13 +3507,13 @@
   {
     "id": "rec-fac-020",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "difficile",
     "question": "Avec quel bilan professionnel Georges St-Pierre a-t-il pris sa retraite en 2019 ?",
     "reponses": [
       "26-2",
       "25-2",
-      "26-3",
-      "27-1"
+      "24-3",
+      "25-3"
     ],
     "bonne_reponse": 0,
     "explication": "GSP a pris sa retraite avec 26 victoires et 2 défaites, deux revers (Hughes, Serra) qu'il a ensuite vengés.",
@@ -3523,7 +3523,7 @@
   {
     "id": "rec-fac-021",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "En 2025, quel combattant détenait le record du plus grand nombre de combats disputés à l'UFC ?",
     "reponses": [
       "Jim Miller",
@@ -3539,7 +3539,7 @@
   {
     "id": "rec-fac-022",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "difficile",
     "question": "Quel événement de 2009, avec Brock Lesnar contre Frank Mir, a dépassé 1,6 million d'achats en pay-per-view ?",
     "reponses": [
       "UFC 100",
@@ -3555,7 +3555,7 @@
   {
     "id": "rec-fac-023",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Qui a été le premier à mettre Max Holloway K.-O., à l'UFC 308 en 2024 ?",
     "reponses": [
       "Ilia Topuria",
@@ -3587,7 +3587,7 @@
   {
     "id": "rec-fac-025",
     "categorie": "records",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel champion des mi-lourds a enchaîné 7 victoires consécutives par K.-O. à l'UFC entre 2004 et 2006 ?",
     "reponses": [
       "Chuck Liddell",
@@ -3607,9 +3607,9 @@
     "question": "Avec quel bilan Khabib Nurmagomedov a-t-il pris sa retraite en 2020 ?",
     "reponses": [
       "29-0",
-      "28-0",
       "30-0",
-      "29-1"
+      "31-0",
+      "30-1"
     ],
     "bonne_reponse": 0,
     "explication": "Khabib a pris sa retraite invaincu après sa victoire contre Justin Gaethje à l'UFC 254, en octobre 2020.",
@@ -3619,7 +3619,7 @@
   {
     "id": "rec-moy-002",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Qui partageait le record de victoires de l'UFC (23) avant d'être soumis par Jim Miller à l'UFC 276 en 2022 ?",
     "reponses": [
       "Donald Cerrone",
@@ -3667,7 +3667,7 @@
   {
     "id": "rec-moy-005",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "En 2025, quelle combattante détenait le record de victoires chez les femmes à l'UFC ?",
     "reponses": [
       "Jéssica Andrade",
@@ -3683,13 +3683,13 @@
   {
     "id": "rec-moy-006",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien de tournois de l'UFC Royce Gracie a-t-il remportés dans les années 1990, un record ?",
     "reponses": [
       "3",
-      "2",
       "4",
-      "5"
+      "5",
+      "6"
     ],
     "bonne_reponse": 0,
     "explication": "Royce Gracie a remporté trois tournois de l'UFC entre 1993 et 1994, un total qu'aucun autre combattant n'a égalé.",
@@ -3699,13 +3699,13 @@
   {
     "id": "rec-moy-007",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Avec quel bilan professionnel Ronda Rousey a-t-elle mis fin à sa carrière de MMA ?",
     "reponses": [
       "12-2",
-      "12-1",
-      "13-2",
-      "11-2"
+      "11-2",
+      "10-2",
+      "11-1"
     ],
     "bonne_reponse": 0,
     "explication": "Ronda Rousey a terminé avec 12 victoires et 2 défaites, deux revers subis consécutivement en 2015 et 2016.",
@@ -3731,7 +3731,7 @@
   {
     "id": "rec-moy-009",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quel combattant a mis K.-O. Mark Hominick en 7 secondes à l'UFC 140 en 2011 ?",
     "reponses": [
       "Chan Sung Jung",
@@ -3747,13 +3747,13 @@
   {
     "id": "rec-moy-010",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien de fois Max Holloway a-t-il défendu la ceinture des plumes après l'avoir unifiée en 2017 ?",
     "reponses": [
       "3",
-      "2",
       "4",
-      "5"
+      "5",
+      "6"
     ],
     "bonne_reponse": 0,
     "explication": "Max Holloway a défendu son titre contre José Aldo, Brian Ortega et Frankie Edgar avant de le perdre fin 2019.",
@@ -3763,13 +3763,13 @@
   {
     "id": "rec-moy-011",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "expert",
     "question": "Combien de fois Matt Hughes a-t-il défendu la ceinture des welters lors de son premier règne, entre 2001 et 2004 ?",
     "reponses": [
       "5",
+      "2",
       "3",
-      "4",
-      "6"
+      "4"
     ],
     "bonne_reponse": 0,
     "explication": "Matt Hughes a battu Sakurai, Newton, Castillo, Sherk et Trigg avant de perdre son titre en janvier 2004.",
@@ -3779,13 +3779,13 @@
   {
     "id": "rec-moy-012",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Avec quel bilan Amanda Nunes a-t-elle annoncé sa retraite après l'UFC 289 en 2023 ?",
     "reponses": [
       "23-5",
-      "22-5",
-      "23-4",
-      "21-5"
+      "24-5",
+      "25-4",
+      "24-4"
     ],
     "bonne_reponse": 0,
     "explication": "Après sa victoire contre Irene Aldana, Nunes s'est retirée avec 23 victoires et 5 défaites, double championne en titre.",
@@ -3796,7 +3796,7 @@
   {
     "id": "rec-moy-013",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien de fois Aljamain Sterling a-t-il défendu la ceinture des coqs entre 2022 et 2023 ?",
     "reponses": [
       "3",
@@ -3844,13 +3844,13 @@
   {
     "id": "rec-moy-016",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien de défenses du titre des légers Islam Makhachev a-t-il réussies avant de laisser sa ceinture en 2025 ?",
     "reponses": [
       "4",
-      "3",
-      "5",
-      "6"
+      "1",
+      "2",
+      "3"
     ],
     "bonne_reponse": 0,
     "explication": "Makhachev a battu Volkanovski deux fois, Poirier et Moicano : 4 défenses, record de la catégorie des légers.",
@@ -3860,7 +3860,7 @@
   {
     "id": "rec-moy-017",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien de fois Khabib Nurmagomedov a-t-il défendu son titre des légers avant sa retraite ?",
     "reponses": [
       "3",
@@ -3908,7 +3908,7 @@
   {
     "id": "rec-moy-020",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Avec quel bilan Daniel Cormier a-t-il pris sa retraite en 2020 ?",
     "reponses": [
       "22-3 (1 NC)",
@@ -3940,13 +3940,13 @@
   {
     "id": "rec-moy-022",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien de fois Israel Adesanya a-t-il défendu la ceinture des moyens lors de son premier règne ?",
     "reponses": [
       "5",
-      "3",
       "4",
-      "6"
+      "6",
+      "7"
     ],
     "bonne_reponse": 0,
     "explication": "De 2020 à 2022, Adesanya a battu Romero, Costa, Vettori, Whittaker et Cannonier.",
@@ -3956,7 +3956,7 @@
   {
     "id": "rec-moy-023",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quel combattant a remporté 5 combats à l'UFC en 2020, égalant le record de victoires sur une année ?",
     "reponses": [
       "Kevin Holland",
@@ -3989,7 +3989,7 @@
   {
     "id": "rec-moy-025",
     "categorie": "records",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "En 2022, quel combattant a dépassé Georges St-Pierre au record de victoires chez les poids mi-moyens ?",
     "reponses": [
       "Neil Magny",
@@ -4005,7 +4005,7 @@
   {
     "id": "rec-dif-001",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "À l'UFC 239 en 2019, qui a battu Ben Askren par K.-O. en 5 secondes, un record de rapidité à l'UFC ?",
     "reponses": [
       "Jorge Masvidal",
@@ -4025,9 +4025,9 @@
     "question": "Combien de défenses de titre consécutives Jon Jones a-t-il réussies chez les mi-lourds lors de son premier règne ?",
     "reponses": [
       "8",
+      "5",
       "6",
-      "7",
-      "9"
+      "7"
     ],
     "bonne_reponse": 0,
     "explication": "De 2011 à 2015, Jones a battu Jackson, Machida, Evans, Belfort, Sonnen, Gustafsson, Teixeira et Cormier.",
@@ -4041,9 +4041,9 @@
     "question": "Combien de fois Joanna Jędrzejczyk a-t-elle défendu son titre des poids pailles entre 2015 et 2017 ?",
     "reponses": [
       "5",
-      "3",
-      "4",
-      "6"
+      "6",
+      "7",
+      "8"
     ],
     "bonne_reponse": 0,
     "explication": "Joanna Jędrzejczyk a défendu 5 fois sa ceinture, record de la catégorie, avant de la perdre contre Rose Namajunas.",
@@ -4133,7 +4133,7 @@
   {
     "id": "rec-dif-009",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "En combien de temps Rafael dos Anjos a-t-il battu Donald Cerrone pour conserver son titre des légers en 2015 ?",
     "reponses": [
       "1 min 06",
@@ -4169,9 +4169,9 @@
     "question": "Combien de défenses de titre consécutives Georges St-Pierre a-t-il réussies chez les mi-moyens entre 2008 et 2013 ?",
     "reponses": [
       "9",
+      "6",
       "7",
-      "8",
-      "10"
+      "8"
     ],
     "bonne_reponse": 0,
     "explication": "Lors de son second règne, GSP a battu Fitch, Penn, Alves, Hardy, Koscheck, Shields, Condit, Diaz et Hendricks.",
@@ -4181,7 +4181,7 @@
   {
     "id": "rec-dif-012",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Combien de knockdowns Israel Adesanya a-t-il infligés à Kelvin Gastelum à l'UFC 236 en 2019, un record en combat de titre ?",
     "reponses": [
       "4",
@@ -4294,7 +4294,7 @@
   {
     "id": "rec-dif-019",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Quel combattant a remporté le plus de bonus Submission of the Night, une récompense supprimée en 2014 ?",
     "reponses": [
       "Joe Lauzon",
@@ -4326,13 +4326,13 @@
   {
     "id": "rec-dif-021",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Avec quel bilan Chuck Liddell a-t-il terminé sa carrière en 2018 ?",
     "reponses": [
       "21-9",
-      "21-8",
       "20-9",
-      "22-9"
+      "19-9",
+      "20-8"
     ],
     "bonne_reponse": 0,
     "explication": "Sorti de sa retraite pour affronter Tito Ortiz en 2018, Liddell a perdu et terminé avec 21 victoires et 9 défaites.",
@@ -4342,7 +4342,7 @@
   {
     "id": "rec-dif-022",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Combien de défenses du titre des mi-lourds Tito Ortiz a-t-il réussies entre 2000 et 2002 ?",
     "reponses": [
       "5",
@@ -4358,7 +4358,7 @@
   {
     "id": "rec-dif-023",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "À la fin de 2025, quel champion détenait le plus long règne unique chez les poids légers de l'UFC ?",
     "reponses": [
       "Khabib Nurmagomedov",
@@ -4374,7 +4374,7 @@
   {
     "id": "rec-dif-024",
     "categorie": "records",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "En juillet 2025 à Abou Dabi, quel combattant a établi le record de knockdowns dans un combat de l'UFC, avec 6 ?",
     "reponses": [
       "Steven Nguyen",
@@ -4422,7 +4422,7 @@
   {
     "id": "rec-exp-002",
     "categorie": "records",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Qui a mis K.-O. Paul Buentello en 15 secondes à l'UFC 55 en 2005, record pour un combat de titre des lourds ?",
     "reponses": [
       "Andrei Arlovski",
@@ -4470,7 +4470,7 @@
   {
     "id": "rec-exp-005",
     "categorie": "records",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel poids lourd a enchaîné 9 victoires consécutives à l'UFC entre 2008 et 2012, record de la catégorie en 2025 ?",
     "reponses": [
       "Junior dos Santos",
@@ -4535,7 +4535,7 @@
   {
     "id": "rec-exp-009",
     "categorie": "records",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel combattant a remporté le plus de bonus Knockout of the Night, une récompense supprimée en 2014 ?",
     "reponses": [
       "Anderson Silva",
@@ -4599,7 +4599,7 @@
   {
     "id": "rec-exp-013",
     "categorie": "records",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Dans quel stade l'UFC 129 (St-Pierre contre Shields) a-t-il réuni 55 724 spectateurs en 2011 ?",
     "reponses": [
       "Le Rogers Centre",
@@ -4619,9 +4619,9 @@
     "question": "Avec quel bilan Matt Hughes a-t-il terminé sa carrière, conclue par une défaite contre Josh Koscheck en 2011 ?",
     "reponses": [
       "45-9",
-      "44-9",
-      "45-8",
-      "46-10"
+      "46-9",
+      "47-8",
+      "46-8"
     ],
     "bonne_reponse": 0,
     "explication": "Double champion des mi-moyens, Matt Hughes a terminé avec 45 victoires et 9 défaites.",
@@ -4732,8 +4732,8 @@
     "reponses": [
       "30-16 (1 NC)",
       "29-16 (1 NC)",
-      "30-15 (1 NC)",
-      "31-16 (1 NC)"
+      "31-15 (1 NC)",
+      "28-17 (1 NC)"
     ],
     "bonne_reponse": 0,
     "explication": "Lawler a conclu sa carrière par un K.-O. contre Niko Price, pour un bilan de 30 victoires et 16 défaites.",
@@ -4844,7 +4844,7 @@
     "reponses": [
       "5 rounds",
       "3 rounds",
-      "4 rounds",
+      "7 rounds",
       "12 rounds"
     ],
     "bonne_reponse": 0,
@@ -4935,7 +4935,7 @@
   {
     "id": "regl-fac-009",
     "categorie": "regles",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Comment appelle-t-on la position où le combattant sur le dos croise les jambes autour de la taille de l'adversaire ?",
     "reponses": [
       "La garde fermée",
@@ -5015,7 +5015,7 @@
   {
     "id": "regl-fac-014",
     "categorie": "regles",
-    "niveau": "facile",
+    "niveau": "moyen",
     "question": "Quel étranglement s'effectue en enserrant la tête et un bras de l'adversaire avec ses jambes ?",
     "reponses": [
       "Le triangle",
@@ -5303,7 +5303,7 @@
   {
     "id": "regl-moy-007",
     "categorie": "regles",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quelle est la limite de poids de la catégorie des poids plumes à l'UFC ?",
     "reponses": [
       "145 livres (65,8 kg)",
@@ -5319,7 +5319,7 @@
   {
     "id": "regl-moy-008",
     "categorie": "regles",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quelle est la limite de poids de la catégorie des poids welters à l'UFC ?",
     "reponses": [
       "170 livres (77,1 kg)",
@@ -5335,13 +5335,13 @@
   {
     "id": "regl-moy-009",
     "categorie": "regles",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Quelle est la limite de poids de la catégorie des poids mouches à l'UFC ?",
     "reponses": [
       "125 livres (56,7 kg)",
       "115 livres (52,2 kg)",
-      "120 livres (54,4 kg)",
-      "135 livres (61,2 kg)"
+      "135 livres (61,2 kg)",
+      "145 livres (65,8 kg)"
     ],
     "bonne_reponse": 0,
     "explication": "Les poids mouches (flyweight) combattent jusqu'à 125 livres, soit 56,7 kg.",
@@ -5447,7 +5447,7 @@
   {
     "id": "regl-moy-016",
     "categorie": "regles",
-    "niveau": "moyen",
+    "niveau": "facile",
     "question": "Comment appelle-t-on la position de corps-à-corps debout où les deux combattants s'agrippent ?",
     "reponses": [
       "Le clinch",
@@ -5575,7 +5575,7 @@
   {
     "id": "regl-moy-024",
     "categorie": "regles",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "Combien pèsent généralement les gants portés par les combattants de l'UFC ?",
     "reponses": [
       "4 onces",
@@ -5591,13 +5591,13 @@
   {
     "id": "regl-moy-025",
     "categorie": "regles",
-    "niveau": "moyen",
+    "niveau": "difficile",
     "question": "En 2025, combien de catégories de poids masculines comptait l'UFC ?",
     "reponses": [
       "8",
-      "7",
-      "9",
-      "10"
+      "5",
+      "6",
+      "7"
     ],
     "bonne_reponse": 0,
     "explication": "Des mouches aux lourds, l'UFC comptait 8 catégories masculines en 2025.",
@@ -5656,7 +5656,7 @@
   {
     "id": "regl-dif-004",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Quelle commission athlétique a réuni en avril 2001 les instances qui ont adopté les règles unifiées du MMA ?",
     "reponses": [
       "Celle du New Jersey",
@@ -5768,7 +5768,7 @@
   {
     "id": "regl-dif-011",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Quel étranglement bras-tête doit son nom à un élève de Renzo Gracie qui l'a popularisé en compétition ?",
     "reponses": [
       "Le D'Arce choke",
@@ -5884,9 +5884,9 @@
     "question": "Selon les règles unifiées, combien de temps un combattant a-t-il pour récupérer d'un coup bas involontaire ?",
     "reponses": [
       "5 minutes",
-      "1 minute",
-      "3 minutes",
-      "10 minutes"
+      "7 minutes",
+      "10 minutes",
+      "15 minutes"
     ],
     "bonne_reponse": 0,
     "explication": "Touché par un coup bas involontaire, un combattant dispose de 5 minutes au maximum pour récupérer.",
@@ -5896,7 +5896,7 @@
   {
     "id": "regl-dif-019",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Lors d'un combat pour le titre, que se passe-t-il si le résultat est un match nul ?",
     "reponses": [
       "Le champion garde sa ceinture",
@@ -5928,7 +5928,7 @@
   {
     "id": "regl-dif-021",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Selon les règles unifiées révisées en 2017, quand un combattant qui ne pose que les mains est-il considéré au sol ?",
     "reponses": [
       "Quand ses deux mains touchent le sol",
@@ -5944,7 +5944,7 @@
   {
     "id": "regl-dif-022",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Quel équipementier a fourni les tenues de combat de l'UFC de 2015 à 2021, avant Venum ?",
     "reponses": [
       "Reebok",
@@ -5960,7 +5960,7 @@
   {
     "id": "regl-dif-023",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "expert",
     "question": "Quel est le diamètre de l'Octogone standard de l'UFC ?",
     "reponses": [
       "30 pieds (9,1 m)",
@@ -5992,7 +5992,7 @@
   {
     "id": "regl-dif-025",
     "categorie": "regles",
-    "niveau": "difficile",
+    "niveau": "moyen",
     "question": "Dans quel coin de l'Octogone se place généralement le champion ou le combattant le mieux classé ?",
     "reponses": [
       "Le coin rouge",
@@ -6025,7 +6025,7 @@
   {
     "id": "regl-exp-002",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quelle limite de temps s'appliquait aux combats de l'UFC 1, en 1993 ?",
     "reponses": [
       "Aucune limite de temps",
@@ -6058,7 +6058,7 @@
   {
     "id": "regl-exp-004",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Selon les règles unifiées, quelle faute consiste à tordre les doigts ou les orteils de l'adversaire ?",
     "reponses": [
       "Manipuler les petites articulations",
@@ -6106,7 +6106,7 @@
   {
     "id": "regl-exp-007",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Comment s'appelle la catégorie des plus de 265 livres prévue par les règles unifiées mais absente de l'UFC ?",
     "reponses": [
       "Les super-lourds",
@@ -6122,7 +6122,7 @@
   {
     "id": "regl-exp-008",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quelle méthode de réhydratation après la pesée l'UFC a-t-elle interdite à partir d'octobre 2015 ?",
     "reponses": [
       "Les perfusions intraveineuses",
@@ -6187,7 +6187,7 @@
   {
     "id": "regl-exp-012",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Contre quel membre de la famille Gracie Masahiko Kimura a-t-il gagné en 1951, donnant son nom à la kimura ?",
     "reponses": [
       "Hélio Gracie",
@@ -6219,7 +6219,7 @@
   {
     "id": "regl-exp-014",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel fondateur de l'école de jiu-jitsu 10th Planet a popularisé le twister ?",
     "reponses": [
       "Eddie Bravo",
@@ -6235,7 +6235,7 @@
   {
     "id": "regl-exp-015",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Avec quelle soumission Frank Mir a-t-il cassé le bras d'Antônio Rodrigo Nogueira à l'UFC 140 en 2011 ?",
     "reponses": [
       "Une kimura",
@@ -6267,13 +6267,13 @@
   {
     "id": "regl-exp-017",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel était le montant de chaque bonus de la soirée lors de l'UFC 300 en avril 2024 ?",
     "reponses": [
       "300 000 dollars",
       "50 000 dollars",
       "100 000 dollars",
-      "500 000 dollars"
+      "200 000 dollars"
     ],
     "bonne_reponse": 0,
     "explication": "Pour fêter l'UFC 300, les bonus habituels de 50 000 dollars ont été portés à 300 000 dollars ; Max Holloway en a touché deux.",
@@ -6287,9 +6287,9 @@
     "question": "Quel événement numéroté a inauguré le « Fight Island » d'Abou Dabi en juillet 2020 ?",
     "reponses": [
       "UFC 251",
-      "UFC 250",
       "UFC 252",
-      "UFC 254"
+      "UFC 253",
+      "UFC 255"
     ],
     "bonne_reponse": 0,
     "explication": "L'UFC 251, en juillet 2020 sur l'île de Yas, a été le premier événement numéroté organisé sur « Fight Island ».",
@@ -6299,7 +6299,7 @@
   {
     "id": "regl-exp-019",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quels entraîneurs dirigeaient les deux équipes de la première saison de The Ultimate Fighter, en 2005 ?",
     "reponses": [
       "Couture et Liddell",
@@ -6363,7 +6363,7 @@
   {
     "id": "regl-exp-023",
     "categorie": "regles",
-    "niveau": "expert",
+    "niveau": "difficile",
     "question": "Quel tournoi l'UFC a-t-elle lancé en 2022 pour offrir des contrats à des espoirs asiatiques ?",
     "reponses": [
       "Road to UFC",
@@ -6408,5 +6408,1269 @@
     "source": "https://en.wikipedia.org/wiki/UFC_on_ESPN:_Woodley_vs._Burns",
     "statut": "a_verifier",
     "note": "Le Contender Series s'y tenait déjà depuis 2019 : « premier événement UFC » s'entend hors Contender Series."
+  },
+  {
+    "id": "cv-sport-002",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Dans quelle discipline Khabib Nurmagomedov a-t-il été deux fois champion du monde avant de régner à l'UFC ?",
+    "reponses": [
+      "Sambo de combat",
+      "Judo",
+      "Lutte gréco-romaine",
+      "Kickboxing"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Khabib Nurmagomedov est double champion du monde de sambo de combat.",
+    "source": "https://en.wikipedia.org/wiki/Khabib_Nurmagomedov",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-003",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Quel art martial Georges St-Pierre a-t-il commencé à 7 ans pour se défendre face à un harceleur ?",
+    "reponses": [
+      "Karaté",
+      "Judo",
+      "Boxe",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "GSP a débuté le karaté Kyokushin à sept ans et était déjà ceinture noire 2e dan à 12 ans.",
+    "source": "https://en.wikipedia.org/wiki/Georges_St-Pierre",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-004",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Avant le MMA, quel sport Francis Ngannou a-t-il commencé à pratiquer à 22 ans au Cameroun ?",
+    "reponses": [
+      "Boxe",
+      "Football",
+      "Lutte",
+      "Kickboxing"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Francis Ngannou a commencé la boxe à 22 ans malgré les réticences de sa famille, avant de bifurquer vers le MMA.",
+    "source": "https://en.wikipedia.org/wiki/Francis_Ngannou",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-005",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Dans quel sport Israel Adesanya a-t-il disputé un titre chez Glory avant de rejoindre l'UFC ?",
+    "reponses": [
+      "Kickboxing",
+      "Boxe",
+      "Taekwondo",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Israel Adesanya a mené une longue carrière en kickboxing et a défié pour le titre des moyens de Glory.",
+    "source": "https://en.wikipedia.org/wiki/Israel_Adesanya",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-006",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Dans quel sport Alex Pereira a-t-il été champion de Glory dans deux catégories avant de briller à l'UFC ?",
+    "reponses": [
+      "Kickboxing",
+      "Boxe",
+      "Judo",
+      "Karaté"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Alex Pereira a été champion de Glory chez les moyens et les mi-lourds en kickboxing.",
+    "source": "https://en.wikipedia.org/wiki/Alex_Pereira",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-007",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Quel combattant a battu Israel Adesanya à deux reprises en kickboxing, bien avant de l'affronter à l'UFC ?",
+    "reponses": [
+      "Alex Pereira",
+      "Robert Whittaker",
+      "Dricus du Plessis",
+      "Sean Strickland"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Alex Pereira a battu Adesanya deux fois en kickboxing, dont une fois par KO, avant de le détrôner à l'UFC 281.",
+    "source": "https://en.wikipedia.org/wiki/Alex_Pereira",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-008",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Avant la WWE et l'UFC, dans quel sport Brock Lesnar a-t-il été champion universitaire NCAA en 2000 ?",
+    "reponses": [
+      "Lutte",
+      "Football américain",
+      "Haltérophilie",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Brock Lesnar a remporté le titre NCAA Division I de lutte en 2000 avec l'université du Minnesota.",
+    "source": "https://en.wikipedia.org/wiki/Brock_Lesnar",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-010",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Dans quel sport Daniel Cormier a-t-il représenté les États-Unis aux Jeux olympiques d'Athènes en 2004 ?",
+    "reponses": [
+      "Lutte",
+      "Judo",
+      "Boxe",
+      "Haltérophilie"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Daniel Cormier a terminé 4e en lutte libre aux JO 2004, avant de devenir champion dans deux catégories à l'UFC.",
+    "source": "https://en.wikipedia.org/wiki/Daniel_Cormier",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-011",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Avant le MMA, dans quel sport Holly Holm a-t-elle été championne du monde dans trois catégories de poids ?",
+    "reponses": [
+      "Boxe",
+      "Judo",
+      "Taekwondo",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Holly Holm a été plusieurs fois championne du monde de boxe, avec 18 défenses de titre dans trois catégories.",
+    "source": "https://en.wikipedia.org/wiki/Holly_Holm",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-012",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Dans quel sport Jon Jones a-t-il été champion national universitaire (junior college) en 2006 ?",
+    "reponses": [
+      "Lutte",
+      "Football américain",
+      "Boxe",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Jon Jones a été champion national NJCAA de lutte en 2006 avec Iowa Central Community College.",
+    "source": "https://en.wikipedia.org/wiki/Jon_Jones",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-014",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Quel ancien catcheur star de la WWE s'est incliné face à Mickey Gall pour son premier combat à l'UFC, en 2016 ?",
+    "reponses": [
+      "CM Punk",
+      "Greg Hardy",
+      "Sage Northcutt",
+      "Mike Perry"
+    ],
+    "bonne_reponse": 0,
+    "explication": "CM Punk, star du catch à la WWE, a perdu par soumission face à Mickey Gall à l'UFC 203 en 2016.",
+    "source": "https://en.wikipedia.org/wiki/CM_Punk",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-015",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Avant de se consacrer au MMA, quel sport Alexander Volkanovski pratiquait-il en semi-professionnel ?",
+    "reponses": [
+      "Rugby à XIII",
+      "Rugby à XV",
+      "Football australien",
+      "Cricket"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Volkanovski jouait pilier en rugby à XIII chez les Warilla Gorillas et fut élu meilleur joueur de sa ligue en 2010.",
+    "source": "https://en.wikipedia.org/wiki/Alexander_Volkanovski",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-016",
+    "categorie": "cv",
+    "niveau": "facile",
+    "question": "Avant de dominer les poids mouches de l'UFC, dans quel sport Valentina Shevchenko a-t-elle été championne ?",
+    "reponses": [
+      "Muay-thaï",
+      "Judo",
+      "Lutte",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Valentina Shevchenko a remporté des titres en muay-thaï, discipline dans laquelle sa mère fut aussi championne.",
+    "source": "https://en.wikipedia.org/wiki/Valentina_Shevchenko",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-018",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel art martial Lyoto Machida a-t-il appris dès l'âge de 3 ans auprès de son père, maître japonais ?",
+    "reponses": [
+      "Karaté",
+      "Taekwondo",
+      "Boxe",
+      "Kung-fu"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Fils d'un maître de karaté Shotokan, Lyoto Machida a commencé le karaté à 3 ans et était ceinture noire à 13 ans.",
+    "source": "https://en.wikipedia.org/wiki/Lyoto_Machida",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-019",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Yoel Romero a-t-il remporté la médaille d'argent olympique en 2000 avec Cuba ?",
+    "reponses": [
+      "Lutte",
+      "Boxe",
+      "Judo",
+      "Haltérophilie"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Yoel Romero, champion du monde de lutte libre en 1999, a pris l'argent aux JO de Sydney en 2000.",
+    "source": "https://en.wikipedia.org/wiki/Yoel_Romero",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-020",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Kamaru Usman a-t-il été champion universitaire NCAA (Division II) en 2010 ?",
+    "reponses": [
+      "Lutte",
+      "Football américain",
+      "Athlétisme",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Kamaru Usman a été champion NCAA Division II de lutte en 2010, et trois fois All-American.",
+    "source": "https://en.wikipedia.org/wiki/Kamaru_Usman",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-021",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Avant le MMA, quel sport Cain Velasquez pratiquait-il à l'université d'Arizona State ?",
+    "reponses": [
+      "Lutte",
+      "Boxe",
+      "Judo",
+      "Haltérophilie"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Cain Velasquez a lutté trois saisons pour Arizona State, terminant 5e puis 4e du championnat national.",
+    "source": "https://en.wikipedia.org/wiki/Cain_Velasquez",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-022",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quelle discipline Zhang Weili a-t-elle été plusieurs fois championne de sa province du Hebei ?",
+    "reponses": [
+      "Sanda",
+      "Taekwondo",
+      "Judo",
+      "Karaté"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Entrée à 12 ans dans une école d'arts martiaux, Zhang Weili a remporté plusieurs titres de sanda dans le Hebei.",
+    "source": "https://en.wikipedia.org/wiki/Zhang_Weili",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-023",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Avant de briller en MMA, dans quel sport Mirko Cro Cop s'est-il fait un nom au K-1 ?",
+    "reponses": [
+      "Kickboxing",
+      "Boxe",
+      "Judo",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Mirko Cro Cop est considéré comme l'un des meilleurs kickboxeurs poids lourds de l'histoire du K-1.",
+    "source": "https://en.wikipedia.org/wiki/Mirko_Cro_Cop",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-024",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel champion de l'UFC a été sacré champion du monde de sambo de combat en 2016 ?",
+    "reponses": [
+      "Islam Makhachev",
+      "Charles Oliveira",
+      "Justin Gaethje",
+      "Dustin Poirier"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Islam Makhachev a remporté l'or aux championnats du monde de sambo de combat FIAS en novembre 2016.",
+    "source": "https://en.wikipedia.org/wiki/Islam_Makhachev",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-025",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Khamzat Chimaev a-t-il été trois fois champion de Suède avant le MMA ?",
+    "reponses": [
+      "Lutte",
+      "Judo",
+      "Boxe",
+      "Sambo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Khamzat Chimaev a été trois fois champion de Suède de lutte libre (2016, 2017 et 2018).",
+    "source": "https://en.wikipedia.org/wiki/Khamzat_Chimaev",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-026",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Petr Yan a-t-il obtenu le titre de maître des sports en Russie avant le MMA ?",
+    "reponses": [
+      "Boxe",
+      "Sambo",
+      "Lutte",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Petr Yan s'est entraîné huit ans en boxe et a obtenu le rang de maître des sports dans la catégorie des 64 kg.",
+    "source": "https://en.wikipedia.org/wiki/Petr_Yan",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-027",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Joanna Jędrzejczyk a-t-elle été plusieurs fois championne du monde amateur IFMA ?",
+    "reponses": [
+      "Muay-thaï",
+      "Judo",
+      "Boxe",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Joanna Jędrzejczyk a remporté cinq titres mondiaux IFMA de muay-thaï consécutifs, de 2009 à 2013.",
+    "source": "https://en.wikipedia.org/wiki/Joanna_J%C4%99drzejczyk",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-028",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel art martial Yair Rodríguez a-t-il commencé à l'âge de 5 ans au Mexique ?",
+    "reponses": [
+      "Taekwondo",
+      "Karaté",
+      "Boxe",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Yair Rodríguez a débuté le taekwondo à cinq ans à Parral, dans l'État de Chihuahua.",
+    "source": "https://en.wikipedia.org/wiki/Yair_Rodr%C3%ADguez",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-029",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel sport de combat Edson Barboza a-t-il pratiqué dès 8 ans, avant de rejoindre l'UFC ?",
+    "reponses": [
+      "Muay-thaï",
+      "Taekwondo",
+      "Capoeira",
+      "Karaté"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Edson Barboza a commencé le muay-thaï à 8 ans et y affiche un bilan professionnel de 25 victoires pour 3 défaites.",
+    "source": "https://en.wikipedia.org/wiki/Edson_Barboza",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-030",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Le père de Stephen « Wonderboy » Thompson dirige une école de quel art martial ?",
+    "reponses": [
+      "Karaté",
+      "Taekwondo",
+      "Judo",
+      "Kung-fu"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Ray Thompson tient l'école Upstate Karate, où son fils a commencé à s'entraîner dès l'âge de 3 ans.",
+    "source": "https://en.wikipedia.org/wiki/Stephen_Thompson_(fighter)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-031",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel combattant de l'UFC a été triple champion NCAA de lutte avec Penn State ?",
+    "reponses": [
+      "Bo Nickal",
+      "Ikram Aliskerov",
+      "Brendan Allen",
+      "Paulo Costa"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Bo Nickal a été trois fois champion NCAA Division I de lutte avec l'université Penn State.",
+    "source": "https://en.wikipedia.org/wiki/Bo_Nickal",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-032",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel ancien champion des welters de l'UFC a été double All-American en lutte à l'université du Missouri ?",
+    "reponses": [
+      "Tyron Woodley",
+      "Robbie Lawler",
+      "Johny Hendricks",
+      "Carlos Condit"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Tyron Woodley a été All-American en lutte en 2003 et 2005 avec les Missouri Tigers.",
+    "source": "https://en.wikipedia.org/wiki/Tyron_Woodley",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-033",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Justin Gaethje a-t-il été All-American en NCAA Division I avec Northern Colorado ?",
+    "reponses": [
+      "Lutte",
+      "Boxe",
+      "Judo",
+      "Rugby"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Justin Gaethje a terminé 7e du championnat NCAA de lutte en 2010, devenant All-American.",
+    "source": "https://en.wikipedia.org/wiki/Justin_Gaethje",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-034",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel combattant de l'UFC a été All-American en lutte à l'université d'Oregon State ?",
+    "reponses": [
+      "Colby Covington",
+      "Jorge Masvidal",
+      "Leon Edwards",
+      "Gilbert Burns"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Colby Covington a été All-American et double champion de la conférence Pac-10 en lutte avec Oregon State.",
+    "source": "https://en.wikipedia.org/wiki/Colby_Covington",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-035",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Avant de devenir un welter de premier plan à l'UFC, dans quelle discipline Gilbert Burns a-t-il été champion du monde ?",
+    "reponses": [
+      "Jiu-jitsu brésilien",
+      "Judo",
+      "Lutte",
+      "Muay-thaï"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Gilbert Burns est champion du monde IBJJF de jiu-jitsu brésilien, en kimono et sans kimono.",
+    "source": "https://en.wikipedia.org/wiki/Gilbert_Burns",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-036",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quelle combattante des poids pailles de l'UFC est une ancienne championne du monde de jiu-jitsu brésilien ?",
+    "reponses": [
+      "Mackenzie Dern",
+      "Zhang Weili",
+      "Rose Namajunas",
+      "Tatiana Suarez"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Mackenzie Dern a été championne du monde de jiu-jitsu brésilien en ceinture noire avant de passer au MMA.",
+    "source": "https://en.wikipedia.org/wiki/Mackenzie_Dern",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-037",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Avant le MMA, dans quel sport de combat Ciryl Gane a-t-il fait ses débuts professionnels ?",
+    "reponses": [
+      "Muay-thaï",
+      "Boxe",
+      "Judo",
+      "Karaté"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Ciryl Gane a découvert le muay-thaï à Paris et a remporté un titre national dès son premier combat professionnel.",
+    "source": "https://en.wikipedia.org/wiki/Ciryl_Gane",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-038",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Grand spécialiste du sol à l'UFC, Demian Maia a remporté la Coupe du monde de quelle discipline ?",
+    "reponses": [
+      "Jiu-jitsu brésilien",
+      "Lutte gréco-romaine",
+      "Luta livre",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Demian Maia a remporté la Coupe du monde de jiu-jitsu et l'ADCC, et a défié pour le titre UFC en 2010 et 2017.",
+    "source": "https://en.wikipedia.org/wiki/Demian_Maia",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-039",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Quel champion du monde de jiu-jitsu brésilien a soumis Cain Velasquez en 2015 pour unifier le titre poids lourd ?",
+    "reponses": [
+      "Fabrício Werdum",
+      "Junior dos Santos",
+      "Stipe Miocic",
+      "Frank Mir"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Champion du monde IBJJF en 2004, Werdum a soumis Velasquez par guillotine à l'UFC 188 à Mexico.",
+    "source": "https://en.wikipedia.org/wiki/Fabr%C3%ADcio_Werdum",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-040",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Tai Tuivasa avait-il signé chez les Sydney Roosters avant de se lancer dans le MMA ?",
+    "reponses": [
+      "Rugby à XIII",
+      "Rugby à XV",
+      "Football australien",
+      "Football"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Tai Tuivasa a été recruté par le club de rugby à XIII des Sydney Roosters en 2010 avant d'abandonner ce sport.",
+    "source": "https://en.wikipedia.org/wiki/Tai_Tuivasa",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-041",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Greg Hardy a-t-il joué six saisons en professionnel avant le MMA ?",
+    "reponses": [
+      "Football américain",
+      "Basket-ball",
+      "Baseball",
+      "Hockey sur glace"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Greg Hardy a joué six saisons en NFL, principalement comme defensive end des Carolina Panthers.",
+    "source": "https://en.wikipedia.org/wiki/Greg_Hardy",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-042",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "En 2012, dans quel sport Dricus du Plessis a-t-il décroché l'or aux championnats du monde WAKO ?",
+    "reponses": [
+      "Kickboxing",
+      "Judo",
+      "Lutte",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "À 17 ans, Dricus du Plessis a remporté l'or en kickboxing K-1 aux Mondiaux WAKO, une première pour l'Afrique du Sud.",
+    "source": "https://en.wikipedia.org/wiki/Dricus_du_Plessis",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-044",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Randy Couture a été trois fois remplaçant de l'équipe olympique américaine dans quel sport ?",
+    "reponses": [
+      "Lutte",
+      "Judo",
+      "Boxe",
+      "Haltérophilie"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Randy Couture a été remplaçant de l'équipe olympique de lutte en 1988, 1992 et 1996.",
+    "source": "https://en.wikipedia.org/wiki/Randy_Couture",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-045",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Avant le MMA, dans quel sport Matt Hughes a-t-il été double All-American à Eastern Illinois ?",
+    "reponses": [
+      "Lutte",
+      "Boxe",
+      "Judo",
+      "Basket-ball"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Matt Hughes a été deux fois All-American en lutte NCAA Division I avec Eastern Illinois (1996 et 1997).",
+    "source": "https://en.wikipedia.org/wiki/Matt_Hughes_(fighter)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-046",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Avant de défier Anderson Silva, dans quel sport Chael Sonnen a-t-il été All-American à l'université d'Oregon ?",
+    "reponses": [
+      "Lutte",
+      "Boxe",
+      "Judo",
+      "Sambo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Chael Sonnen a été All-American en lutte NCAA Division I avec l'université d'Oregon en 1998.",
+    "source": "https://en.wikipedia.org/wiki/Chael_Sonnen",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-047",
+    "categorie": "cv",
+    "niveau": "moyen",
+    "question": "Dans quel sport Aljamain Sterling a-t-il été double All-American (Division III) à Cortland ?",
+    "reponses": [
+      "Lutte",
+      "Boxe",
+      "Kickboxing",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Aljamain Sterling a été deux fois All-American de lutte en NCAA Division III avec Cortland.",
+    "source": "https://en.wikipedia.org/wiki/Aljamain_Sterling",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-048",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel futur combattant de l'UFC a remporté le Grand Prix mondial K-1 en 2001 ?",
+    "reponses": [
+      "Mark Hunt",
+      "Mirko Cro Cop",
+      "Pat Barry",
+      "Gökhan Saki"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Le Néo-Zélandais Mark Hunt a remporté le K-1 World Grand Prix 2001 avant de combattre au Pride puis à l'UFC.",
+    "source": "https://en.wikipedia.org/wiki/Mark_Hunt",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-049",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quel sport Josh Koscheck a-t-il été champion national NCAA en 2001 avec Edinboro ?",
+    "reponses": [
+      "Lutte",
+      "Football américain",
+      "Boxe",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Josh Koscheck a été champion NCAA de lutte en 2001 chez les 174 livres et quatre fois All-American.",
+    "source": "https://en.wikipedia.org/wiki/Josh_Koscheck",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-050",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien champion des welters de l'UFC a été double champion NCAA de lutte avec Oklahoma State ?",
+    "reponses": [
+      "Johny Hendricks",
+      "Robbie Lawler",
+      "Tyron Woodley",
+      "Carlos Condit"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Johny Hendricks a remporté les titres NCAA Division I de lutte en 2005 et 2006 avec Oklahoma State.",
+    "source": "https://en.wikipedia.org/wiki/Johny_Hendricks",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-052",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quel sport Héctor Lombard a-t-il représenté Cuba aux Jeux olympiques de Sydney en 2000 ?",
+    "reponses": [
+      "Judo",
+      "Lutte",
+      "Boxe",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Héctor Lombard a disputé le tournoi de judo des JO 2000 pour Cuba ; il est ceinture noire 4e dan.",
+    "source": "https://en.wikipedia.org/wiki/H%C3%A9ctor_Lombard",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-053",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel art martial Karo Parisyan a-t-il commencé à 9 ans sous la direction de Gokor Chivichyan ?",
+    "reponses": [
+      "Judo",
+      "Lutte",
+      "Karaté",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Karo Parisyan a débuté le judo à neuf ans auprès de son compatriote arménien Gokor Chivichyan.",
+    "source": "https://en.wikipedia.org/wiki/Karo_Parisyan",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-054",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quelle médaillée d'argent olympique en lutte (2004) a défié Ronda Rousey pour le titre à l'UFC 170 ?",
+    "reponses": [
+      "Sara McMann",
+      "Liz Carmouche",
+      "Alexis Davis",
+      "Miesha Tate"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Sara McMann, vice-championne olympique de lutte à Athènes, a perdu face à Rousey à l'UFC 170 en 2014.",
+    "source": "https://en.wikipedia.org/wiki/Sara_McMann",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-055",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Avant de découvrir le muay-thaï, quel sport collectif Cris Cyborg pratiquait-elle au niveau national au Brésil ?",
+    "reponses": [
+      "Handball",
+      "Volley-ball",
+      "Basket-ball",
+      "Football"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Cris Cyborg a commencé le sport à 12 ans par le handball, pratiqué au niveau national au Brésil.",
+    "source": "https://en.wikipedia.org/wiki/Cris_Cyborg",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-056",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quelle discipline Ronaldo « Jacaré » Souza a-t-il été double champion du monde en ceinture noire ?",
+    "reponses": [
+      "Jiu-jitsu brésilien",
+      "Lutte gréco-romaine",
+      "Luta livre",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Ronaldo Souza a été deux fois champion du monde de jiu-jitsu brésilien en ceinture noire, et champion de l'ADCC.",
+    "source": "https://en.wikipedia.org/wiki/Ronaldo_Souza",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-057",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel combattant fut le premier non-Brésilien champion du monde de jiu-jitsu en ceinture noire, en 2000 ?",
+    "reponses": [
+      "B.J. Penn",
+      "Matt Serra",
+      "Jens Pulver",
+      "Caol Uno"
+    ],
+    "bonne_reponse": 0,
+    "explication": "B.J. Penn a remporté les Mondiaux de jiu-jitsu en ceinture noire en 2000, une première pour un non-Brésilien.",
+    "source": "https://en.wikipedia.org/wiki/B.J._Penn",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-058",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel champion du monde de jiu-jitsu brésilien a mis Mirko Cro Cop KO d'un coup de pied à la tête à l'UFC 70 ?",
+    "reponses": [
+      "Gabriel Gonzaga",
+      "Fabrício Werdum",
+      "Antônio Rodrigo Nogueira",
+      "Frank Mir"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Gabriel Gonzaga, champion du monde IBJJF, a créé la surprise en battant Cro Cop sur un high kick à l'UFC 70.",
+    "source": "https://en.wikipedia.org/wiki/Gabriel_Gonzaga",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-059",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quel sport Gökhan Saki s'est-il fait un nom avant de rejoindre l'UFC en 2017 ?",
+    "reponses": [
+      "Kickboxing",
+      "Boxe",
+      "Lutte",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Gökhan Saki, star du kickboxing chez K-1 et Glory, a fait ses débuts à l'UFC en septembre 2017.",
+    "source": "https://en.wikipedia.org/wiki/G%C3%B6khan_Saki",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-060",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien champion du monde de boxe a affronté Randy Couture à l'UFC 118 en 2010 ?",
+    "reponses": [
+      "James Toney",
+      "Kimbo Slice",
+      "Brendan Schaub",
+      "Gabriel Gonzaga"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Le boxeur James Toney a disputé son unique combat de MMA face à Randy Couture à l'UFC 118.",
+    "source": "https://en.wikipedia.org/wiki/James_Toney",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-061",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quel sport Tatiana Suarez a-t-elle été médaillée de bronze aux championnats du monde ?",
+    "reponses": [
+      "Lutte",
+      "Judo",
+      "Jiu-jitsu brésilien",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Avant le MMA, Tatiana Suarez a remporté le bronze aux championnats du monde de lutte en 2008.",
+    "source": "https://en.wikipedia.org/wiki/Tatiana_Suarez",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-062",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel combattant a été champion NCAA de lutte avec Penn State en 2008 ?",
+    "reponses": [
+      "Phil Davis",
+      "Ryan Bader",
+      "Rashad Evans",
+      "Jon Jones"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Phil Davis s'est d'abord fait connaître comme lutteur de Penn State, champion NCAA Division I en 2008.",
+    "source": "https://en.wikipedia.org/wiki/Phil_Davis_(fighter)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-063",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quel sport Ben Askren a-t-il représenté les États-Unis aux Jeux olympiques de Pékin en 2008 ?",
+    "reponses": [
+      "Lutte",
+      "Judo",
+      "Boxe",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Ben Askren, double champion NCAA, faisait partie de l'équipe olympique américaine de lutte libre en 2008.",
+    "source": "https://en.wikipedia.org/wiki/Ben_Askren",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-064",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quel sport Yoshihiro Akiyama a-t-il remporté l'or aux Jeux asiatiques de 2002 pour le Japon ?",
+    "reponses": [
+      "Judo",
+      "Karaté",
+      "Lutte",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Yoshihiro Akiyama, judoka, a gagné l'or aux Jeux asiatiques 2002 pour le Japon avant de passer au MMA.",
+    "source": "https://en.wikipedia.org/wiki/Yoshihiro_Akiyama",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-065",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Au Daghestan, Zabit Magomedsharipov a vécu plus de dix ans dans un internat consacré à quel art martial ?",
+    "reponses": [
+      "Wushu",
+      "Judo",
+      "Boxe",
+      "Karaté"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Zabit Magomedsharipov a vécu et s'est entraîné une dizaine d'années à l'internat de wushu « Cinq directions du monde ».",
+    "source": "https://en.wikipedia.org/wiki/Zabit_Magomedsharipov",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-066",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Avant le MMA, Kenny Florian jouait dans l'équipe universitaire de Boston College dans quel sport ?",
+    "reponses": [
+      "Football",
+      "Lutte",
+      "Hockey sur glace",
+      "Football américain"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Kenny Florian jouait au football (soccer) dans l'équipe de Boston College, en NCAA Division I.",
+    "source": "https://en.wikipedia.org/wiki/Kenny_Florian",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-067",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien joueur de football américain de l'université du Tennessee a défié Jon Jones pour un titre en 2016 ?",
+    "reponses": [
+      "Ovince Saint Preux",
+      "Anthony Johnson",
+      "Glover Teixeira",
+      "Jimi Manuwa"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Ovince Saint Preux a joué au football américain pour Tennessee, puis affronté Jon Jones pour le titre intérimaire à l'UFC 197.",
+    "source": "https://en.wikipedia.org/wiki/Ovince_Saint_Preux",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-068",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien joueur NFL des New York Giants est devenu combattant poids lourd à l'UFC ?",
+    "reponses": [
+      "Matt Mitrione",
+      "Shane Carwin",
+      "Roy Nelson",
+      "Cheick Kongo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Matt Mitrione a joué en NFL avec les Giants et les Vikings avant de participer à The Ultimate Fighter.",
+    "source": "https://en.wikipedia.org/wiki/Matt_Mitrione",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-069",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien champion des légers de l'UFC a lutté pour l'université de Clarion, en Pennsylvanie ?",
+    "reponses": [
+      "Frankie Edgar",
+      "B.J. Penn",
+      "Benson Henderson",
+      "Anthony Pettis"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Frankie Edgar a lutté pour Clarion University, se qualifiant quatre fois pour le championnat NCAA Division I.",
+    "source": "https://en.wikipedia.org/wiki/Frankie_Edgar",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-070",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien champion des coqs de l'UFC a lutté avec une bourse pour Cal State Fullerton ?",
+    "reponses": [
+      "T.J. Dillashaw",
+      "Renan Barão",
+      "Dominick Cruz",
+      "Cody Garbrandt"
+    ],
+    "bonne_reponse": 0,
+    "explication": "T.J. Dillashaw a obtenu une bourse complète pour lutter avec les Titans de Cal State Fullerton.",
+    "source": "https://en.wikipedia.org/wiki/T.J._Dillashaw",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-071",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Dans quelle discipline Dan Henderson a-t-il participé aux Jeux olympiques de 1992 et 1996 ?",
+    "reponses": [
+      "Lutte gréco-romaine",
+      "Lutte libre",
+      "Judo",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Dan Henderson a représenté les États-Unis en lutte gréco-romaine aux JO de Barcelone et d'Atlanta.",
+    "source": "https://en.wikipedia.org/wiki/Dan_Henderson",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-072",
+    "categorie": "cv",
+    "niveau": "difficile",
+    "question": "Quel ancien lutteur d'Arizona State a remporté The Ultimate Fighter 8 chez les mi-lourds ?",
+    "reponses": [
+      "Ryan Bader",
+      "Vinny Magalhães",
+      "Krzysztof Soszynski",
+      "Tom Lawlor"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Ryan Bader, coéquipier de Cain Velasquez à Arizona State, a remporté la saison 8 de TUF.",
+    "source": "https://en.wikipedia.org/wiki/Ryan_Bader",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-073",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Avant le kickboxing et le MMA, dans quel sport Gary Goodridge figurait-il parmi les meilleurs mondiaux ?",
+    "reponses": [
+      "Bras de fer",
+      "Haltérophilie",
+      "Lutte",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Avant ses combats à l'UFC et au Pride, Gary Goodridge était l'un des meilleurs pratiquants de bras de fer professionnel.",
+    "source": "https://en.wikipedia.org/wiki/Gary_Goodridge",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-075",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel sport pratiquait Teila Tuli, battu par Gerard Gordeau lors de l'UFC 1 ?",
+    "reponses": [
+      "Sumo",
+      "Lutte",
+      "Judo",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Teila Tuli, de son vrai nom Taylor Wily, était un lutteur de sumo, mis KO par Gordeau à l'UFC 1.",
+    "source": "https://en.wikipedia.org/wiki/Taylor_Wily",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-076",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel sumotori a affronté Keith Hackney lors de l'UFC 3 ?",
+    "reponses": [
+      "Emmanuel Yarbrough",
+      "Kimo Leopoldo",
+      "Tank Abbott",
+      "Paul Varelans"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Emmanuel Yarbrough représentait le sumo à l'UFC 3, où il fut battu par Keith Hackney, adepte du kempo.",
+    "source": "https://en.wikipedia.org/wiki/Emmanuel_Yarbrough",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-078",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel champion du monde de kickboxing a battu Mark Coleman pour le titre poids lourd de l'UFC en 1997 ?",
+    "reponses": [
+      "Maurice Smith",
+      "Vitor Belfort",
+      "Randy Couture",
+      "Don Frye"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Maurice Smith, champion du monde WKA de kickboxing, a battu Mark Coleman aux points à l'UFC 14.",
+    "source": "https://en.wikipedia.org/wiki/Maurice_Smith_(fighter)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-080",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel champion olympique de lutte en 1992 a combattu quatre fois dans l'Octogone de l'UFC ?",
+    "reponses": [
+      "Kevin Jackson",
+      "Mark Coleman",
+      "Mark Kerr",
+      "Kevin Randleman"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Kevin Jackson, or olympique en lutte libre en 1992, a disputé quatre combats à l'UFC.",
+    "source": "https://en.wikipedia.org/wiki/Kevin_Jackson",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-081",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel lutteur fut le premier champion olympique à combattre à l'UFC, lors de l'UFC 9 en 1996 ?",
+    "reponses": [
+      "Mark Schultz",
+      "Don Frye",
+      "Mark Coleman",
+      "Dan Severn"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Champion olympique en 1984, Mark Schultz a remplacé Dave Beneteau au pied levé et battu Gary Goodridge à l'UFC 9.",
+    "source": "https://en.wikipedia.org/wiki/Mark_Schultz_(wrestler)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-082",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel futur champion de l'UFC Mark Kerr a-t-il battu en finale du championnat NCAA de lutte en 1992 ?",
+    "reponses": [
+      "Randy Couture",
+      "Mark Coleman",
+      "Dan Severn",
+      "Don Frye"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Avec Syracuse, Mark Kerr a remporté le titre NCAA 1992 en battant Randy Couture 12-4 en finale.",
+    "source": "https://en.wikipedia.org/wiki/Mark_Kerr_(fighter)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-083",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Dans quelle discipline Mark O. Madsen a-t-il été vice-champion olympique en 2016, avant de combattre à l'UFC ?",
+    "reponses": [
+      "Lutte gréco-romaine",
+      "Judo",
+      "Boxe",
+      "Taekwondo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Le Danois Mark O. Madsen a pris l'argent en lutte gréco-romaine (75 kg) aux JO de Rio en 2016.",
+    "source": "https://en.wikipedia.org/wiki/Mark_Madsen_(fighter)",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-084",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Dans quel sport Rustam Khabilov a-t-il été champion du monde avant de combattre à l'UFC ?",
+    "reponses": [
+      "Sambo de combat",
+      "Judo",
+      "Kickboxing",
+      "Boxe"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Rustam Khabilov, célèbre pour ses suplex à l'UFC, est champion du monde de sambo de combat.",
+    "source": "https://en.wikipedia.org/wiki/Rustam_Khabilov",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-085",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Avant le MMA, dans quel sport de combat Cung Le, passé par l'UFC, s'est-il fait un nom ?",
+    "reponses": [
+      "Sanda",
+      "Muay-thaï",
+      "Judo",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Cung Le était une star du sanshou (sanda), invaincu en 17 combats professionnels avant de passer au MMA.",
+    "source": "https://en.wikipedia.org/wiki/Cung_Le",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-086",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Quel combattant de l'UFC a remporté l'argent en lutte gréco-romaine aux JO de Sydney en 2000 ?",
+    "reponses": [
+      "Matt Lindland",
+      "Dan Henderson",
+      "Randy Couture",
+      "Chael Sonnen"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Matt Lindland a décroché l'argent en lutte gréco-romaine (76 kg) aux JO 2000 avant de combattre à l'UFC.",
+    "source": "https://en.wikipedia.org/wiki/Matt_Lindland",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-087",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Avant le MMA, quel sport Jon Fitch pratiquait-il à l'université Purdue ?",
+    "reponses": [
+      "Lutte",
+      "Football américain",
+      "Boxe",
+      "Judo"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Jon Fitch a intégré l'équipe de lutte de Purdue comme walk-on et y a lutté quatre saisons.",
+    "source": "https://en.wikipedia.org/wiki/Jon_Fitch",
+    "statut": "a_verifier"
+  },
+  {
+    "id": "cv-sport-088",
+    "categorie": "cv",
+    "niveau": "expert",
+    "question": "Dans quel sport Gerard Gordeau, finaliste de l'UFC 1, a-t-il été champion du monde ?",
+    "reponses": [
+      "Savate",
+      "Sumo",
+      "Boxe",
+      "Lutte"
+    ],
+    "bonne_reponse": 0,
+    "explication": "Le Néerlandais Gerard Gordeau a été champion du monde de savate en 1991 et huit fois champion des Pays-Bas de karaté.",
+    "source": "https://en.wikipedia.org/wiki/Gerard_Gordeau",
+    "statut": "a_verifier"
   }
 ]

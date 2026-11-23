@@ -11,9 +11,8 @@ import { CATEGORIES, CATEGORY_LABEL, LEVELS, LEVEL_LABEL, type Level } from '../
 import { GENERATED_FILE, QUESTIONS_FILE, validate, type Question } from '../server/questions';
 
 const REVIEW_FILE = path.resolve(import.meta.dirname, '../data/a-verifier.md');
-const TARGET_PER_CELL = 25;
-/** Catégories écrites à la main (25 questions visées par niveau). Les autres sont générées. */
-const WRITTEN_CATEGORIES = CATEGORIES.slice(0, 4);
+/** En dessous, un niveau se répète trop vite (un Main Event en tire 25 questions). */
+const MIN_PER_LEVEL = 150;
 
 type Q = Question & { note?: string };
 
@@ -117,10 +116,10 @@ async function main() {
     `\nBanque : ${raw.length} questions (${hand.length} écrites à la main, ${generated.length} générées), ${valid.length} valides.\n`,
   );
   console.log(table + '\n');
+  // Un niveau presque vide se ressentirait en jeu (questions qui reviennent vite).
   for (const l of LEVELS)
-    for (const c of WRITTEN_CATEGORIES)
-      if (count(l, c) < TARGET_PER_CELL)
-        warnings.push(`${LEVEL_LABEL[l]} · ${CATEGORY_LABEL[c]} : ${count(l, c)}/${TARGET_PER_CELL} questions`);
+    if (valid.filter((q) => q.niveau === l).length < MIN_PER_LEVEL)
+      warnings.push(`${LEVEL_LABEL[l]} : seulement ${valid.filter((q) => q.niveau === l).length} questions`);
 
   if (errors.length) console.log(`❌ ${errors.length} erreur(s) — ces questions ne seront pas jouées :\n  - ${errors.join('\n  - ')}\n`);
   if (warnings.length) console.log(`⚠️  ${warnings.length} point(s) à regarder :\n  - ${warnings.join('\n  - ')}\n`);

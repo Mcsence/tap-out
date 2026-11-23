@@ -1,14 +1,14 @@
 # Questions à vérifier
 
-Fichier généré par `npm run questions` — 400 question(s) écrite(s) à la main sur 400 restent à relire.
+Fichier généré par `npm run questions` — 479 question(s) écrite(s) à la main sur 479 restent à relire.
 
 Pour chaque question : vérifier le fait sur la source, puis dans `data/questions.json` passer son `"statut"` de `"a_verifier"` à `"verifiee"` (ou corriger la question). Relancer `npm run questions` pour mettre cette liste à jour.
 
 Ordre de relecture : Expert d’abord, puis Difficile, Moyen, Facile. Les questions avec une ⚑ note sont à regarder en priorité.
 
-Les 6278 questions de `data/questions-generees.json` sont tirées automatiquement des pages Wikipédia des événements et des combattants (`npm run generer`) : elles ne sont pas listées ici. Une erreur dans l'une d'elles se corrige à la source (la page Wikipédia) ou en la retirant du fichier.
+Les 4923 questions de `data/questions-generees.json` sont tirées automatiquement des pages Wikipédia des événements et des combattants (`npm run generer`) : elles ne sont pas listées ici. Une erreur dans l'une d'elles se corrige à la source (la page Wikipédia) ou en la retirant du fichier.
 
-## Expert (100)
+## Expert (99)
 
 ### Histoire & légendes
 
@@ -16,6 +16,18 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ War of the Worlds  ✗ Clash of the Titans · Battle of the Styles · Fight of Champions
   - Le projet s'appelait « War of the Worlds » avant que Semaphore n'adopte le nom Ultimate Fighting Championship. [source](https://en.wikipedia.org/wiki/UFC_1)
   - ⚑ Fait confirmé par plusieurs sources (Sherdog, Bloody Elbow), mais « World's Best Fighter » est aussi cité comme titre de travail : vérifier qu'aucun distracteur n'est un autre titre envisagé.
+- [ ] **hist-dif-003** — Comment s'appelait l'écurie d'entraînement fondée par Ken Shamrock ?
+  - ✓ Lion's Den  ✗ Team Quest · Hammer House · Miletich Fighting Systems
+  - Ken Shamrock a fondé le Lion's Den, l'une des premières écuries de MMA, où se sont formés notamment Frank Shamrock et Guy Mezger. [source](https://en.wikipedia.org/wiki/Ken_Shamrock)
+- [ ] **hist-dif-013** — Dans quelle salle londonienne s'est déroulé l'UFC 38 en 2002, premier événement de l'UFC au Royaume-Uni ?
+  - ✓ Royal Albert Hall  ✗ O2 Arena · Wembley Arena · ExCeL London
+  - L'UFC 38, surnommé « Brawl at the Hall », s'est tenu au Royal Albert Hall de Londres en juillet 2002. [source](https://en.wikipedia.org/wiki/UFC_38)
+- [ ] **hist-dif-016** — Contre qui Royce Gracie a-t-il fait match nul après 36 minutes de combat à l'UFC 5 en 1995 ?
+  - ✓ Ken Shamrock  ✗ Dan Severn · Kimo Leopoldo · Oleg Taktarov
+  - Le « superfight » de l'UFC 5 entre Royce Gracie et Ken Shamrock s'est terminé par un match nul après 36 minutes. [source](https://en.wikipedia.org/wiki/UFC_5)
+- [ ] **hist-dif-025** — Contre qui Royce Gracie a-t-il remporté la finale du tournoi de l'UFC 2, en mars 1994 ?
+  - ✓ Patrick Smith  ✗ Remco Pardoel · Jason DeLucia · Johnny Rhodes
+  - Royce Gracie a fait abandonner Patrick Smith sous les coups en finale de l'UFC 2, à Denver. [source](https://en.wikipedia.org/wiki/UFC_2)
 - [ ] **hist-exp-001** — Quel boxeur est entré dans l'Octogone de l'UFC 1 avec un seul gant de boxe ?
   - ✓ Art Jimmerson  ✗ Kevin Rosier · Zane Frazier · Teila Tuli
   - Art Jimmerson a combattu Royce Gracie à l'UFC 1 avec un seul gant et a abandonné rapidement une fois au sol. [source](https://en.wikipedia.org/wiki/UFC_1)
@@ -49,11 +61,8 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-exp-011** — Quelle société possédait l'UFC avant son rachat par Zuffa en 2001 ?
   - ✓ Semaphore Entertainment Group  ✗ World Extreme Cagefighting · Golden Boy Promotions · Top Rank
   - L'UFC appartenait à Semaphore Entertainment Group (SEG), qui l'a vendue à Zuffa pour 2 millions de dollars. [source](https://en.wikipedia.org/wiki/Zuffa)
-- [ ] **hist-exp-012** — Quel sénateur américain a qualifié l'UFC de « combat de coqs humain » dans les années 1990 ?
-  - ✓ John McCain  ✗ Ted Kennedy · Bob Dole · Joe Biden
-  - John McCain a mené campagne contre l'UFC, la qualifiant de « human cockfighting » et poussant à son interdiction dans plusieurs États. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
 - [ ] **hist-exp-013** — Quel a été le premier événement organisé par Zuffa après son rachat de l'UFC en 2001 ?
-  - ✓ UFC 30  ✗ UFC 28 · UFC 31 · UFC 33
+  - ✓ UFC 30  ✗ UFC 31 · UFC 32 · UFC 34
   - L'UFC 30, « Battle on the Boardwalk », s'est tenu en février 2001 à Atlantic City, premier gala de l'ère Zuffa. [source](https://en.wikipedia.org/wiki/UFC_30)
 - [ ] **hist-exp-014** — Quel événement, en septembre 2001, a été le premier de l'UFC organisé à Las Vegas ?
   - ✓ UFC 33  ✗ UFC 30 · UFC 32 · UFC 35
@@ -62,16 +71,13 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Kimo Leopoldo  ✗ Harold Howard · Keith Hackney · Tank Abbott
   - Kimo Leopoldo a fait son entrée en portant une grande croix avant de perdre contre Royce Gracie par clé de bras. [source](https://en.wikipedia.org/wiki/UFC_3)
 - [ ] **hist-exp-017** — Combien de combattants participaient au tournoi de l'UFC 2 en 1994 ?
-  - ✓ 16  ✗ 8 · 12 · 32
+  - ✓ 16  ✗ 8 · 24 · 32
   - L'UFC 2 a réuni 16 combattants dans un tournoi à élimination directe, remporté par Royce Gracie. [source](https://en.wikipedia.org/wiki/UFC_2)
 - [ ] **hist-exp-018** — Quel membre de la famille Gracie a affronté Nobuhiko Takada en tête d'affiche du premier événement Pride, en 1997 ?
   - ✓ Rickson Gracie  ✗ Royce Gracie · Renzo Gracie · Royler Gracie
   - Pride 1, au Tokyo Dome en octobre 1997, a vu Rickson Gracie soumettre Nobuhiko Takada par clé de bras. [source](https://en.wikipedia.org/wiki/Pride_1)
-- [ ] **hist-exp-019** — En quelle année Zuffa a-t-elle racheté l'organisation rivale Strikeforce ?
-  - ✓ 2011  ✗ 2009 · 2010 · 2013
-  - Zuffa a annoncé le rachat de Strikeforce en mars 2011 ; l'organisation a disparu début 2013. [source](https://en.wikipedia.org/wiki/Strikeforce_(mixed_martial_arts))
 - [ ] **hist-exp-020** — Lors de quel événement Randy Couture a-t-il fait ses débuts à l'UFC, en 1997 ?
-  - ✓ UFC 13  ✗ UFC 11 · UFC 12 · UFC 15
+  - ✓ UFC 13  ✗ UFC 9 · UFC 10 · UFC 11
   - Randy Couture a débuté à l'UFC 13 en mai 1997, où il a remporté le tournoi des poids lourds. [source](https://en.wikipedia.org/wiki/UFC_13)
 - [ ] **hist-exp-021** — Contre qui Chuck Liddell a-t-il fait ses débuts à l'UFC, à l'UFC 17 en 1998 ?
   - ✓ Noe Hernandez  ✗ Jeremy Horn · Kevin Randleman · Paul Jones
@@ -85,9 +91,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-exp-024** — Quelle légende du football américain faisait partie de l'équipe de commentateurs de l'UFC 1 ?
   - ✓ Jim Brown  ✗ O. J. Simpson · Joe Namath · Walter Payton
   - Jim Brown, membre du Hall of Fame de la NFL, commentait l'UFC 1 aux côtés de Bill Wallace et Kathy Long. [source](https://en.wikipedia.org/wiki/UFC_1)
-- [ ] **hist-exp-025** — En quelle année l'État de New York a-t-il légalisé le MMA professionnel, ouvrant la voie à l'UFC au Madison Square Garden ?
-  - ✓ 2016  ✗ 2012 · 2014 · 2018
-  - New York a légalisé le MMA professionnel en 2016, ce qui a permis l'UFC 205 au Madison Square Garden en novembre. [source](https://en.wikipedia.org/wiki/UFC_205)
 
 ### Champions & ceintures
 
@@ -106,12 +109,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-exp-005** — Qui fut le premier champion des poids moyens (185 livres) de l'UFC, en 2001 ?
   - ✓ Dave Menne  ✗ Murilo Bustamante · Evan Tanner · Gil Castillo
   - Dave Menne a battu Gil Castillo aux points à l'UFC 33, en septembre 2001. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
-- [ ] **champ-exp-006** — Qui fut le premier champion des poids coqs de l'UFC, à la fusion avec le WEC fin 2010 ?
-  - ✓ Dominick Cruz  ✗ Renan Barão · Urijah Faber · Brian Bowles
-  - Champion du WEC, Dominick Cruz est devenu le premier champion des coqs de l'UFC lors de la fusion des deux organisations. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
-- [ ] **champ-exp-007** — Qui fut la première championne des poids pailles de l'UFC, en 2014 ?
-  - ✓ Carla Esparza  ✗ Joanna Jędrzejczyk · Rose Namajunas · Jéssica Penne
-  - Carla Esparza a soumis Rose Namajunas en finale de la saison 20 de The Ultimate Fighter, en décembre 2014. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
 - [ ] **champ-exp-008** — Qui fut la première championne des poids mouches femmes de l'UFC, en 2017 ?
   - ✓ Nicco Montaño  ✗ Valentina Shevchenko · Roxanne Modafferi · Sijara Eubanks
   - Nicco Montaño a battu Roxanne Modafferi en finale de la saison 26 de The Ultimate Fighter, en décembre 2017. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
@@ -130,42 +127,12 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-exp-013** — Quel champion des lourds, vainqueur de Randy Couture à l'UFC 36 en 2002, a perdu son titre après un contrôle positif ?
   - ✓ Josh Barnett  ✗ Ricco Rodriguez · Tim Sylvia · Pedro Rizzo
   - Josh Barnett a battu Randy Couture à l'UFC 36, puis a été déchu du titre après un contrôle antidopage positif. [source](https://en.wikipedia.org/wiki/Josh_Barnett)
-- [ ] **champ-exp-014** — Qui a pris la ceinture des poids pailles à Rose Namajunas grâce à un slam à l'UFC 237, en 2019 ?
-  - ✓ Jéssica Andrade  ✗ Zhang Weili · Tatiana Suarez · Cláudia Gadelha
-  - Jéssica Andrade a mis Rose Namajunas K.-O. en la projetant au sol à l'UFC 237, à Rio en mai 2019. [source](https://en.wikipedia.org/wiki/UFC_237)
-- [ ] **champ-exp-015** — Contre qui Sean Sherk a-t-il remporté la ceinture vacante des poids légers à l'UFC 64, en 2006 ?
-  - ✓ Kenny Florian  ✗ Hermes França · Joe Stevenson · Jens Pulver
-  - Sean Sherk a battu Kenny Florian aux points à l'UFC 64, ramenant une ceinture des légers vacante depuis 2002. [source](https://en.wikipedia.org/wiki/UFC_64)
-- [ ] **champ-exp-016** — Qui a pris la ceinture des mi-lourds à Forrest Griffin à l'UFC 92, en 2008 ?
-  - ✓ Rashad Evans  ✗ Lyoto Machida · Quinton Jackson · Keith Jardine
-  - Rashad Evans a battu Forrest Griffin par K.-O. technique au 3e round de l'UFC 92, en décembre 2008. [source](https://en.wikipedia.org/wiki/UFC_92)
-- [ ] **champ-exp-017** — Contre qui Renan Barão a-t-il remporté la ceinture intérimaire des poids coqs en 2012 ?
-  - ✓ Urijah Faber  ✗ Michael McDonald · Eddie Wineland · Brian Bowles
-  - Renan Barão a battu Urijah Faber aux points à l'UFC 149, en juillet 2012 à Calgary. [source](https://en.wikipedia.org/wiki/UFC_149)
-- [ ] **champ-exp-018** — Contre qui Deiveson Figueiredo a-t-il remporté la ceinture vacante des poids mouches en juillet 2020 ?
-  - ✓ Joseph Benavidez  ✗ Brandon Moreno · Alex Perez · Askar Askarov
-  - Lors de leur revanche à Abou Dabi, Deiveson Figueiredo a soumis Joseph Benavidez au 1er round. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
-- [ ] **champ-exp-019** — Contre qui Cris Cyborg a-t-elle remporté la ceinture vacante des poids plumes à l'UFC 214, en 2017 ?
-  - ✓ Tonya Evinger  ✗ Germaine de Randamie · Megan Anderson · Holly Holm
-  - Cris Cyborg a battu Tonya Evinger par K.-O. technique au 3e round de l'UFC 214, en juillet 2017. [source](https://en.wikipedia.org/wiki/UFC_214)
-- [ ] **champ-exp-020** — Quel champion des moyens, ancien professeur de mathématiques, était surnommé « Ace » ?
-  - ✓ Rich Franklin  ✗ Evan Tanner · Nate Marquardt · Murilo Bustamante
-  - Rich « Ace » Franklin, ancien professeur de mathématiques au lycée, fut champion des moyens de 2005 à 2006. [source](https://en.wikipedia.org/wiki/Rich_Franklin)
-- [ ] **champ-exp-021** — Contre qui Fabrício Werdum a-t-il remporté la ceinture intérimaire des poids lourds en 2014 ?
-  - ✓ Mark Hunt  ✗ Cain Velasquez · Travis Browne · Stipe Miocic
-  - Fabrício Werdum a battu Mark Hunt au 2e round de l'UFC 180, à Mexico en novembre 2014. [source](https://en.wikipedia.org/wiki/UFC_180)
-- [ ] **champ-exp-022** — Qui a remporté la ceinture intérimaire des poids lourds face à Tim Sylvia à l'UFC 81, en 2008 ?
-  - ✓ Antônio Rodrigo Nogueira  ✗ Frank Mir · Brock Lesnar · Heath Herring
-  - Antônio Rodrigo « Minotauro » Nogueira a soumis Tim Sylvia par guillotine au 3e round de l'UFC 81. [source](https://en.wikipedia.org/wiki/UFC_81)
 - [ ] **champ-exp-023** — Contre qui Tito Ortiz a-t-il remporté la ceinture vacante des mi-lourds à l'UFC 25, en 2000 ?
   - ✓ Wanderlei Silva  ✗ Frank Shamrock · Guy Mezger · Vitor Belfort
   - Tito Ortiz a battu Wanderlei Silva par décision unanime à l'UFC 25, au Japon en avril 2000. [source](https://en.wikipedia.org/wiki/UFC_25)
 - [ ] **champ-exp-024** — Qui a pris la ceinture des mi-lourds à Randy Couture à l'UFC 46 en 2004, sur une coupure à l'œil ?
   - ✓ Vitor Belfort  ✗ Chuck Liddell · Tito Ortiz · Quinton Jackson
   - Vitor Belfort a gagné en moins d'une minute à l'UFC 46, une coupure à la paupière de Couture ayant entraîné l'arrêt. [source](https://en.wikipedia.org/wiki/UFC_46)
-- [ ] **champ-exp-025** — Contre qui Carlos Condit a-t-il remporté la ceinture intérimaire des welters à l'UFC 143, en 2012 ?
-  - ✓ Nick Diaz  ✗ Johny Hendricks · Josh Koscheck · Jake Shields
-  - Carlos Condit a battu Nick Diaz par décision unanime à l'UFC 143, en février 2012. [source](https://en.wikipedia.org/wiki/UFC_143)
 
 ### Records & stats
 
@@ -173,30 +140,39 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Donald Cerrone  ✗ Jeremy Stephens · Anderson Silva · Edson Barboza
   - Donald Cerrone a envoyé 20 adversaires au tapis à l'UFC, devant Jeremy Stephens et Anderson Silva (18). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
   - ⚑ Tableau Wikipédia mis à jour en juillet 2025 seulement : confirmer qu'aucun poursuivant n'a atteint 20 avant la fin de 2025.
+- [ ] **rec-dif-009** — En combien de temps Rafael dos Anjos a-t-il battu Donald Cerrone pour conserver son titre des légers en 2015 ?
+  - ✓ 1 min 06  ✗ 0 min 51 · 1 min 31 · 2 min 06
+  - À l'UFC on Fox 17, dos Anjos a stoppé Cerrone en 66 secondes, la finition la plus rapide d'un combat de titre des légers. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-dif-012** — Combien de knockdowns Israel Adesanya a-t-il infligés à Kelvin Gastelum à l'UFC 236 en 2019, un record en combat de titre ?
+  - ✓ 4  ✗ 3 · 5 · 6
+  - Adesanya a envoyé Gastelum au sol 4 fois pour remporter le titre intérimaire des moyens, record d'un combat de titre. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-dif-019** — Quel combattant a remporté le plus de bonus Submission of the Night, une récompense supprimée en 2014 ?
+  - ✓ Joe Lauzon  ✗ Nate Diaz · Demian Maia · Charles Oliveira
+  - Joe Lauzon a reçu 6 bonus Submission of the Night, devant Nate Diaz (5). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-dif-021** — Avec quel bilan Chuck Liddell a-t-il terminé sa carrière en 2018 ?
+  - ✓ 21-9  ✗ 20-9 · 19-9 · 20-8
+  - Sorti de sa retraite pour affronter Tito Ortiz en 2018, Liddell a perdu et terminé avec 21 victoires et 9 défaites. [source](https://en.wikipedia.org/wiki/Chuck_Liddell)
+- [ ] **rec-dif-022** — Combien de défenses du titre des mi-lourds Tito Ortiz a-t-il réussies entre 2000 et 2002 ?
+  - ✓ 5  ✗ 3 · 4 · 6
+  - Tito Ortiz a défendu cinq fois la ceinture des mi-lourds de l'UFC entre 2000 et 2002. [source](https://en.wikipedia.org/wiki/Tito_Ortiz)
+- [ ] **rec-dif-024** — En juillet 2025 à Abou Dabi, quel combattant a établi le record de knockdowns dans un combat de l'UFC, avec 6 ?
+  - ✓ Steven Nguyen  ✗ Jean Silva · Diego Lopes · Lerone Murphy
+  - Steven Nguyen a envoyé Mohammad Yahya six fois au tapis, battant le record de cinq de Forrest Petz et Jeremy Stephens. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-001** — En combien de secondes Oleg Taktarov a-t-il soumis Anthony Macias à l'UFC 6 en 1995, la soumission la plus rapide de l'UFC ?
   - ✓ 9 secondes  ✗ 12 secondes · 14 secondes · 16 secondes
   - Taktarov a soumis Macias en 9 secondes, un record toujours d'actualité en 2025. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-exp-002** — Qui a mis K.-O. Paul Buentello en 15 secondes à l'UFC 55 en 2005, record pour un combat de titre des lourds ?
-  - ✓ Andrei Arlovski  ✗ Tim Sylvia · Frank Mir · Ricco Rodriguez
-  - Andrei Arlovski a défendu sa ceinture des lourds en 15 secondes, le K.-O. le plus rapide d'un combat de titre de la catégorie. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-003** — Qui a signé en 2012 le K.-O. le plus rapide de l'histoire des mi-lourds de l'UFC, en 7 secondes ?
   - ✓ Ryan Jimmo  ✗ Anthony Perosh · Jimi Manuwa · Ovince Saint Preux
   - Pour ses débuts à l'UFC 149, à Calgary, Ryan Jimmo a mis Anthony Perosh K.-O. en 7 secondes. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-004** — En combien de secondes Todd Duffee a-t-il mis K.-O. Tim Hague à l'UFC 102 en 2009 ?
   - ✓ 7 secondes  ✗ 5 secondes · 9 secondes · 11 secondes
   - Pour ses débuts à l'UFC, Todd Duffee a signé en 7 secondes le K.-O. le plus rapide de l'histoire des poids lourds. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-exp-005** — Quel poids lourd a enchaîné 9 victoires consécutives à l'UFC entre 2008 et 2012, record de la catégorie en 2025 ?
-  - ✓ Junior dos Santos  ✗ Cain Velasquez · Stipe Miocic · Fabrício Werdum
-  - Junior dos Santos a gagné 9 fois de suite, jusqu'à sa défaite contre Cain Velasquez fin 2012. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-006** — Quel événement de 1994 détenait encore en 2025 le record de victoires par soumission en une soirée, avec 10 ?
   - ✓ UFC 2  ✗ UFC 3 · UFC 4 · UFC 5
   - En mars 1994, l'UFC 2 a vu 10 de ses combats se terminer par soumission, un record pour une seule soirée. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-007** — Quel combattant a quitté l'UFC en 2022 après une série record de 9 combats sans victoire ?
   - ✓ Sam Alvey  ✗ Jeremy Stephens · B.J. Penn · Tony Ferguson
   - Sam Alvey a enchaîné 8 défaites et 1 nul avant que l'UFC ne renouvelle pas son contrat en 2022. [source](https://en.wikipedia.org/wiki/Sam_Alvey)
-- [ ] **rec-exp-009** — Quel combattant a remporté le plus de bonus Knockout of the Night, une récompense supprimée en 2014 ?
-  - ✓ Anderson Silva  ✗ Vitor Belfort · Chris Leben · Lyoto Machida
-  - Anderson Silva a reçu 7 bonus Knockout of the Night, devant Vitor Belfort (5). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-010** — Quel combattant a soumis Matt Hughes en 20 secondes à l'UFC 29 en 2000 ?
   - ✓ Dennis Hallman  ✗ Carlos Newton · Frank Trigg · B.J. Penn
   - Dennis Hallman a soumis Hughes par clé de bras en 20 secondes, la soumission la plus rapide de l'histoire des mi-moyens. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
@@ -206,11 +182,8 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **rec-exp-012** — Qui a mis K.-O. Aspen Ladd en 16 secondes lors d'un événement UFC à Sacramento en 2019 ?
   - ✓ Germaine de Randamie  ✗ Holly Holm · Megan Anderson · Felicia Spencer
   - Germaine de Randamie a stoppé Aspen Ladd en 16 secondes, l'un des K.-O. les plus rapides de l'histoire féminine de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-exp-013** — Dans quel stade l'UFC 129 (St-Pierre contre Shields) a-t-il réuni 55 724 spectateurs en 2011 ?
-  - ✓ Le Rogers Centre  ✗ Le Centre Bell · Le Stade olympique · Le BC Place
-  - L'UFC 129 au Rogers Centre de Toronto a longtemps été l'événement le plus suivi de l'histoire de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-exp-014** — Avec quel bilan Matt Hughes a-t-il terminé sa carrière, conclue par une défaite contre Josh Koscheck en 2011 ?
-  - ✓ 45-9  ✗ 44-9 · 45-8 · 46-10
+  - ✓ 45-9  ✗ 46-9 · 47-8 · 46-8
   - Double champion des mi-moyens, Matt Hughes a terminé avec 45 victoires et 9 défaites. [source](https://en.wikipedia.org/wiki/Matt_Hughes_(fighter))
 - [ ] **rec-exp-015** — Avec quel bilan Frankie Edgar a-t-il pris sa retraite après l'UFC 281 en 2022 ?
   - ✓ 24-11-1  ✗ 23-11-1 · 24-10-1 · 25-11
@@ -231,7 +204,7 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Brad Tavares  ✗ Michael Bisping · Gerald Meerschaert · Uriah Hall
   - Arrivé via The Ultimate Fighter en 2010, Brad Tavares a disputé 28 combats chez les moyens, record de la catégorie. [source](https://en.wikipedia.org/wiki/Brad_Tavares)
 - [ ] **rec-exp-021** — Avec quel bilan Robbie Lawler a-t-il pris sa retraite après l'UFC 290 en 2023 ?
-  - ✓ 30-16 (1 NC)  ✗ 29-16 (1 NC) · 30-15 (1 NC) · 31-16 (1 NC)
+  - ✓ 30-16 (1 NC)  ✗ 29-16 (1 NC) · 31-15 (1 NC) · 28-17 (1 NC)
   - Lawler a conclu sa carrière par un K.-O. contre Niko Price, pour un bilan de 30 victoires et 16 défaites. [source](https://en.wikipedia.org/wiki/Robbie_Lawler)
 - [ ] **rec-exp-022** — En 2025, quel combattant détenait le record d'amenées au sol réussies chez les poids légers de l'UFC ?
   - ✓ Gleison Tibau  ✗ Khabib Nurmagomedov · Clay Guida · Islam Makhachev
@@ -245,6 +218,9 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **rec-exp-025** — En 2021, quel événement est devenu le premier de l'UFC à compter 11 combats terminés aux points ?
   - ✓ UFC 263  ✗ UFC 169 · UFC 259 · UFC 274
   - En juin 2021 à Glendale, 11 combats de l'UFC 263 sont allés à la décision, un record ensuite égalé. [source](https://en.wikipedia.org/wiki/UFC_263)
+- [ ] **rec-moy-011** — Combien de fois Matt Hughes a-t-il défendu la ceinture des welters lors de son premier règne, entre 2001 et 2004 ?
+  - ✓ 5  ✗ 2 · 3 · 4
+  - Matt Hughes a battu Sakurai, Newton, Castillo, Sherk et Trigg avant de perdre son titre en janvier 2004. [source](https://en.wikipedia.org/wiki/Matt_Hughes_(fighter))
 
 ### Règles, techniques & événements
 
@@ -252,32 +228,31 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Impact, domination et durée  ✗ Volume, précision et puissance · Agressivité, contrôle et défense · Amenées, soumissions et frappes
   - Depuis 2017, un 10-8 s'envisage selon l'impact (dégâts), la domination et la durée : les « trois D » en anglais. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
   - ⚑ Le premier critère est appelé « impact » ou « damage » selon les sources ; l'ABC a reprécisé le 10-8 en 2025.
-- [ ] **regl-exp-008** — Quelle méthode de réhydratation après la pesée l'UFC a-t-elle interdite à partir d'octobre 2015 ?
-  - ✓ Les perfusions intraveineuses  ✗ Les boissons électrolytiques · Les solutions orales · Les bouillons salés
-  - Dans le cadre du programme USADA, les perfusions intraveineuses (IV) sont interdites depuis le 1er octobre 2015, sauf exemption médicale. [source](https://en.wikipedia.org/wiki/United_States_Anti-Doping_Agency)
-  - ⚑ Fait confirmé par la presse MMA (USADA, 2015) ; la page Wikipédia USADA ne le mentionne peut-être pas : source à remplacer au besoin.
 - [ ] **regl-exp-025** — Quel combat était la tête d'affiche du premier événement UFC organisé à l'UFC Apex, le 30 mai 2020 ?
   - ✓ Woodley contre Burns  ✗ Blaydes contre Volkov · Poirier contre Hooker · Overeem contre Harris
   - L'UFC on ESPN : Woodley vs Burns, sans public, a été le premier événement UFC à l'Apex ; Gilbert Burns l'a emporté. [source](https://en.wikipedia.org/wiki/UFC_on_ESPN:_Woodley_vs._Burns)
   - ⚑ Le Contender Series s'y tenait déjà depuis 2019 : « premier événement UFC » s'entend hors Contender Series.
+- [ ] **regl-dif-004** — Quelle commission athlétique a réuni en avril 2001 les instances qui ont adopté les règles unifiées du MMA ?
+  - ✓ Celle du New Jersey  ✗ Celle du Nevada · Celle de Californie · Celle de New York
+  - Le 3 avril 2001, la commission du New Jersey (NJSACB) et d'autres instances se sont accordées sur les règles unifiées. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
+- [ ] **regl-dif-011** — Quel étranglement bras-tête doit son nom à un élève de Renzo Gracie qui l'a popularisé en compétition ?
+  - ✓ Le D'Arce choke  ✗ L'anaconda choke · Le Von Flue choke · Le Peruvian necktie
+  - Le D'Arce choke porte le nom de Joe D'Arce, ceinture noire sous Renzo Gracie, qui l'a popularisé sans l'avoir inventé. [source](https://en.wikipedia.org/wiki/Arm_triangle_choke)
+- [ ] **regl-dif-021** — Selon les règles unifiées révisées en 2017, quand un combattant qui ne pose que les mains est-il considéré au sol ?
+  - ✓ Quand ses deux mains touchent le sol  ✗ Dès qu'une main touche le sol · Après 3 secondes mains au sol · Jamais, les mains ne comptent pas
+  - Depuis 2017, un combattant est au sol s'il pose les deux mains (paumes ou poings) ; une seule main ne suffit plus. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
+- [ ] **regl-dif-023** — Quel est le diamètre de l'Octogone standard de l'UFC ?
+  - ✓ 30 pieds (9,1 m)  ✗ 25 pieds (7,6 m) · 20 pieds (6,1 m) · 35 pieds (10,7 m)
+  - L'Octogone standard mesure 30 pieds de large ; une version réduite de 25 pieds est utilisée à l'UFC Apex et dans les petites salles. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_cage)
 - [ ] **regl-exp-001** — Quel fut le premier événement de l'UFC sanctionné par la commission athlétique du New Jersey, en novembre 2000 ?
   - ✓ UFC 28  ✗ UFC 26 · UFC 30 · UFC 31
   - L'UFC 28, le 17 novembre 2000 à Atlantic City, a été le premier événement UFC encadré par la commission du New Jersey. [source](https://en.wikipedia.org/wiki/UFC_28)
-- [ ] **regl-exp-002** — Quelle limite de temps s'appliquait aux combats de l'UFC 1, en 1993 ?
-  - ✓ Aucune limite de temps  ✗ Trois rounds de 5 minutes · Un round de 10 minutes · Un round de 15 minutes
-  - À l'UFC 1, il n'y avait ni rounds ni limite de temps : un combat ne s'arrêtait que sur K.-O., abandon ou jet de l'éponge. [source](https://en.wikipedia.org/wiki/UFC_1)
-- [ ] **regl-exp-004** — Selon les règles unifiées, quelle faute consiste à tordre les doigts ou les orteils de l'adversaire ?
-  - ✓ Manipuler les petites articulations  ✗ Le fish-hooking · L'eye-gouging · Le rabbit punch
-  - Les règles unifiées interdisent la manipulation des petites articulations (small joint manipulation), comme les doigts. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
 - [ ] **regl-exp-005** — Lors de quel événement de 1997 le port de gants est-il devenu obligatoire à l'UFC ?
   - ✓ UFC 14  ✗ UFC 12 · UFC 13 · UFC 15
   - Jusque-là facultatifs, les gants rembourrés sont devenus obligatoires à l'UFC 14, en juillet 1997. [source](https://en.wikipedia.org/wiki/UFC_14)
 - [ ] **regl-exp-006** — Quel organisme a adopté en 2009 les « Unified Rules of Mixed Martial Arts » pour l'ensemble de ses commissions ?
   - ✓ L'Association of Boxing Commissions  ✗ La commission du Nevada · L'USADA · Le World Boxing Council
   - Le 30 juillet 2009, l'Association of Boxing Commissions (ABC) a adopté à l'unanimité les règles unifiées du MMA. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
-- [ ] **regl-exp-007** — Comment s'appelle la catégorie des plus de 265 livres prévue par les règles unifiées mais absente de l'UFC ?
-  - ✓ Les super-lourds  ✗ Les lourds-légers · Les mi-lourds · Les super-moyens
-  - Les règles unifiées prévoient une catégorie super-lourds au-delà de 265 livres, que l'UFC n'utilise pas. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
 - [ ] **regl-exp-009** — Quel étranglement, contre-attaque d'une guillotine depuis le contrôle latéral, porte le nom d'un ancien de TUF ?
   - ✓ Le Von Flue choke  ✗ Le D'Arce choke · L'anaconda choke · Le Brabo choke
   - Jason Von Flue a rendu célèbre cet étranglement de l'épaule en battant Alex Karalexis à l'Ultimate Fight Night 3 en 2006. [source](https://en.wikipedia.org/wiki/Jason_Von_Flue)
@@ -287,30 +262,15 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-exp-011** — Quel est le nom japonais, issu du judo, de la clé de bras en croix (armbar) ?
   - ✓ Juji-gatame  ✗ Sankaku-jime · Hadaka-jime · Kesa-gatame
   - Juji-gatame signifie « clé en croix » ; sankaku-jime désigne le triangle et hadaka-jime l'étranglement arrière. [source](https://en.wikipedia.org/wiki/Armlock)
-- [ ] **regl-exp-012** — Contre quel membre de la famille Gracie Masahiko Kimura a-t-il gagné en 1951, donnant son nom à la kimura ?
-  - ✓ Hélio Gracie  ✗ Carlos Gracie · Carlson Gracie · Rolls Gracie
-  - En 1951 au Maracanã, Masahiko Kimura a battu Hélio Gracie avec cette clé d'épaule, depuis appelée kimura. [source](https://en.wikipedia.org/wiki/Masahiko_Kimura)
 - [ ] **regl-exp-013** — Avec quelle soumission rare Aleksei Oleinik a-t-il battu Viktor Pešta en 2017, une première à l'UFC ?
   - ✓ L'Ezekiel choke  ✗ Le twister · La gogoplata · Le Von Flue choke
   - À l'UFC Fight Night 103, en janvier 2017, Oleinik a réussi depuis le dessous le premier Ezekiel choke de l'histoire de l'UFC. [source](https://en.wikipedia.org/wiki/Alexey_Oleinik)
-- [ ] **regl-exp-014** — Quel fondateur de l'école de jiu-jitsu 10th Planet a popularisé le twister ?
-  - ✓ Eddie Bravo  ✗ Marcelo Garcia · Renzo Gracie · John Danaher
-  - Eddie Bravo, fondateur du 10th Planet Jiu-Jitsu, a popularisé le twister, une torsion de la colonne issue de la lutte. [source](https://en.wikipedia.org/wiki/Eddie_Bravo)
-- [ ] **regl-exp-015** — Avec quelle soumission Frank Mir a-t-il cassé le bras d'Antônio Rodrigo Nogueira à l'UFC 140 en 2011 ?
-  - ✓ Une kimura  ✗ Un triangle · Une americana · Une omoplata
-  - À l'UFC 140, Frank Mir a brisé le bras de « Minotauro » Nogueira avec une kimura. [source](https://en.wikipedia.org/wiki/UFC_140)
 - [ ] **regl-exp-016** — Quel coup Edson Barboza a-t-il utilisé pour mettre K.-O. Terry Etim à l'UFC 142 en 2012 ?
   - ✓ Un spinning wheel kick  ✗ Un front kick · Un superman punch · Un coup de genou sauté
   - À Rio, à l'UFC 142, Edson Barboza a assommé Terry Etim d'un spinning wheel kick. [source](https://en.wikipedia.org/wiki/UFC_142)
-- [ ] **regl-exp-017** — Quel était le montant de chaque bonus de la soirée lors de l'UFC 300 en avril 2024 ?
-  - ✓ 300 000 dollars  ✗ 50 000 dollars · 100 000 dollars · 500 000 dollars
-  - Pour fêter l'UFC 300, les bonus habituels de 50 000 dollars ont été portés à 300 000 dollars ; Max Holloway en a touché deux. [source](https://en.wikipedia.org/wiki/UFC_300)
 - [ ] **regl-exp-018** — Quel événement numéroté a inauguré le « Fight Island » d'Abou Dabi en juillet 2020 ?
-  - ✓ UFC 251  ✗ UFC 250 · UFC 252 · UFC 254
+  - ✓ UFC 251  ✗ UFC 252 · UFC 253 · UFC 255
   - L'UFC 251, en juillet 2020 sur l'île de Yas, a été le premier événement numéroté organisé sur « Fight Island ». [source](https://en.wikipedia.org/wiki/UFC_251)
-- [ ] **regl-exp-019** — Quels entraîneurs dirigeaient les deux équipes de la première saison de The Ultimate Fighter, en 2005 ?
-  - ✓ Couture et Liddell  ✗ Ortiz et Shamrock · Hughes et Franklin · Jackson et Griffin
-  - La saison 1 de The Ultimate Fighter opposait l'équipe de Randy Couture à celle de Chuck Liddell. [source](https://en.wikipedia.org/wiki/The_Ultimate_Fighter_1)
 - [ ] **regl-exp-020** — Lors de quel événement de 1999 l'UFC a-t-elle utilisé pour la première fois le système de notation à 10 points ?
   - ✓ UFC 21  ✗ UFC 18 · UFC 19 · UFC 23
   - L'UFC 21, en juillet 1999, a été le premier événement noté selon le système des 10 points obligatoires. [source](https://en.wikipedia.org/wiki/UFC_21)
@@ -320,26 +280,62 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-exp-022** — Quel arbitre a été vivement critiqué par Dana White pour avoir tardé à arrêter Shevchenko contre Cachoeira en 2018 ?
   - ✓ Mario Yamasaki  ✗ Herb Dean · Marc Goddard · Dan Miragliotta
   - À l'UFC Fight Night 125 à Belém, Mario Yamasaki a laissé Priscila Cachoeira encaisser bien trop longtemps les coups de Shevchenko. [source](https://en.wikipedia.org/wiki/Mario_Yamasaki)
-- [ ] **regl-exp-023** — Quel tournoi l'UFC a-t-elle lancé en 2022 pour offrir des contrats à des espoirs asiatiques ?
-  - ✓ Road to UFC  ✗ Asian Contender Series · UFC Asia Cup · Dragon Fight Series
-  - Lancé en 2022, Road to UFC oppose des espoirs asiatiques dans des tournois dont les vainqueurs signent à l'UFC. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
 - [ ] **regl-exp-024** — Quel arbitre brésilien a officié lors de l'UFC 1 en 1993, avant l'arrivée de Big John McCarthy ?
   - ✓ João Alberto Barreto  ✗ Mario Yamasaki · Eduardo Herdy · Keith Peterson
   - Ancien combattant de vale tudo, João Alberto Barreto a arbitré plusieurs combats de l'UFC 1 avec Hélio Vigio. [source](https://en.wikipedia.org/wiki/UFC_1)
 
-## Difficile (100)
+### CV des combattants
+
+- [ ] **cv-sport-073** — Avant le kickboxing et le MMA, dans quel sport Gary Goodridge figurait-il parmi les meilleurs mondiaux ?
+  - ✓ Bras de fer  ✗ Haltérophilie · Lutte · Boxe
+  - Avant ses combats à l'UFC et au Pride, Gary Goodridge était l'un des meilleurs pratiquants de bras de fer professionnel. [source](https://en.wikipedia.org/wiki/Gary_Goodridge)
+- [ ] **cv-sport-075** — Quel sport pratiquait Teila Tuli, battu par Gerard Gordeau lors de l'UFC 1 ?
+  - ✓ Sumo  ✗ Lutte · Judo · Boxe
+  - Teila Tuli, de son vrai nom Taylor Wily, était un lutteur de sumo, mis KO par Gordeau à l'UFC 1. [source](https://en.wikipedia.org/wiki/Taylor_Wily)
+- [ ] **cv-sport-076** — Quel sumotori a affronté Keith Hackney lors de l'UFC 3 ?
+  - ✓ Emmanuel Yarbrough  ✗ Kimo Leopoldo · Tank Abbott · Paul Varelans
+  - Emmanuel Yarbrough représentait le sumo à l'UFC 3, où il fut battu par Keith Hackney, adepte du kempo. [source](https://en.wikipedia.org/wiki/Emmanuel_Yarbrough)
+- [ ] **cv-sport-078** — Quel champion du monde de kickboxing a battu Mark Coleman pour le titre poids lourd de l'UFC en 1997 ?
+  - ✓ Maurice Smith  ✗ Vitor Belfort · Randy Couture · Don Frye
+  - Maurice Smith, champion du monde WKA de kickboxing, a battu Mark Coleman aux points à l'UFC 14. [source](https://en.wikipedia.org/wiki/Maurice_Smith_(fighter))
+- [ ] **cv-sport-080** — Quel champion olympique de lutte en 1992 a combattu quatre fois dans l'Octogone de l'UFC ?
+  - ✓ Kevin Jackson  ✗ Mark Coleman · Mark Kerr · Kevin Randleman
+  - Kevin Jackson, or olympique en lutte libre en 1992, a disputé quatre combats à l'UFC. [source](https://en.wikipedia.org/wiki/Kevin_Jackson)
+- [ ] **cv-sport-081** — Quel lutteur fut le premier champion olympique à combattre à l'UFC, lors de l'UFC 9 en 1996 ?
+  - ✓ Mark Schultz  ✗ Don Frye · Mark Coleman · Dan Severn
+  - Champion olympique en 1984, Mark Schultz a remplacé Dave Beneteau au pied levé et battu Gary Goodridge à l'UFC 9. [source](https://en.wikipedia.org/wiki/Mark_Schultz_(wrestler))
+- [ ] **cv-sport-082** — Quel futur champion de l'UFC Mark Kerr a-t-il battu en finale du championnat NCAA de lutte en 1992 ?
+  - ✓ Randy Couture  ✗ Mark Coleman · Dan Severn · Don Frye
+  - Avec Syracuse, Mark Kerr a remporté le titre NCAA 1992 en battant Randy Couture 12-4 en finale. [source](https://en.wikipedia.org/wiki/Mark_Kerr_(fighter))
+- [ ] **cv-sport-083** — Dans quelle discipline Mark O. Madsen a-t-il été vice-champion olympique en 2016, avant de combattre à l'UFC ?
+  - ✓ Lutte gréco-romaine  ✗ Judo · Boxe · Taekwondo
+  - Le Danois Mark O. Madsen a pris l'argent en lutte gréco-romaine (75 kg) aux JO de Rio en 2016. [source](https://en.wikipedia.org/wiki/Mark_Madsen_(fighter))
+- [ ] **cv-sport-084** — Dans quel sport Rustam Khabilov a-t-il été champion du monde avant de combattre à l'UFC ?
+  - ✓ Sambo de combat  ✗ Judo · Kickboxing · Boxe
+  - Rustam Khabilov, célèbre pour ses suplex à l'UFC, est champion du monde de sambo de combat. [source](https://en.wikipedia.org/wiki/Rustam_Khabilov)
+- [ ] **cv-sport-085** — Avant le MMA, dans quel sport de combat Cung Le, passé par l'UFC, s'est-il fait un nom ?
+  - ✓ Sanda  ✗ Muay-thaï · Judo · Lutte
+  - Cung Le était une star du sanshou (sanda), invaincu en 17 combats professionnels avant de passer au MMA. [source](https://en.wikipedia.org/wiki/Cung_Le)
+- [ ] **cv-sport-086** — Quel combattant de l'UFC a remporté l'argent en lutte gréco-romaine aux JO de Sydney en 2000 ?
+  - ✓ Matt Lindland  ✗ Dan Henderson · Randy Couture · Chael Sonnen
+  - Matt Lindland a décroché l'argent en lutte gréco-romaine (76 kg) aux JO 2000 avant de combattre à l'UFC. [source](https://en.wikipedia.org/wiki/Matt_Lindland)
+- [ ] **cv-sport-087** — Avant le MMA, quel sport Jon Fitch pratiquait-il à l'université Purdue ?
+  - ✓ Lutte  ✗ Football américain · Boxe · Judo
+  - Jon Fitch a intégré l'équipe de lutte de Purdue comme walk-on et y a lutté quatre saisons. [source](https://en.wikipedia.org/wiki/Jon_Fitch)
+- [ ] **cv-sport-088** — Dans quel sport Gerard Gordeau, finaliste de l'UFC 1, a-t-il été champion du monde ?
+  - ✓ Savate  ✗ Sumo · Boxe · Lutte
+  - Le Néerlandais Gerard Gordeau a été champion du monde de savate en 1991 et huit fois champion des Pays-Bas de karaté. [source](https://en.wikipedia.org/wiki/Gerard_Gordeau)
+
+## Difficile (150)
 
 ### Histoire & légendes
 
 - [ ] **hist-dif-001** — Lors de quel événement s'est déroulé le premier combat féminin de l'histoire de l'UFC, en février 2013 ?
-  - ✓ UFC 157  ✗ UFC 150 · UFC 160 · UFC 168
+  - ✓ UFC 157  ✗ UFC 160 · UFC 163 · UFC 168
   - À l'UFC 157, Ronda Rousey a défendu sa ceinture des coqs face à Liz Carmouche, par clé de bras au premier round. [source](https://en.wikipedia.org/wiki/UFC_157)
 - [ ] **hist-dif-002** — Quel combattant a remporté la saison 2 de The Ultimate Fighter chez les poids lourds, en 2005 ?
   - ✓ Rashad Evans  ✗ Brad Imes · Keith Jardine · Seth Petruzelli
   - Rashad Evans a battu Brad Imes aux points en finale de la saison 2, en novembre 2005. [source](https://en.wikipedia.org/wiki/The_Ultimate_Fighter_2)
-- [ ] **hist-dif-003** — Comment s'appelait l'écurie d'entraînement fondée par Ken Shamrock ?
-  - ✓ Lion's Den  ✗ Team Quest · Hammer House · Miletich Fighting Systems
-  - Ken Shamrock a fondé le Lion's Den, l'une des premières écuries de MMA, où se sont formés notamment Frank Shamrock et Guy Mezger. [source](https://en.wikipedia.org/wiki/Ken_Shamrock)
 - [ ] **hist-dif-004** — Quel combattant a remporté le Grand Prix des poids moyens de Pride en 2005 ?
   - ✓ Maurício Rua  ✗ Wanderlei Silva · Ricardo Arona · Quinton Jackson
   - Maurício « Shogun » Rua a remporté le Grand Prix 2005 de Pride en battant Ricardo Arona en finale. [source](https://en.wikipedia.org/wiki/Maur%C3%ADcio_Rua)
@@ -367,45 +363,39 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-dif-012** — Qui a remporté la catégorie des poids moyens lors de la première saison de The Ultimate Fighter, en 2005 ?
   - ✓ Diego Sanchez  ✗ Kenny Florian · Josh Koscheck · Chris Leben
   - Diego Sanchez a battu Kenny Florian en finale de la première saison, le même soir que le combat Griffin contre Bonnar. [source](https://en.wikipedia.org/wiki/Diego_Sanchez)
-- [ ] **hist-dif-013** — Dans quelle salle londonienne s'est déroulé l'UFC 38 en 2002, premier événement de l'UFC au Royaume-Uni ?
-  - ✓ Royal Albert Hall  ✗ O2 Arena · Wembley Arena · ExCeL London
-  - L'UFC 38, surnommé « Brawl at the Hall », s'est tenu au Royal Albert Hall de Londres en juillet 2002. [source](https://en.wikipedia.org/wiki/UFC_38)
-- [ ] **hist-dif-014** — Quel diffuseur a pris le relais de Fox aux États-Unis pour retransmettre l'UFC à partir de 2019 ?
-  - ✓ ESPN  ✗ NBC · CBS · HBO
-  - Après sept ans avec Fox, l'UFC est passée sur ESPN et sa plateforme ESPN+ en janvier 2019. [source](https://en.wikipedia.org/wiki/UFC_on_ESPN)
-- [ ] **hist-dif-015** — Avec quel diffuseur américain l'UFC a-t-elle signé un contrat de sept ans en 2011 ?
-  - ✓ Fox  ✗ ESPN · CBS · NBC
-  - En août 2011, l'UFC a signé un contrat de sept ans avec Fox ; le premier événement a eu lieu en novembre 2011. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
-- [ ] **hist-dif-016** — Contre qui Royce Gracie a-t-il fait match nul après 36 minutes de combat à l'UFC 5 en 1995 ?
-  - ✓ Ken Shamrock  ✗ Dan Severn · Kimo Leopoldo · Oleg Taktarov
-  - Le « superfight » de l'UFC 5 entre Royce Gracie et Ken Shamrock s'est terminé par un match nul après 36 minutes. [source](https://en.wikipedia.org/wiki/UFC_5)
-- [ ] **hist-dif-017** — Quel combattant, rendu célèbre par des vidéos de combats de rue sur Internet, a participé à la saison 10 de The Ultimate Fighter ?
-  - ✓ Kimbo Slice  ✗ Bob Sapp · Tank Abbott · Seth Petruzelli
-  - Kimbo Slice, star des combats de rue filmés, a participé en 2009 à la saison 10 de The Ultimate Fighter. [source](https://en.wikipedia.org/wiki/Kimbo_Slice)
 - [ ] **hist-dif-018** — Quel Japonais, surnommé « Gracie Hunter », a battu Royce Gracie après 90 minutes de combat à Pride en 2000 ?
   - ✓ Kazushi Sakuraba  ✗ Takanori Gomi · Nobuhiko Takada · Yoshihiro Akiyama
   - Kazushi Sakuraba a battu Royce Gracie en mai 2000 lors du Grand Prix Pride, le clan Gracie jetant l'éponge après six rounds. [source](https://en.wikipedia.org/wiki/Kazushi_Sakuraba)
 - [ ] **hist-dif-019** — En quelle année Anderson Silva a-t-il fait ses débuts à l'UFC, face à Chris Leben ?
-  - ✓ 2006  ✗ 2004 · 2005 · 2007
+  - ✓ 2006  ✗ 2003 · 2004 · 2005
   - Anderson Silva a débuté à l'UFC en juin 2006 en mettant Chris Leben K.-O. en 49 secondes. [source](https://en.wikipedia.org/wiki/Anderson_Silva)
-- [ ] **hist-dif-020** — Quel adversaire Anderson Silva a-t-il mis K.-O. d'un célèbre coup de pied de face à l'UFC 126 en 2011 ?
-  - ✓ Vitor Belfort  ✗ Chael Sonnen · Forrest Griffin · Yushin Okami
-  - À l'UFC 126, Anderson Silva a mis Vitor Belfort K.-O. d'un front kick au visage dès le 1er round. [source](https://en.wikipedia.org/wiki/UFC_126)
-- [ ] **hist-dif-021** — Quelle rivale de Ronda Rousey a été l'entraîneuse adverse de la saison 18 de The Ultimate Fighter en 2013 ?
-  - ✓ Miesha Tate  ✗ Liz Carmouche · Sara McMann · Alexis Davis
-  - Miesha Tate a coaché face à Ronda Rousey dans The Ultimate Fighter 18, première saison mixte de l'émission. [source](https://en.wikipedia.org/wiki/Miesha_Tate)
 - [ ] **hist-dif-022** — Dans quelle ville l'UFC a-t-elle organisé son premier gala en Chine, en novembre 2012 ?
   - ✓ Macao  ✗ Shanghai · Pékin · Hong Kong
   - Le 10 novembre 2012, l'UFC a organisé à la Cotai Arena de Macao son premier événement en Chine. [source](https://en.wikipedia.org/wiki/2012_in_UFC)
 - [ ] **hist-dif-023** — Contre qui Conor McGregor a-t-il fait ses débuts à l'UFC, en avril 2013 à Stockholm ?
   - ✓ Marcus Brimage  ✗ Max Holloway · Diego Brandão · Dustin Poirier
   - Conor McGregor a débuté à l'UFC en battant Marcus Brimage par K.-O. technique au 1er round, à Stockholm. [source](https://en.wikipedia.org/wiki/Conor_McGregor)
-- [ ] **hist-dif-024** — Dans quelle ville l'UFC a-t-elle organisé son premier événement en Arabie saoudite, en juin 2024 ?
-  - ✓ Riyad  ✗ Djeddah · Dammam · Khobar
-  - En juin 2024, l'UFC a organisé à la Kingdom Arena de Riyad sa première soirée en Arabie saoudite. [source](https://en.wikipedia.org/wiki/2024_in_UFC)
-- [ ] **hist-dif-025** — Contre qui Royce Gracie a-t-il remporté la finale du tournoi de l'UFC 2, en mars 1994 ?
-  - ✓ Patrick Smith  ✗ Remco Pardoel · Jason DeLucia · Johnny Rhodes
-  - Royce Gracie a fait abandonner Patrick Smith sous les coups en finale de l'UFC 2, à Denver. [source](https://en.wikipedia.org/wiki/UFC_2)
+- [ ] **hist-exp-012** — Quel sénateur américain a qualifié l'UFC de « combat de coqs humain » dans les années 1990 ?
+  - ✓ John McCain  ✗ Ted Kennedy · Bob Dole · Joe Biden
+  - John McCain a mené campagne contre l'UFC, la qualifiant de « human cockfighting » et poussant à son interdiction dans plusieurs États. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
+- [ ] **hist-exp-019** — En quelle année Zuffa a-t-elle racheté l'organisation rivale Strikeforce ?
+  - ✓ 2011  ✗ 2008 · 2009 · 2010
+  - Zuffa a annoncé le rachat de Strikeforce en mars 2011 ; l'organisation a disparu début 2013. [source](https://en.wikipedia.org/wiki/Strikeforce_(mixed_martial_arts))
+- [ ] **hist-exp-025** — En quelle année l'État de New York a-t-il légalisé le MMA professionnel, ouvrant la voie à l'UFC au Madison Square Garden ?
+  - ✓ 2016  ✗ 2010 · 2012 · 2014
+  - New York a légalisé le MMA professionnel en 2016, ce qui a permis l'UFC 205 au Madison Square Garden en novembre. [source](https://en.wikipedia.org/wiki/UFC_205)
+- [ ] **hist-moy-002** — Quels combattants ont été les premiers intronisés au Hall of Fame de l'UFC, en 2003 ?
+  - ✓ Royce Gracie et Ken Shamrock  ✗ Dan Severn et Mark Coleman · Randy Couture et Chuck Liddell · Matt Hughes et Tito Ortiz
+  - Lors de l'UFC 45, en novembre 2003, Royce Gracie et Ken Shamrock ont inauguré le Hall of Fame de l'UFC. [source](https://en.wikipedia.org/wiki/UFC_Hall_of_Fame)
+- [ ] **hist-moy-003** — Dans quelle ville américaine s'est déroulé l'UFC 1 en 1993 ?
+  - ✓ Denver  ✗ Las Vegas · Tulsa · Detroit
+  - L'UFC 1 s'est tenu le 12 novembre 1993 à la McNichols Sports Arena de Denver, dans le Colorado. [source](https://en.wikipedia.org/wiki/UFC_1)
+- [ ] **hist-moy-008** — Quelle combattante a remporté en 2013 la saison 18 de The Ultimate Fighter, la première avec des femmes ?
+  - ✓ Julianna Peña  ✗ Raquel Pennington · Jessica Rakoczy · Shayna Baszler
+  - Julianna Peña a battu Jessica Rakoczy en finale de la saison 18, devenant la première femme à remporter l'émission. [source](https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_Rousey_vs._Team_Tate)
+- [ ] **hist-moy-022** — Quel champion a battu Royce Gracie lors de son retour à l'UFC, à l'UFC 60 en 2006 ?
+  - ✓ Matt Hughes  ✗ Georges St-Pierre · Matt Serra · Frank Trigg
+  - Matt Hughes a battu Royce Gracie par arrêt de l'arbitre au 1er round de l'UFC 60 en mai 2006. [source](https://en.wikipedia.org/wiki/UFC_60)
 
 ### Champions & ceintures
 
@@ -416,7 +406,7 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ UFC 198  ✗ UFC 196 · UFC 200 · UFC 203
   - Stipe Miocic a mis Fabrício Werdum K.-O. au 1er round de l'UFC 198, à Curitiba en mai 2016. [source](https://en.wikipedia.org/wiki/UFC_198)
 - [ ] **champ-dif-003** — En quelle année Junior dos Santos a-t-il pris la ceinture des lourds à Cain Velasquez ?
-  - ✓ 2011  ✗ 2010 · 2012 · 2013
+  - ✓ 2011  ✗ 2008 · 2009 · 2010
   - Junior dos Santos a mis Cain Velasquez K.-O. en 64 secondes lors du premier UFC on Fox, en novembre 2011. [source](https://en.wikipedia.org/wiki/Junior_dos_Santos)
 - [ ] **champ-dif-004** — Contre qui Khabib Nurmagomedov a-t-il remporté la ceinture des légers à l'UFC 223, en 2018 ?
   - ✓ Al Iaquinta  ✗ Tony Ferguson · Max Holloway · Edson Barboza
@@ -436,42 +426,24 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-dif-009** — Contre qui Daniel Cormier a-t-il remporté la ceinture vacante des mi-lourds en 2015 ?
   - ✓ Anthony Johnson  ✗ Alexander Gustafsson · Glover Teixeira · Ryan Bader
   - Après le retrait du titre à Jon Jones, Daniel Cormier a soumis Anthony Johnson au 3e round de l'UFC 187. [source](https://en.wikipedia.org/wiki/UFC_187)
-- [ ] **champ-dif-010** — Contre qui Jiří Procházka a-t-il remporté la ceinture des mi-lourds en juin 2022 ?
-  - ✓ Glover Teixeira  ✗ Jan Błachowicz · Dominick Reyes · Magomed Ankalaev
-  - Jiří Procházka a soumis Glover Teixeira au 5e round de l'UFC 275, à Singapour. [source](https://en.wikipedia.org/wiki/UFC_275)
 - [ ] **champ-dif-011** — Lors de quel événement Max Holloway a-t-il battu José Aldo à Rio pour unifier la ceinture des plumes ?
   - ✓ UFC 212  ✗ UFC 206 · UFC 211 · UFC 214
   - Champion intérimaire, Max Holloway a battu José Aldo par K.-O. technique au 3e round de l'UFC 212, en juin 2017. [source](https://en.wikipedia.org/wiki/UFC_212)
-- [ ] **champ-dif-012** — Qui a pris la ceinture des poids welters à Robbie Lawler en 2016 ?
-  - ✓ Tyron Woodley  ✗ Stephen Thompson · Carlos Condit · Rory MacDonald
-  - Tyron Woodley a mis Robbie Lawler K.-O. au 1er round de l'UFC 201, en juillet 2016. [source](https://en.wikipedia.org/wiki/UFC_201)
 - [ ] **champ-dif-013** — Qui a pris la ceinture des poids légers à Rafael dos Anjos en juillet 2016 ?
   - ✓ Eddie Alvarez  ✗ Khabib Nurmagomedov · Tony Ferguson · Donald Cerrone
   - Eddie Alvarez a battu Rafael dos Anjos par K.-O. technique au 1er round, avant de perdre le titre face à McGregor. [source](https://en.wikipedia.org/wiki/Eddie_Alvarez)
 - [ ] **champ-dif-014** — Qui a créé la surprise en prenant la ceinture des coqs à Renan Barão à l'UFC 173, en 2014 ?
   - ✓ T.J. Dillashaw  ✗ Dominick Cruz · Urijah Faber · Cody Garbrandt
   - Grand outsider, T.J. Dillashaw a battu Renan Barão par K.-O. technique au 5e round de l'UFC 173. [source](https://en.wikipedia.org/wiki/UFC_173)
-- [ ] **champ-dif-015** — Qui a pris la ceinture des poids coqs à Holly Holm en mars 2016 ?
-  - ✓ Miesha Tate  ✗ Amanda Nunes · Ronda Rousey · Valentina Shevchenko
-  - Miesha Tate a soumis Holly Holm par étranglement arrière au 5e round de l'UFC 196. [source](https://en.wikipedia.org/wiki/UFC_196)
 - [ ] **champ-dif-016** — Qui fut la première championne des poids plumes femmes de l'UFC, en 2017 ?
   - ✓ Germaine de Randamie  ✗ Cris Cyborg · Holly Holm · Amanda Nunes
   - Germaine de Randamie a battu Holly Holm aux points à l'UFC 208 pour devenir la première championne des plumes. [source](https://en.wikipedia.org/wiki/UFC_208)
-- [ ] **champ-dif-017** — Contre qui Valentina Shevchenko a-t-elle remporté la ceinture vacante des poids mouches en 2018 ?
-  - ✓ Joanna Jędrzejczyk  ✗ Jessica Eye · Katlyn Chookagian · Nicco Montaño
-  - Valentina Shevchenko a battu Joanna Jędrzejczyk par décision unanime à l'UFC 231, en décembre 2018. [source](https://en.wikipedia.org/wiki/UFC_231)
 - [ ] **champ-dif-018** — Contre qui Zhang Weili a-t-elle récupéré la ceinture des poids pailles en novembre 2022 ?
   - ✓ Carla Esparza  ✗ Rose Namajunas · Joanna Jędrzejczyk · Marina Rodriguez
   - Zhang Weili a soumis la championne Carla Esparza au 2e round de l'UFC 281. [source](https://en.wikipedia.org/wiki/UFC_281)
 - [ ] **champ-dif-019** — À qui Glover Teixeira, 42 ans, a-t-il pris la ceinture des mi-lourds en 2021 ?
   - ✓ Jan Błachowicz  ✗ Jiří Procházka · Dominick Reyes · Thiago Santos
   - Glover Teixeira a soumis Jan Błachowicz au 2e round de l'UFC 267, à Abou Dabi en octobre 2021. [source](https://en.wikipedia.org/wiki/UFC_267)
-- [ ] **champ-dif-020** — Qui est devenu en 2021 le premier champion de l'UFC né au Mexique ?
-  - ✓ Brandon Moreno  ✗ Yair Rodríguez · Alexa Grasso · Cain Velasquez
-  - Brandon Moreno a soumis Deiveson Figueiredo à l'UFC 263 en juin 2021 pour devenir champion des mouches. [source](https://en.wikipedia.org/wiki/Brandon_Moreno)
-- [ ] **champ-dif-021** — Qui a pris la ceinture des mouches à Valentina Shevchenko à l'UFC 285, en 2023 ?
-  - ✓ Alexa Grasso  ✗ Manon Fiorot · Taila Santos · Erin Blanchfield
-  - Alexa Grasso a soumis Valentina Shevchenko au 4e round de l'UFC 285, en mars 2023. [source](https://en.wikipedia.org/wiki/UFC_285)
 - [ ] **champ-dif-022** — Contre qui Jon Jones a-t-il récupéré la ceinture vacante des mi-lourds à l'UFC 232, en 2018 ?
   - ✓ Alexander Gustafsson  ✗ Anthony Smith · Thiago Santos · Ovince Saint Preux
   - Jon Jones a battu Alexander Gustafsson par K.-O. technique au 3e round de l'UFC 232, en décembre 2018. [source](https://en.wikipedia.org/wiki/UFC_232)
@@ -484,6 +456,45 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-dif-025** — Contre qui Petr Yan a-t-il remporté la ceinture vacante des poids coqs en 2020 ?
   - ✓ José Aldo  ✗ Cory Sandhagen · Marlon Moraes · Aljamain Sterling
   - Petr Yan a battu José Aldo par K.-O. technique au 5e round, à Abou Dabi en juillet 2020. [source](https://en.wikipedia.org/wiki/UFC_251)
+- [ ] **champ-exp-006** — Qui fut le premier champion des poids coqs de l'UFC, à la fusion avec le WEC fin 2010 ?
+  - ✓ Dominick Cruz  ✗ Renan Barão · Urijah Faber · Brian Bowles
+  - Champion du WEC, Dominick Cruz est devenu le premier champion des coqs de l'UFC lors de la fusion des deux organisations. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
+- [ ] **champ-exp-007** — Qui fut la première championne des poids pailles de l'UFC, en 2014 ?
+  - ✓ Carla Esparza  ✗ Joanna Jędrzejczyk · Rose Namajunas · Jéssica Penne
+  - Carla Esparza a soumis Rose Namajunas en finale de la saison 20 de The Ultimate Fighter, en décembre 2014. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
+- [ ] **champ-exp-014** — Qui a pris la ceinture des poids pailles à Rose Namajunas grâce à un slam à l'UFC 237, en 2019 ?
+  - ✓ Jéssica Andrade  ✗ Zhang Weili · Tatiana Suarez · Cláudia Gadelha
+  - Jéssica Andrade a mis Rose Namajunas K.-O. en la projetant au sol à l'UFC 237, à Rio en mai 2019. [source](https://en.wikipedia.org/wiki/UFC_237)
+- [ ] **champ-exp-015** — Contre qui Sean Sherk a-t-il remporté la ceinture vacante des poids légers à l'UFC 64, en 2006 ?
+  - ✓ Kenny Florian  ✗ Hermes França · Joe Stevenson · Jens Pulver
+  - Sean Sherk a battu Kenny Florian aux points à l'UFC 64, ramenant une ceinture des légers vacante depuis 2002. [source](https://en.wikipedia.org/wiki/UFC_64)
+- [ ] **champ-exp-016** — Qui a pris la ceinture des mi-lourds à Forrest Griffin à l'UFC 92, en 2008 ?
+  - ✓ Rashad Evans  ✗ Lyoto Machida · Quinton Jackson · Keith Jardine
+  - Rashad Evans a battu Forrest Griffin par K.-O. technique au 3e round de l'UFC 92, en décembre 2008. [source](https://en.wikipedia.org/wiki/UFC_92)
+- [ ] **champ-exp-017** — Contre qui Renan Barão a-t-il remporté la ceinture intérimaire des poids coqs en 2012 ?
+  - ✓ Urijah Faber  ✗ Michael McDonald · Eddie Wineland · Brian Bowles
+  - Renan Barão a battu Urijah Faber aux points à l'UFC 149, en juillet 2012 à Calgary. [source](https://en.wikipedia.org/wiki/UFC_149)
+- [ ] **champ-exp-018** — Contre qui Deiveson Figueiredo a-t-il remporté la ceinture vacante des poids mouches en juillet 2020 ?
+  - ✓ Joseph Benavidez  ✗ Brandon Moreno · Alex Perez · Askar Askarov
+  - Lors de leur revanche à Abou Dabi, Deiveson Figueiredo a soumis Joseph Benavidez au 1er round. [source](https://en.wikipedia.org/wiki/List_of_UFC_champions)
+- [ ] **champ-exp-019** — Contre qui Cris Cyborg a-t-elle remporté la ceinture vacante des poids plumes à l'UFC 214, en 2017 ?
+  - ✓ Tonya Evinger  ✗ Germaine de Randamie · Megan Anderson · Holly Holm
+  - Cris Cyborg a battu Tonya Evinger par K.-O. technique au 3e round de l'UFC 214, en juillet 2017. [source](https://en.wikipedia.org/wiki/UFC_214)
+- [ ] **champ-exp-020** — Quel champion des moyens, ancien professeur de mathématiques, était surnommé « Ace » ?
+  - ✓ Rich Franklin  ✗ Evan Tanner · Nate Marquardt · Murilo Bustamante
+  - Rich « Ace » Franklin, ancien professeur de mathématiques au lycée, fut champion des moyens de 2005 à 2006. [source](https://en.wikipedia.org/wiki/Rich_Franklin)
+- [ ] **champ-exp-021** — Contre qui Fabrício Werdum a-t-il remporté la ceinture intérimaire des poids lourds en 2014 ?
+  - ✓ Mark Hunt  ✗ Cain Velasquez · Travis Browne · Stipe Miocic
+  - Fabrício Werdum a battu Mark Hunt au 2e round de l'UFC 180, à Mexico en novembre 2014. [source](https://en.wikipedia.org/wiki/UFC_180)
+- [ ] **champ-exp-022** — Qui a remporté la ceinture intérimaire des poids lourds face à Tim Sylvia à l'UFC 81, en 2008 ?
+  - ✓ Antônio Rodrigo Nogueira  ✗ Frank Mir · Brock Lesnar · Heath Herring
+  - Antônio Rodrigo « Minotauro » Nogueira a soumis Tim Sylvia par guillotine au 3e round de l'UFC 81. [source](https://en.wikipedia.org/wiki/UFC_81)
+- [ ] **champ-exp-025** — Contre qui Carlos Condit a-t-il remporté la ceinture intérimaire des welters à l'UFC 143, en 2012 ?
+  - ✓ Nick Diaz  ✗ Johny Hendricks · Josh Koscheck · Jake Shields
+  - Carlos Condit a battu Nick Diaz par décision unanime à l'UFC 143, en février 2012. [source](https://en.wikipedia.org/wiki/UFC_143)
+- [ ] **champ-moy-009** — Contre qui Tony Ferguson a-t-il remporté la ceinture intérimaire des poids légers en 2017 ?
+  - ✓ Kevin Lee  ✗ Edson Barboza · Rafael dos Anjos · Anthony Pettis
+  - Tony Ferguson a soumis Kevin Lee par triangle au 3e round de l'UFC 216, en octobre 2017. [source](https://en.wikipedia.org/wiki/UFC_216)
 
 ### Records & stats
 
@@ -491,14 +502,19 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Cain Velasquez  ✗ Stipe Miocic · Jon Jones · Brock Lesnar
   - Cain Velasquez a régné de décembre 2012 (UFC 155) à juin 2015 (défaite contre Werdum), soit 896 jours. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
   - ⚑ Le règne de Jon Jones chez les lourds (mars 2023 - juin 2025) fait environ 840 jours : vérifier qu'il reste bien sous 896.
-- [ ] **rec-dif-001** — À l'UFC 239 en 2019, qui a battu Ben Askren par K.-O. en 5 secondes, un record de rapidité à l'UFC ?
-  - ✓ Jorge Masvidal  ✗ Kamaru Usman · Colby Covington · Leon Edwards
-  - Jorge Masvidal a mis Ben Askren K.-O. d'un coup de genou sauté dès l'ouverture du combat. [source](https://en.wikipedia.org/wiki/UFC_239)
+- [ ] **rec-moy-012** — Avec quel bilan Amanda Nunes a-t-elle annoncé sa retraite après l'UFC 289 en 2023 ?
+  - ✓ 23-5  ✗ 24-5 · 25-4 · 24-4
+  - Après sa victoire contre Irene Aldana, Nunes s'est retirée avec 23 victoires et 5 défaites, double championne en titre. [source](https://en.wikipedia.org/wiki/Amanda_Nunes)
+  - ⚑ Nunes est revenue en 2026 (UFC 324) : son bilan actuel diffère, la question porte bien sur sa retraite de 2023.
+- [ ] **rec-moy-023** — Quel combattant a remporté 5 combats à l'UFC en 2020, égalant le record de victoires sur une année ?
+  - ✓ Kevin Holland  ✗ Khamzat Chimaev · Neil Magny · Kamaru Usman
+  - Kevin Holland a gagné 5 fois en 2020, égalant Roger Huerta (2007) et Neil Magny (2014). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+  - ⚑ Le tableau Wikipédia « Most bouts or wins in a calendar year » est marqué « citation needed » : confirmer le 5-0 de Holland en 2020.
 - [ ] **rec-dif-002** — Combien de défenses de titre consécutives Jon Jones a-t-il réussies chez les mi-lourds lors de son premier règne ?
-  - ✓ 8  ✗ 6 · 7 · 9
+  - ✓ 8  ✗ 5 · 6 · 7
   - De 2011 à 2015, Jones a battu Jackson, Machida, Evans, Belfort, Sonnen, Gustafsson, Teixeira et Cormier. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-003** — Combien de fois Joanna Jędrzejczyk a-t-elle défendu son titre des poids pailles entre 2015 et 2017 ?
-  - ✓ 5  ✗ 3 · 4 · 6
+  - ✓ 5  ✗ 6 · 7 · 8
   - Joanna Jędrzejczyk a défendu 5 fois sa ceinture, record de la catégorie, avant de la perdre contre Rose Namajunas. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-004** — Contre qui Demetrious Johnson a-t-il obtenu une soumission à 4 min 59 du 5e round, à l'UFC 186 en 2015 ?
   - ✓ Kyoji Horiguchi  ✗ Joseph Benavidez · John Moraga · Ray Borg
@@ -515,18 +531,12 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **rec-dif-008** — À la fin de 2025, quel combattant détenait le record d'amenées au sol réussies chez les poids lourds de l'UFC ?
   - ✓ Curtis Blaydes  ✗ Cain Velasquez · Daniel Cormier · Tom Aspinall
   - Le lutteur Curtis Blaydes est de loin le poids lourd qui a réussi le plus d'amenées au sol à l'UFC. [source](https://en.wikipedia.org/wiki/Curtis_Blaydes)
-- [ ] **rec-dif-009** — En combien de temps Rafael dos Anjos a-t-il battu Donald Cerrone pour conserver son titre des légers en 2015 ?
-  - ✓ 1 min 06  ✗ 0 min 51 · 1 min 31 · 2 min 06
-  - À l'UFC on Fox 17, dos Anjos a stoppé Cerrone en 66 secondes, la finition la plus rapide d'un combat de titre des légers. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-010** — À la fin de 2025, quel combattant détenait le record de victoires par K.-O. en combat de titre à l'UFC, avec 7 ?
   - ✓ Anderson Silva  ✗ Alex Pereira · Chuck Liddell · Matt Hughes
   - Anderson Silva compte 7 K.-O. en combat de titre, devant Alex Pereira (6). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-011** — Combien de défenses de titre consécutives Georges St-Pierre a-t-il réussies chez les mi-moyens entre 2008 et 2013 ?
-  - ✓ 9  ✗ 7 · 8 · 10
+  - ✓ 9  ✗ 6 · 7 · 8
   - Lors de son second règne, GSP a battu Fitch, Penn, Alves, Hardy, Koscheck, Shields, Condit, Diaz et Hendricks. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-dif-012** — Combien de knockdowns Israel Adesanya a-t-il infligés à Kelvin Gastelum à l'UFC 236 en 2019, un record en combat de titre ?
-  - ✓ 4  ✗ 3 · 5 · 6
-  - Adesanya a envoyé Gastelum au sol 4 fois pour remporter le titre intérimaire des moyens, record d'un combat de titre. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-014** — Contre qui Max Holloway a-t-il porté 290 frappes significatives à l'UFC 231 en 2018, un record en combat de titre ?
   - ✓ Brian Ortega  ✗ Frankie Edgar · José Aldo · Alexander Volkanovski
   - Holloway a dominé Brian Ortega jusqu'à l'arrêt du médecin après le 4e round, avec 290 frappes significatives. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
@@ -542,27 +552,72 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **rec-dif-018** — Qui a mis K.-O. Chan Sung Jung d'un coude retourné à 4 min 59 du 5e round, en 2018 ?
   - ✓ Yair Rodríguez  ✗ Brian Ortega · Jeremy Stephens · Dennis Bermudez
   - À Denver, Yair Rodríguez a mis « The Korean Zombie » K.-O. à une seconde de la fin, le K.-O. le plus tardif possible. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-dif-019** — Quel combattant a remporté le plus de bonus Submission of the Night, une récompense supprimée en 2014 ?
-  - ✓ Joe Lauzon  ✗ Nate Diaz · Demian Maia · Charles Oliveira
-  - Joe Lauzon a reçu 6 bonus Submission of the Night, devant Nate Diaz (5). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-020** — En 2025, quel combattant détenait le record de finitions consécutives à l'UFC, avec 11 ?
   - ✓ Royce Gracie  ✗ Anderson Silva · Chuck Liddell · Charles Oliveira
   - Royce Gracie a terminé 11 combats de suite avant la limite lors des premiers tournois, devant Anderson Silva (8). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-dif-021** — Avec quel bilan Chuck Liddell a-t-il terminé sa carrière en 2018 ?
-  - ✓ 21-9  ✗ 21-8 · 20-9 · 22-9
-  - Sorti de sa retraite pour affronter Tito Ortiz en 2018, Liddell a perdu et terminé avec 21 victoires et 9 défaites. [source](https://en.wikipedia.org/wiki/Chuck_Liddell)
-- [ ] **rec-dif-022** — Combien de défenses du titre des mi-lourds Tito Ortiz a-t-il réussies entre 2000 et 2002 ?
-  - ✓ 5  ✗ 3 · 4 · 6
-  - Tito Ortiz a défendu cinq fois la ceinture des mi-lourds de l'UFC entre 2000 et 2002. [source](https://en.wikipedia.org/wiki/Tito_Ortiz)
-- [ ] **rec-dif-023** — À la fin de 2025, quel champion détenait le plus long règne unique chez les poids légers de l'UFC ?
-  - ✓ Khabib Nurmagomedov  ✗ Islam Makhachev · B.J. Penn · Frankie Edgar
-  - Khabib a régné 1 077 jours, d'avril 2018 à sa renonciation au titre en 2021. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-dif-024** — En juillet 2025 à Abou Dabi, quel combattant a établi le record de knockdowns dans un combat de l'UFC, avec 6 ?
-  - ✓ Steven Nguyen  ✗ Jean Silva · Diego Lopes · Lerone Murphy
-  - Steven Nguyen a envoyé Mohammad Yahya six fois au tapis, battant le record de cinq de Forrest Petz et Jeremy Stephens. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-dif-025** — En 2014, dans quelle ville les 11 combats d'une soirée UFC se sont-ils tous terminés avant la limite ?
   - ✓ Sydney  ✗ Melbourne · Auckland · Londres
   - À l'UFC Fight Night 55 (Rockhold contre Bisping), les 11 combats se sont terminés par K.-O. ou soumission. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-exp-002** — Qui a mis K.-O. Paul Buentello en 15 secondes à l'UFC 55 en 2005, record pour un combat de titre des lourds ?
+  - ✓ Andrei Arlovski  ✗ Tim Sylvia · Frank Mir · Ricco Rodriguez
+  - Andrei Arlovski a défendu sa ceinture des lourds en 15 secondes, le K.-O. le plus rapide d'un combat de titre de la catégorie. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-exp-005** — Quel poids lourd a enchaîné 9 victoires consécutives à l'UFC entre 2008 et 2012, record de la catégorie en 2025 ?
+  - ✓ Junior dos Santos  ✗ Cain Velasquez · Stipe Miocic · Fabrício Werdum
+  - Junior dos Santos a gagné 9 fois de suite, jusqu'à sa défaite contre Cain Velasquez fin 2012. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-exp-009** — Quel combattant a remporté le plus de bonus Knockout of the Night, une récompense supprimée en 2014 ?
+  - ✓ Anderson Silva  ✗ Vitor Belfort · Chris Leben · Lyoto Machida
+  - Anderson Silva a reçu 7 bonus Knockout of the Night, devant Vitor Belfort (5). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-exp-013** — Dans quel stade l'UFC 129 (St-Pierre contre Shields) a-t-il réuni 55 724 spectateurs en 2011 ?
+  - ✓ Le Rogers Centre  ✗ Le Centre Bell · Le Stade olympique · Le BC Place
+  - L'UFC 129 au Rogers Centre de Toronto a longtemps été l'événement le plus suivi de l'histoire de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-011** — À l'UFC 300 en 2024, combien de secondes restait-il quand Max Holloway a mis K.-O. Justin Gaethje ?
+  - ✓ 1 seconde  ✗ 5 secondes · 10 secondes · 30 secondes
+  - Holloway a mis Gaethje K.-O. à 4 min 59 du 5e round, à une seconde de la fin du combat. [source](https://en.wikipedia.org/wiki/UFC_300)
+- [ ] **rec-fac-019** — Combien de fois Ronda Rousey a-t-elle défendu son titre des poids coqs à l'UFC ?
+  - ✓ 6  ✗ 3 · 4 · 5
+  - Rousey a défendu sa ceinture 6 fois (Carmouche, Tate, McMann, Davis, Zingano, Correia) avant de la perdre contre Holly Holm. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-020** — Avec quel bilan professionnel Georges St-Pierre a-t-il pris sa retraite en 2019 ?
+  - ✓ 26-2  ✗ 25-2 · 24-3 · 25-3
+  - GSP a pris sa retraite avec 26 victoires et 2 défaites, deux revers (Hughes, Serra) qu'il a ensuite vengés. [source](https://en.wikipedia.org/wiki/Georges_St-Pierre)
+- [ ] **rec-fac-022** — Quel événement de 2009, avec Brock Lesnar contre Frank Mir, a dépassé 1,6 million d'achats en pay-per-view ?
+  - ✓ UFC 100  ✗ UFC 91 · UFC 92 · UFC 116
+  - L'UFC 100, en juillet 2009, a atteint environ 1,6 million d'achats, un record à l'époque. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-moy-002** — Qui partageait le record de victoires de l'UFC (23) avant d'être soumis par Jim Miller à l'UFC 276 en 2022 ?
+  - ✓ Donald Cerrone  ✗ Demian Maia · Michael Bisping · Andrei Arlovski
+  - En soumettant Donald Cerrone, Jim Miller a signé sa 24e victoire et est devenu seul détenteur du record de victoires à l'UFC. [source](https://en.wikipedia.org/wiki/Jim_Miller_(fighter))
+- [ ] **rec-moy-005** — En 2025, quelle combattante détenait le record de victoires chez les femmes à l'UFC ?
+  - ✓ Jéssica Andrade  ✗ Amanda Nunes · Valentina Shevchenko · Joanna Jędrzejczyk
+  - Jéssica Andrade a dépassé Amanda Nunes à l'UFC 300 en 2024 en signant sa 17e victoire à l'UFC. [source](https://en.wikipedia.org/wiki/J%C3%A9ssica_Andrade)
+- [ ] **rec-moy-006** — Combien de tournois de l'UFC Royce Gracie a-t-il remportés dans les années 1990, un record ?
+  - ✓ 3  ✗ 4 · 5 · 6
+  - Royce Gracie a remporté trois tournois de l'UFC entre 1993 et 1994, un total qu'aucun autre combattant n'a égalé. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-moy-007** — Avec quel bilan professionnel Ronda Rousey a-t-elle mis fin à sa carrière de MMA ?
+  - ✓ 12-2  ✗ 11-2 · 10-2 · 11-1
+  - Ronda Rousey a terminé avec 12 victoires et 2 défaites, deux revers subis consécutivement en 2015 et 2016. [source](https://en.wikipedia.org/wiki/Ronda_Rousey)
+- [ ] **rec-moy-009** — Quel combattant a mis K.-O. Mark Hominick en 7 secondes à l'UFC 140 en 2011 ?
+  - ✓ Chan Sung Jung  ✗ Dong Hyun Kim · Doo Ho Choi · Kang Kyung-ho
+  - « The Korean Zombie » a signé en 7 secondes le K.-O. le plus rapide de l'histoire des poids plumes de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-moy-010** — Combien de fois Max Holloway a-t-il défendu la ceinture des plumes après l'avoir unifiée en 2017 ?
+  - ✓ 3  ✗ 4 · 5 · 6
+  - Max Holloway a défendu son titre contre José Aldo, Brian Ortega et Frankie Edgar avant de le perdre fin 2019. [source](https://en.wikipedia.org/wiki/Max_Holloway)
+- [ ] **rec-moy-013** — Combien de fois Aljamain Sterling a-t-il défendu la ceinture des coqs entre 2022 et 2023 ?
+  - ✓ 3  ✗ 1 · 2 · 4
+  - Aljamain Sterling a défendu son titre contre Petr Yan, T.J. Dillashaw puis Henry Cejudo. [source](https://en.wikipedia.org/wiki/Aljamain_Sterling)
+- [ ] **rec-moy-016** — Combien de défenses du titre des légers Islam Makhachev a-t-il réussies avant de laisser sa ceinture en 2025 ?
+  - ✓ 4  ✗ 1 · 2 · 3
+  - Makhachev a battu Volkanovski deux fois, Poirier et Moicano : 4 défenses, record de la catégorie des légers. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-moy-017** — Combien de fois Khabib Nurmagomedov a-t-il défendu son titre des légers avant sa retraite ?
+  - ✓ 3  ✗ 2 · 4 · 5
+  - Khabib a défendu sa ceinture contre Conor McGregor, Dustin Poirier et Justin Gaethje. [source](https://en.wikipedia.org/wiki/Khabib_Nurmagomedov)
+- [ ] **rec-moy-020** — Avec quel bilan Daniel Cormier a-t-il pris sa retraite en 2020 ?
+  - ✓ 22-3 (1 NC)  ✗ 21-3 (1 NC) · 22-2 (1 NC) · 23-3 (1 NC)
+  - Cormier n'a perdu que contre Jon Jones et Stipe Miocic ; sa 2e défaite contre Jones a été changée en sans décision. [source](https://en.wikipedia.org/wiki/Daniel_Cormier)
+- [ ] **rec-moy-022** — Combien de fois Israel Adesanya a-t-il défendu la ceinture des moyens lors de son premier règne ?
+  - ✓ 5  ✗ 4 · 6 · 7
+  - De 2020 à 2022, Adesanya a battu Romero, Costa, Vettori, Whittaker et Cannonier. [source](https://en.wikipedia.org/wiki/Israel_Adesanya)
+- [ ] **rec-moy-025** — En 2022, quel combattant a dépassé Georges St-Pierre au record de victoires chez les poids mi-moyens ?
+  - ✓ Neil Magny  ✗ Kamaru Usman · Matt Brown · Robbie Lawler
+  - En battant Daniel Rodriguez en novembre 2022, Neil Magny a signé sa 20e victoire chez les mi-moyens, une de plus que GSP. [source](https://en.wikipedia.org/wiki/Neil_Magny)
 
 ### Règles, techniques & événements
 
@@ -570,19 +625,16 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Le coude « 12-6 »  ✗ Le coude retourné · Le coude remontant · Le coude horizontal
   - Le coude « 12-6 », qui descend comme les aiguilles de midi à six heures, figurait parmi les fautes des règles unifiées. [source](https://en.wikipedia.org/wiki/12%E2%80%936_elbow)
   - ⚑ L'interdiction a été levée par l'ABC vers 2024-2025 : vérifier que la formulation « a longtemps été interdit » reste juste.
-- [ ] **regl-dif-025** — Dans quel coin de l'Octogone se place généralement le champion ou le combattant le mieux classé ?
-  - ✓ Le coin rouge  ✗ Le coin bleu · Le coin blanc · Le coin noir
-  - Par convention, le champion ou le combattant favori occupe le coin rouge, et son adversaire le coin bleu. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts)
-  - ⚑ Convention bien établie mais source Wikipédia générale : vérifier qu'elle mentionne bien les coins rouge et bleu.
+- [ ] **regl-exp-008** — Quelle méthode de réhydratation après la pesée l'UFC a-t-elle interdite à partir d'octobre 2015 ?
+  - ✓ Les perfusions intraveineuses  ✗ Les boissons électrolytiques · Les solutions orales · Les bouillons salés
+  - Dans le cadre du programme USADA, les perfusions intraveineuses (IV) sont interdites depuis le 1er octobre 2015, sauf exemption médicale. [source](https://en.wikipedia.org/wiki/United_States_Anti-Doping_Agency)
+  - ⚑ Fait confirmé par la presse MMA (USADA, 2015) ; la page Wikipédia USADA ne le mentionne peut-être pas : source à remplacer au besoin.
 - [ ] **regl-dif-002** — Laquelle de ces actions est une faute selon les règles unifiées du MMA ?
   - ✓ Agripper le grillage  ✗ Frapper le corps au sol · Frapper la cuisse du pied · Donner un coude debout
   - Saisir le grillage de la cage avec les doigts ou les orteils est une faute ; les autres frappes proposées sont légales. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
 - [ ] **regl-dif-003** — Comment appelle-t-on les coups de pied à la tête d'un adversaire au sol, autorisés au Pride mais interdits à l'UFC ?
   - ✓ Les soccer kicks  ✗ Les calf kicks · Les axe kicks · Les teep kicks
   - Les soccer kicks, frappés comme un tir au football sur un adversaire au sol, étaient permis au Pride mais sont interdits par les règles unifiées. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
-- [ ] **regl-dif-004** — Quelle commission athlétique a réuni en avril 2001 les instances qui ont adopté les règles unifiées du MMA ?
-  - ✓ Celle du New Jersey  ✗ Celle du Nevada · Celle de Californie · Celle de New York
-  - Le 3 avril 2001, la commission du New Jersey (NJSACB) et d'autres instances se sont accordées sur les règles unifiées. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
 - [ ] **regl-dif-005** — Lors d'un combat sans titre, de combien un combattant peut-il dépasser la limite de sa catégorie à la pesée ?
   - ✓ 1 livre  ✗ 2 livres · 3 livres · 5 livres
   - Une tolérance d'une livre est accordée pour les combats sans titre ; pour un titre, la limite doit être respectée exactement. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
@@ -601,9 +653,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-dif-010** — Quelle catégorie de l'UFC a pour limite 205 livres (93 kg) ?
   - ✓ Les poids mi-lourds  ✗ Les poids lourds · Les poids moyens · Les poids super-moyens
   - Les poids mi-lourds (light heavyweight) combattent jusqu'à 205 livres, entre les moyens (185) et les lourds (265). [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
-- [ ] **regl-dif-011** — Quel étranglement bras-tête doit son nom à un élève de Renzo Gracie qui l'a popularisé en compétition ?
-  - ✓ Le D'Arce choke  ✗ L'anaconda choke · Le Von Flue choke · Le Peruvian necktie
-  - Le D'Arce choke porte le nom de Joe D'Arce, ceinture noire sous Renzo Gracie, qui l'a popularisé sans l'avoir inventé. [source](https://en.wikipedia.org/wiki/Arm_triangle_choke)
 - [ ] **regl-dif-012** — Quelle soumission contrôle l'épaule de l'adversaire à l'aide des jambes, depuis la garde ?
   - ✓ L'omoplata  ✗ La kimura · L'americana · Le twister
   - L'omoplata est une clé d'épaule réalisée avec les jambes, alors que la kimura et l'americana se font avec les bras. [source](https://en.wikipedia.org/wiki/Omoplata)
@@ -623,40 +672,175 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ Une clé de genou (kneebar)  ✗ Une kimura · Un triangle · Une guillotine
   - Pour les débuts de Brock Lesnar à l'UFC, Frank Mir l'a soumis par clé de genou dès le premier round. [source](https://en.wikipedia.org/wiki/UFC_81)
 - [ ] **regl-dif-018** — Selon les règles unifiées, combien de temps un combattant a-t-il pour récupérer d'un coup bas involontaire ?
-  - ✓ 5 minutes  ✗ 1 minute · 3 minutes · 10 minutes
+  - ✓ 5 minutes  ✗ 7 minutes · 10 minutes · 15 minutes
   - Touché par un coup bas involontaire, un combattant dispose de 5 minutes au maximum pour récupérer. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
-- [ ] **regl-dif-019** — Lors d'un combat pour le titre, que se passe-t-il si le résultat est un match nul ?
-  - ✓ Le champion garde sa ceinture  ✗ La ceinture devient vacante · Un round de plus est disputé · Le défi est rejoué sous 30 jours
-  - En cas de match nul, le titre n'est pas perdu : le champion conserve sa ceinture. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
 - [ ] **regl-dif-020** — Dans quelle salle de Las Vegas s'est tenu l'UFC 300 en avril 2024 ?
   - ✓ T-Mobile Arena  ✗ MGM Grand Garden Arena · UFC Apex · Sphere
   - L'UFC 300 s'est tenu le 13 avril 2024 à la T-Mobile Arena de Las Vegas. [source](https://en.wikipedia.org/wiki/UFC_300)
-- [ ] **regl-dif-021** — Selon les règles unifiées révisées en 2017, quand un combattant qui ne pose que les mains est-il considéré au sol ?
-  - ✓ Quand ses deux mains touchent le sol  ✗ Dès qu'une main touche le sol · Après 3 secondes mains au sol · Jamais, les mains ne comptent pas
-  - Depuis 2017, un combattant est au sol s'il pose les deux mains (paumes ou poings) ; une seule main ne suffit plus. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
-- [ ] **regl-dif-022** — Quel équipementier a fourni les tenues de combat de l'UFC de 2015 à 2021, avant Venum ?
-  - ✓ Reebok  ✗ Nike · Under Armour · Adidas
-  - Reebok a habillé les combattants de l'UFC de 2015 à mars 2021 ; Venum a pris le relais en avril 2021. [source](https://en.wikipedia.org/wiki/Venum)
-- [ ] **regl-dif-023** — Quel est le diamètre de l'Octogone standard de l'UFC ?
-  - ✓ 30 pieds (9,1 m)  ✗ 25 pieds (7,6 m) · 20 pieds (6,1 m) · 35 pieds (10,7 m)
-  - L'Octogone standard mesure 30 pieds de large ; une version réduite de 25 pieds est utilisée à l'UFC Apex et dans les petites salles. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_cage)
 - [ ] **regl-dif-024** — Comment s'appelle le centre d'entraînement et de recherche ouvert par l'UFC à Las Vegas en 2017 ?
   - ✓ UFC Performance Institute  ✗ UFC Fight Lab · UFC Training Center · UFC Apex
   - L'UFC Performance Institute, ouvert en 2017 à Las Vegas, accueille les combattants pour la préparation et la récupération. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
+- [ ] **regl-exp-002** — Quelle limite de temps s'appliquait aux combats de l'UFC 1, en 1993 ?
+  - ✓ Aucune limite de temps  ✗ Trois rounds de 5 minutes · Un round de 10 minutes · Un round de 15 minutes
+  - À l'UFC 1, il n'y avait ni rounds ni limite de temps : un combat ne s'arrêtait que sur K.-O., abandon ou jet de l'éponge. [source](https://en.wikipedia.org/wiki/UFC_1)
+- [ ] **regl-exp-004** — Selon les règles unifiées, quelle faute consiste à tordre les doigts ou les orteils de l'adversaire ?
+  - ✓ Manipuler les petites articulations  ✗ Le fish-hooking · L'eye-gouging · Le rabbit punch
+  - Les règles unifiées interdisent la manipulation des petites articulations (small joint manipulation), comme les doigts. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
+- [ ] **regl-exp-007** — Comment s'appelle la catégorie des plus de 265 livres prévue par les règles unifiées mais absente de l'UFC ?
+  - ✓ Les super-lourds  ✗ Les lourds-légers · Les mi-lourds · Les super-moyens
+  - Les règles unifiées prévoient une catégorie super-lourds au-delà de 265 livres, que l'UFC n'utilise pas. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
+- [ ] **regl-exp-012** — Contre quel membre de la famille Gracie Masahiko Kimura a-t-il gagné en 1951, donnant son nom à la kimura ?
+  - ✓ Hélio Gracie  ✗ Carlos Gracie · Carlson Gracie · Rolls Gracie
+  - En 1951 au Maracanã, Masahiko Kimura a battu Hélio Gracie avec cette clé d'épaule, depuis appelée kimura. [source](https://en.wikipedia.org/wiki/Masahiko_Kimura)
+- [ ] **regl-exp-014** — Quel fondateur de l'école de jiu-jitsu 10th Planet a popularisé le twister ?
+  - ✓ Eddie Bravo  ✗ Marcelo Garcia · Renzo Gracie · John Danaher
+  - Eddie Bravo, fondateur du 10th Planet Jiu-Jitsu, a popularisé le twister, une torsion de la colonne issue de la lutte. [source](https://en.wikipedia.org/wiki/Eddie_Bravo)
+- [ ] **regl-exp-015** — Avec quelle soumission Frank Mir a-t-il cassé le bras d'Antônio Rodrigo Nogueira à l'UFC 140 en 2011 ?
+  - ✓ Une kimura  ✗ Un triangle · Une americana · Une omoplata
+  - À l'UFC 140, Frank Mir a brisé le bras de « Minotauro » Nogueira avec une kimura. [source](https://en.wikipedia.org/wiki/UFC_140)
+- [ ] **regl-exp-017** — Quel était le montant de chaque bonus de la soirée lors de l'UFC 300 en avril 2024 ?
+  - ✓ 300 000 dollars  ✗ 50 000 dollars · 100 000 dollars · 200 000 dollars
+  - Pour fêter l'UFC 300, les bonus habituels de 50 000 dollars ont été portés à 300 000 dollars ; Max Holloway en a touché deux. [source](https://en.wikipedia.org/wiki/UFC_300)
+- [ ] **regl-exp-019** — Quels entraîneurs dirigeaient les deux équipes de la première saison de The Ultimate Fighter, en 2005 ?
+  - ✓ Couture et Liddell  ✗ Ortiz et Shamrock · Hughes et Franklin · Jackson et Griffin
+  - La saison 1 de The Ultimate Fighter opposait l'équipe de Randy Couture à celle de Chuck Liddell. [source](https://en.wikipedia.org/wiki/The_Ultimate_Fighter_1)
+- [ ] **regl-exp-023** — Quel tournoi l'UFC a-t-elle lancé en 2022 pour offrir des contrats à des espoirs asiatiques ?
+  - ✓ Road to UFC  ✗ Asian Contender Series · UFC Asia Cup · Dragon Fight Series
+  - Lancé en 2022, Road to UFC oppose des espoirs asiatiques dans des tournois dont les vainqueurs signent à l'UFC. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
+- [ ] **regl-moy-007** — Quelle est la limite de poids de la catégorie des poids plumes à l'UFC ?
+  - ✓ 145 livres (65,8 kg)  ✗ 135 livres (61,2 kg) · 155 livres (70,3 kg) · 140 livres (63,5 kg)
+  - Les poids plumes (featherweight) combattent jusqu'à 145 livres, soit 65,8 kg. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
+- [ ] **regl-moy-008** — Quelle est la limite de poids de la catégorie des poids welters à l'UFC ?
+  - ✓ 170 livres (77,1 kg)  ✗ 160 livres (72,6 kg) · 185 livres (83,9 kg) · 155 livres (70,3 kg)
+  - Les poids welters (welterweight) combattent jusqu'à 170 livres, soit 77,1 kg. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
+- [ ] **regl-moy-009** — Quelle est la limite de poids de la catégorie des poids mouches à l'UFC ?
+  - ✓ 125 livres (56,7 kg)  ✗ 115 livres (52,2 kg) · 135 livres (61,2 kg) · 145 livres (65,8 kg)
+  - Les poids mouches (flyweight) combattent jusqu'à 125 livres, soit 56,7 kg. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
+- [ ] **regl-moy-024** — Combien pèsent généralement les gants portés par les combattants de l'UFC ?
+  - ✓ 4 onces  ✗ 8 onces · 10 onces · 16 onces
+  - Les gants de l'UFC pèsent environ 4 onces (113 g), bien moins que les gants de boxe de 8 à 10 onces. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts)
+- [ ] **regl-moy-025** — En 2025, combien de catégories de poids masculines comptait l'UFC ?
+  - ✓ 8  ✗ 5 · 6 · 7
+  - Des mouches aux lourds, l'UFC comptait 8 catégories masculines en 2025. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
 
-## Moyen (100)
+### CV des combattants
+
+- [ ] **cv-sport-048** — Quel futur combattant de l'UFC a remporté le Grand Prix mondial K-1 en 2001 ?
+  - ✓ Mark Hunt  ✗ Mirko Cro Cop · Pat Barry · Gökhan Saki
+  - Le Néo-Zélandais Mark Hunt a remporté le K-1 World Grand Prix 2001 avant de combattre au Pride puis à l'UFC. [source](https://en.wikipedia.org/wiki/Mark_Hunt)
+- [ ] **cv-sport-049** — Dans quel sport Josh Koscheck a-t-il été champion national NCAA en 2001 avec Edinboro ?
+  - ✓ Lutte  ✗ Football américain · Boxe · Judo
+  - Josh Koscheck a été champion NCAA de lutte en 2001 chez les 174 livres et quatre fois All-American. [source](https://en.wikipedia.org/wiki/Josh_Koscheck)
+- [ ] **cv-sport-050** — Quel ancien champion des welters de l'UFC a été double champion NCAA de lutte avec Oklahoma State ?
+  - ✓ Johny Hendricks  ✗ Robbie Lawler · Tyron Woodley · Carlos Condit
+  - Johny Hendricks a remporté les titres NCAA Division I de lutte en 2005 et 2006 avec Oklahoma State. [source](https://en.wikipedia.org/wiki/Johny_Hendricks)
+- [ ] **cv-sport-052** — Dans quel sport Héctor Lombard a-t-il représenté Cuba aux Jeux olympiques de Sydney en 2000 ?
+  - ✓ Judo  ✗ Lutte · Boxe · Taekwondo
+  - Héctor Lombard a disputé le tournoi de judo des JO 2000 pour Cuba ; il est ceinture noire 4e dan. [source](https://en.wikipedia.org/wiki/H%C3%A9ctor_Lombard)
+- [ ] **cv-sport-053** — Quel art martial Karo Parisyan a-t-il commencé à 9 ans sous la direction de Gokor Chivichyan ?
+  - ✓ Judo  ✗ Lutte · Karaté · Taekwondo
+  - Karo Parisyan a débuté le judo à neuf ans auprès de son compatriote arménien Gokor Chivichyan. [source](https://en.wikipedia.org/wiki/Karo_Parisyan)
+- [ ] **cv-sport-054** — Quelle médaillée d'argent olympique en lutte (2004) a défié Ronda Rousey pour le titre à l'UFC 170 ?
+  - ✓ Sara McMann  ✗ Liz Carmouche · Alexis Davis · Miesha Tate
+  - Sara McMann, vice-championne olympique de lutte à Athènes, a perdu face à Rousey à l'UFC 170 en 2014. [source](https://en.wikipedia.org/wiki/Sara_McMann)
+- [ ] **cv-sport-055** — Avant de découvrir le muay-thaï, quel sport collectif Cris Cyborg pratiquait-elle au niveau national au Brésil ?
+  - ✓ Handball  ✗ Volley-ball · Basket-ball · Football
+  - Cris Cyborg a commencé le sport à 12 ans par le handball, pratiqué au niveau national au Brésil. [source](https://en.wikipedia.org/wiki/Cris_Cyborg)
+- [ ] **cv-sport-056** — Dans quelle discipline Ronaldo « Jacaré » Souza a-t-il été double champion du monde en ceinture noire ?
+  - ✓ Jiu-jitsu brésilien  ✗ Lutte gréco-romaine · Luta livre · Judo
+  - Ronaldo Souza a été deux fois champion du monde de jiu-jitsu brésilien en ceinture noire, et champion de l'ADCC. [source](https://en.wikipedia.org/wiki/Ronaldo_Souza)
+- [ ] **cv-sport-057** — Quel combattant fut le premier non-Brésilien champion du monde de jiu-jitsu en ceinture noire, en 2000 ?
+  - ✓ B.J. Penn  ✗ Matt Serra · Jens Pulver · Caol Uno
+  - B.J. Penn a remporté les Mondiaux de jiu-jitsu en ceinture noire en 2000, une première pour un non-Brésilien. [source](https://en.wikipedia.org/wiki/B.J._Penn)
+- [ ] **cv-sport-058** — Quel champion du monde de jiu-jitsu brésilien a mis Mirko Cro Cop KO d'un coup de pied à la tête à l'UFC 70 ?
+  - ✓ Gabriel Gonzaga  ✗ Fabrício Werdum · Antônio Rodrigo Nogueira · Frank Mir
+  - Gabriel Gonzaga, champion du monde IBJJF, a créé la surprise en battant Cro Cop sur un high kick à l'UFC 70. [source](https://en.wikipedia.org/wiki/Gabriel_Gonzaga)
+- [ ] **cv-sport-059** — Dans quel sport Gökhan Saki s'est-il fait un nom avant de rejoindre l'UFC en 2017 ?
+  - ✓ Kickboxing  ✗ Boxe · Lutte · Judo
+  - Gökhan Saki, star du kickboxing chez K-1 et Glory, a fait ses débuts à l'UFC en septembre 2017. [source](https://en.wikipedia.org/wiki/G%C3%B6khan_Saki)
+- [ ] **cv-sport-060** — Quel ancien champion du monde de boxe a affronté Randy Couture à l'UFC 118 en 2010 ?
+  - ✓ James Toney  ✗ Kimbo Slice · Brendan Schaub · Gabriel Gonzaga
+  - Le boxeur James Toney a disputé son unique combat de MMA face à Randy Couture à l'UFC 118. [source](https://en.wikipedia.org/wiki/James_Toney)
+- [ ] **cv-sport-061** — Dans quel sport Tatiana Suarez a-t-elle été médaillée de bronze aux championnats du monde ?
+  - ✓ Lutte  ✗ Judo · Jiu-jitsu brésilien · Taekwondo
+  - Avant le MMA, Tatiana Suarez a remporté le bronze aux championnats du monde de lutte en 2008. [source](https://en.wikipedia.org/wiki/Tatiana_Suarez)
+- [ ] **cv-sport-062** — Quel combattant a été champion NCAA de lutte avec Penn State en 2008 ?
+  - ✓ Phil Davis  ✗ Ryan Bader · Rashad Evans · Jon Jones
+  - Phil Davis s'est d'abord fait connaître comme lutteur de Penn State, champion NCAA Division I en 2008. [source](https://en.wikipedia.org/wiki/Phil_Davis_(fighter))
+- [ ] **cv-sport-063** — Dans quel sport Ben Askren a-t-il représenté les États-Unis aux Jeux olympiques de Pékin en 2008 ?
+  - ✓ Lutte  ✗ Judo · Boxe · Taekwondo
+  - Ben Askren, double champion NCAA, faisait partie de l'équipe olympique américaine de lutte libre en 2008. [source](https://en.wikipedia.org/wiki/Ben_Askren)
+- [ ] **cv-sport-064** — Dans quel sport Yoshihiro Akiyama a-t-il remporté l'or aux Jeux asiatiques de 2002 pour le Japon ?
+  - ✓ Judo  ✗ Karaté · Lutte · Taekwondo
+  - Yoshihiro Akiyama, judoka, a gagné l'or aux Jeux asiatiques 2002 pour le Japon avant de passer au MMA. [source](https://en.wikipedia.org/wiki/Yoshihiro_Akiyama)
+- [ ] **cv-sport-065** — Au Daghestan, Zabit Magomedsharipov a vécu plus de dix ans dans un internat consacré à quel art martial ?
+  - ✓ Wushu  ✗ Judo · Boxe · Karaté
+  - Zabit Magomedsharipov a vécu et s'est entraîné une dizaine d'années à l'internat de wushu « Cinq directions du monde ». [source](https://en.wikipedia.org/wiki/Zabit_Magomedsharipov)
+- [ ] **cv-sport-066** — Avant le MMA, Kenny Florian jouait dans l'équipe universitaire de Boston College dans quel sport ?
+  - ✓ Football  ✗ Lutte · Hockey sur glace · Football américain
+  - Kenny Florian jouait au football (soccer) dans l'équipe de Boston College, en NCAA Division I. [source](https://en.wikipedia.org/wiki/Kenny_Florian)
+- [ ] **cv-sport-067** — Quel ancien joueur de football américain de l'université du Tennessee a défié Jon Jones pour un titre en 2016 ?
+  - ✓ Ovince Saint Preux  ✗ Anthony Johnson · Glover Teixeira · Jimi Manuwa
+  - Ovince Saint Preux a joué au football américain pour Tennessee, puis affronté Jon Jones pour le titre intérimaire à l'UFC 197. [source](https://en.wikipedia.org/wiki/Ovince_Saint_Preux)
+- [ ] **cv-sport-068** — Quel ancien joueur NFL des New York Giants est devenu combattant poids lourd à l'UFC ?
+  - ✓ Matt Mitrione  ✗ Shane Carwin · Roy Nelson · Cheick Kongo
+  - Matt Mitrione a joué en NFL avec les Giants et les Vikings avant de participer à The Ultimate Fighter. [source](https://en.wikipedia.org/wiki/Matt_Mitrione)
+- [ ] **cv-sport-069** — Quel ancien champion des légers de l'UFC a lutté pour l'université de Clarion, en Pennsylvanie ?
+  - ✓ Frankie Edgar  ✗ B.J. Penn · Benson Henderson · Anthony Pettis
+  - Frankie Edgar a lutté pour Clarion University, se qualifiant quatre fois pour le championnat NCAA Division I. [source](https://en.wikipedia.org/wiki/Frankie_Edgar)
+- [ ] **cv-sport-070** — Quel ancien champion des coqs de l'UFC a lutté avec une bourse pour Cal State Fullerton ?
+  - ✓ T.J. Dillashaw  ✗ Renan Barão · Dominick Cruz · Cody Garbrandt
+  - T.J. Dillashaw a obtenu une bourse complète pour lutter avec les Titans de Cal State Fullerton. [source](https://en.wikipedia.org/wiki/T.J._Dillashaw)
+- [ ] **cv-sport-071** — Dans quelle discipline Dan Henderson a-t-il participé aux Jeux olympiques de 1992 et 1996 ?
+  - ✓ Lutte gréco-romaine  ✗ Lutte libre · Judo · Boxe
+  - Dan Henderson a représenté les États-Unis en lutte gréco-romaine aux JO de Barcelone et d'Atlanta. [source](https://en.wikipedia.org/wiki/Dan_Henderson)
+- [ ] **cv-sport-072** — Quel ancien lutteur d'Arizona State a remporté The Ultimate Fighter 8 chez les mi-lourds ?
+  - ✓ Ryan Bader  ✗ Vinny Magalhães · Krzysztof Soszynski · Tom Lawlor
+  - Ryan Bader, coéquipier de Cain Velasquez à Arizona State, a remporté la saison 8 de TUF. [source](https://en.wikipedia.org/wiki/Ryan_Bader)
+
+## Moyen (156)
 
 ### Histoire & légendes
 
+- [ ] **hist-dif-014** — Quel diffuseur a pris le relais de Fox aux États-Unis pour retransmettre l'UFC à partir de 2019 ?
+  - ✓ ESPN  ✗ NBC · CBS · HBO
+  - Après sept ans avec Fox, l'UFC est passée sur ESPN et sa plateforme ESPN+ en janvier 2019. [source](https://en.wikipedia.org/wiki/UFC_on_ESPN)
+- [ ] **hist-dif-015** — Avec quel diffuseur américain l'UFC a-t-elle signé un contrat de sept ans en 2011 ?
+  - ✓ Fox  ✗ ESPN · CBS · NBC
+  - En août 2011, l'UFC a signé un contrat de sept ans avec Fox ; le premier événement a eu lieu en novembre 2011. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
+- [ ] **hist-dif-017** — Quel combattant, rendu célèbre par des vidéos de combats de rue sur Internet, a participé à la saison 10 de The Ultimate Fighter ?
+  - ✓ Kimbo Slice  ✗ Bob Sapp · Tank Abbott · Seth Petruzelli
+  - Kimbo Slice, star des combats de rue filmés, a participé en 2009 à la saison 10 de The Ultimate Fighter. [source](https://en.wikipedia.org/wiki/Kimbo_Slice)
+- [ ] **hist-dif-020** — Quel adversaire Anderson Silva a-t-il mis K.-O. d'un célèbre coup de pied de face à l'UFC 126 en 2011 ?
+  - ✓ Vitor Belfort  ✗ Chael Sonnen · Forrest Griffin · Yushin Okami
+  - À l'UFC 126, Anderson Silva a mis Vitor Belfort K.-O. d'un front kick au visage dès le 1er round. [source](https://en.wikipedia.org/wiki/UFC_126)
+- [ ] **hist-dif-021** — Quelle rivale de Ronda Rousey a été l'entraîneuse adverse de la saison 18 de The Ultimate Fighter en 2013 ?
+  - ✓ Miesha Tate  ✗ Liz Carmouche · Sara McMann · Alexis Davis
+  - Miesha Tate a coaché face à Ronda Rousey dans The Ultimate Fighter 18, première saison mixte de l'émission. [source](https://en.wikipedia.org/wiki/Miesha_Tate)
+- [ ] **hist-dif-024** — Dans quelle ville l'UFC a-t-elle organisé son premier événement en Arabie saoudite, en juin 2024 ?
+  - ✓ Riyad  ✗ Djeddah · Dammam · Khobar
+  - En juin 2024, l'UFC a organisé à la Kingdom Arena de Riyad sa première soirée en Arabie saoudite. [source](https://en.wikipedia.org/wiki/2024_in_UFC)
+- [ ] **hist-fac-002** — Quelle famille brésilienne de jiu-jitsu est à l'origine de la création de l'UFC en 1993 ?
+  - ✓ Les Gracie  ✗ Les Machida · Les Nogueira · Les Silva
+  - Rorion Gracie a cofondé l'UFC avec Art Davie pour démontrer l'efficacité du jiu-jitsu de sa famille. [source](https://en.wikipedia.org/wiki/UFC_1)
+- [ ] **hist-fac-009** — Quelle organisation japonaise de MMA a été rachetée par les propriétaires de l'UFC en 2007 ?
+  - ✓ Pride  ✗ K-1 · Dream · Shooto
+  - Les frères Fertitta, propriétaires de l'UFC, ont racheté Pride en 2007 ; l'organisation a cessé ses activités peu après. [source](https://en.wikipedia.org/wiki/Pride_Fighting_Championships)
+- [ ] **hist-fac-012** — Quel combattant américain de Louisiane est surnommé « The Diamond » ?
+  - ✓ Dustin Poirier  ✗ Justin Gaethje · Michael Chandler · Tony Ferguson
+  - Dustin Poirier, né à Lafayette en Louisiane, combat sous le surnom « The Diamond ». [source](https://en.wikipedia.org/wiki/Dustin_Poirier)
+- [ ] **hist-fac-013** — Quel combattant, champion chez les lourds et les mi-lourds, était surnommé « The Natural » ?
+  - ✓ Randy Couture  ✗ Chuck Liddell · Frank Mir · Tito Ortiz
+  - Randy Couture, surnommé « The Natural », a été champion de l'UFC chez les poids lourds et les mi-lourds. [source](https://en.wikipedia.org/wiki/Randy_Couture)
+- [ ] **hist-fac-014** — Quelle combattante brésilienne est surnommée « The Lioness » ?
+  - ✓ Amanda Nunes  ✗ Cris Cyborg · Jéssica Andrade · Mackenzie Dern
+  - Amanda Nunes est surnommée « The Lioness » (« la Lionne »). [source](https://en.wikipedia.org/wiki/Amanda_Nunes)
+- [ ] **hist-fac-015** — Comment s'appelle le frère aîné de Nate Diaz, lui aussi combattant de l'UFC ?
+  - ✓ Nick Diaz  ✗ Mike Diaz · Tony Diaz · Ray Diaz
+  - Nick Diaz, l'aîné de la fratrie, a combattu à l'UFC comme son frère cadet Nate. [source](https://en.wikipedia.org/wiki/Nick_Diaz)
 - [ ] **hist-moy-001** — Qui a remporté le tournoi de l'UFC 1 en 1993 ?
   - ✓ Royce Gracie  ✗ Ken Shamrock · Gerard Gordeau · Dan Severn
   - Royce Gracie a battu Gerard Gordeau en finale, par soumission. [source](https://fr.wikipedia.org/wiki/UFC_1)
-- [ ] **hist-moy-002** — Quels combattants ont été les premiers intronisés au Hall of Fame de l'UFC, en 2003 ?
-  - ✓ Royce Gracie et Ken Shamrock  ✗ Dan Severn et Mark Coleman · Randy Couture et Chuck Liddell · Matt Hughes et Tito Ortiz
-  - Lors de l'UFC 45, en novembre 2003, Royce Gracie et Ken Shamrock ont inauguré le Hall of Fame de l'UFC. [source](https://en.wikipedia.org/wiki/UFC_Hall_of_Fame)
-- [ ] **hist-moy-003** — Dans quelle ville américaine s'est déroulé l'UFC 1 en 1993 ?
-  - ✓ Denver  ✗ Las Vegas · Tulsa · Detroit
-  - L'UFC 1 s'est tenu le 12 novembre 1993 à la McNichols Sports Arena de Denver, dans le Colorado. [source](https://en.wikipedia.org/wiki/UFC_1)
 - [ ] **hist-moy-004** — Quel combat de la finale de The Ultimate Fighter, en 2005, est souvent présenté comme celui qui a sauvé l'UFC ?
   - ✓ Griffin contre Bonnar  ✗ Liddell contre Ortiz · Couture contre Liddell · Hughes contre Trigg
   - La guerre entre Forrest Griffin et Stephan Bonnar en avril 2005 a passionné le public et lancé l'essor de l'UFC à la télévision. [source](https://en.wikipedia.org/wiki/Forrest_Griffin)
@@ -669,9 +853,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-moy-007** — Dans quelle ville Dustin Poirier a-t-il disputé le dernier combat de sa carrière, en juillet 2025 ?
   - ✓ La Nouvelle-Orléans  ✗ Houston · Las Vegas · Miami
   - Le Louisianais Dustin Poirier a fait ses adieux à l'UFC 318, à La Nouvelle-Orléans, en juillet 2025. [source](https://en.wikipedia.org/wiki/UFC_318)
-- [ ] **hist-moy-008** — Quelle combattante a remporté en 2013 la saison 18 de The Ultimate Fighter, la première avec des femmes ?
-  - ✓ Julianna Peña  ✗ Raquel Pennington · Jessica Rakoczy · Shayna Baszler
-  - Julianna Peña a battu Jessica Rakoczy en finale de la saison 18, devenant la première femme à remporter l'émission. [source](https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_Rousey_vs._Team_Tate)
 - [ ] **hist-moy-009** — Contre qui Jorge Masvidal a-t-il remporté la ceinture symbolique « BMF » en 2019 ?
   - ✓ Nate Diaz  ✗ Ben Askren · Darren Till · Kamaru Usman
   - À l'UFC 244 en novembre 2019, Jorge Masvidal a battu Nate Diaz (arrêt du médecin) pour la ceinture BMF. [source](https://en.wikipedia.org/wiki/UFC_244)
@@ -711,12 +892,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-moy-021** — Quel commentateur a formé avec Joe Rogan le célèbre duo de l'UFC jusqu'à la fin de 2016 ?
   - ✓ Mike Goldberg  ✗ Jon Anik · Brian Stann · Jeff Blatnick
   - Mike Goldberg a commenté l'UFC de 1997 à l'UFC 207 en décembre 2016, longtemps aux côtés de Joe Rogan. [source](https://en.wikipedia.org/wiki/Mike_Goldberg)
-- [ ] **hist-moy-022** — Quel champion a battu Royce Gracie lors de son retour à l'UFC, à l'UFC 60 en 2006 ?
-  - ✓ Matt Hughes  ✗ Georges St-Pierre · Matt Serra · Frank Trigg
-  - Matt Hughes a battu Royce Gracie par arrêt de l'arbitre au 1er round de l'UFC 60 en mai 2006. [source](https://en.wikipedia.org/wiki/UFC_60)
-- [ ] **hist-moy-023** — Quel combattant a mis Conor McGregor K.-O. en janvier 2021 à l'UFC 257 ?
-  - ✓ Dustin Poirier  ✗ Justin Gaethje · Michael Chandler · Charles Oliveira
-  - Dustin Poirier a pris sa revanche sur McGregor en le mettant K.-O. au 2e round de l'UFC 257, à Abu Dhabi. [source](https://en.wikipedia.org/wiki/UFC_257)
 - [ ] **hist-moy-024** — Quel nom porte l'événement que l'UFC organise en septembre autour de la fête nationale mexicaine, depuis 2023 ?
   - ✓ Noche UFC  ✗ UFC Fiesta · Grito UFC · UFC Azteca
   - Depuis 2023, la soirée Noche UFC célèbre chaque mois de septembre la fête de l'indépendance mexicaine. [source](https://en.wikipedia.org/wiki/UFC_306)
@@ -726,6 +901,63 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 
 ### Champions & ceintures
 
+- [ ] **champ-dif-010** — Contre qui Jiří Procházka a-t-il remporté la ceinture des mi-lourds en juin 2022 ?
+  - ✓ Glover Teixeira  ✗ Jan Błachowicz · Dominick Reyes · Magomed Ankalaev
+  - Jiří Procházka a soumis Glover Teixeira au 5e round de l'UFC 275, à Singapour. [source](https://en.wikipedia.org/wiki/UFC_275)
+- [ ] **champ-dif-012** — Qui a pris la ceinture des poids welters à Robbie Lawler en 2016 ?
+  - ✓ Tyron Woodley  ✗ Stephen Thompson · Carlos Condit · Rory MacDonald
+  - Tyron Woodley a mis Robbie Lawler K.-O. au 1er round de l'UFC 201, en juillet 2016. [source](https://en.wikipedia.org/wiki/UFC_201)
+- [ ] **champ-dif-015** — Qui a pris la ceinture des poids coqs à Holly Holm en mars 2016 ?
+  - ✓ Miesha Tate  ✗ Amanda Nunes · Ronda Rousey · Valentina Shevchenko
+  - Miesha Tate a soumis Holly Holm par étranglement arrière au 5e round de l'UFC 196. [source](https://en.wikipedia.org/wiki/UFC_196)
+- [ ] **champ-dif-017** — Contre qui Valentina Shevchenko a-t-elle remporté la ceinture vacante des poids mouches en 2018 ?
+  - ✓ Joanna Jędrzejczyk  ✗ Jessica Eye · Katlyn Chookagian · Nicco Montaño
+  - Valentina Shevchenko a battu Joanna Jędrzejczyk par décision unanime à l'UFC 231, en décembre 2018. [source](https://en.wikipedia.org/wiki/UFC_231)
+- [ ] **champ-dif-020** — Qui est devenu en 2021 le premier champion de l'UFC né au Mexique ?
+  - ✓ Brandon Moreno  ✗ Yair Rodríguez · Alexa Grasso · Cain Velasquez
+  - Brandon Moreno a soumis Deiveson Figueiredo à l'UFC 263 en juin 2021 pour devenir champion des mouches. [source](https://en.wikipedia.org/wiki/Brandon_Moreno)
+- [ ] **champ-dif-021** — Qui a pris la ceinture des mouches à Valentina Shevchenko à l'UFC 285, en 2023 ?
+  - ✓ Alexa Grasso  ✗ Manon Fiorot · Taila Santos · Erin Blanchfield
+  - Alexa Grasso a soumis Valentina Shevchenko au 4e round de l'UFC 285, en mars 2023. [source](https://en.wikipedia.org/wiki/UFC_285)
+- [ ] **champ-fac-003** — Qui a pris la ceinture des poids moyens à Dricus du Plessis en août 2025 ?
+  - ✓ Khamzat Chimaev  ✗ Israel Adesanya · Sean Strickland · Nassourdine Imavov
+  - Khamzat Chimaev a dominé Dricus du Plessis aux points à l'UFC 319, à Chicago, pour devenir champion des moyens. [source](https://en.wikipedia.org/wiki/UFC_319)
+- [ ] **champ-fac-007** — Quelle championne de l'UFC avait auparavant remporté deux titres olympiques en judo ?
+  - ✓ Kayla Harrison  ✗ Ronda Rousey · Julianna Peña · Raquel Pennington
+  - Double championne olympique de judo (2012, 2016), Kayla Harrison a pris la ceinture des coqs à l'UFC 316 en 2025. [source](https://en.wikipedia.org/wiki/Kayla_Harrison)
+- [ ] **champ-fac-010** — Quel Anglais est devenu champion des poids lourds de l'UFC en 2025, après la retraite de Jon Jones ?
+  - ✓ Tom Aspinall  ✗ Curtis Blaydes · Ciryl Gane · Sergei Pavlovich
+  - Champion intérimaire depuis 2023, Tom Aspinall a été promu champion incontesté en juin 2025. [source](https://en.wikipedia.org/wiki/Tom_Aspinall)
+- [ ] **champ-fac-013** — Quel ancien champion des plumes a conquis la ceinture des poids légers en juin 2025 ?
+  - ✓ Ilia Topuria  ✗ Alexander Volkanovski · Max Holloway · Brian Ortega
+  - Ilia Topuria a mis Charles Oliveira K.-O. au 1er round de l'UFC 317 pour remporter la ceinture vacante des légers. [source](https://en.wikipedia.org/wiki/UFC_317)
+- [ ] **champ-fac-015** — Quel futur champion de l'UFC a été sacré champion olympique de lutte libre à Pékin, en 2008 ?
+  - ✓ Henry Cejudo  ✗ Daniel Cormier · Ben Askren · Yoel Romero
+  - Henry Cejudo a gagné l'or olympique de lutte libre en 2008, avant de devenir champion de l'UFC. [source](https://en.wikipedia.org/wiki/Henry_Cejudo)
+- [ ] **champ-fac-016** — Quel est le surnom de l'Australien Alexander Volkanovski, champion des poids plumes ?
+  - ✓ The Great  ✗ Blessed · The Korean Zombie · El Matador
+  - Alexander Volkanovski est surnommé « The Great », en clin d'œil à Alexandre le Grand. [source](https://en.wikipedia.org/wiki/Alexander_Volkanovski)
+- [ ] **champ-fac-017** — Quel champion des poids mi-lourds à la crête iroquoise était surnommé « The Iceman » ?
+  - ✓ Chuck Liddell  ✗ Tito Ortiz · Randy Couture · Quinton Jackson
+  - Chuck Liddell, champion des mi-lourds de 2005 à 2007, était surnommé « The Iceman ». [source](https://en.wikipedia.org/wiki/Chuck_Liddell)
+- [ ] **champ-fac-018** — Quel est le surnom de Demetrious Johnson, longtemps champion des poids mouches ?
+  - ✓ Mighty Mouse  ✗ Triple C · Deus da Guerra · The Assassin Baby
+  - Demetrious Johnson est surnommé « Mighty Mouse », en référence au super-héros souris des dessins animés. [source](https://en.wikipedia.org/wiki/Demetrious_Johnson)
+- [ ] **champ-fac-019** — Quel ami et partenaire d'entraînement de Khabib a remporté la ceinture des poids légers en 2022 ?
+  - ✓ Islam Makhachev  ✗ Charles Oliveira · Justin Gaethje · Dustin Poirier
+  - Islam Makhachev a soumis Charles Oliveira à l'UFC 280 en octobre 2022 pour devenir champion des légers. [source](https://en.wikipedia.org/wiki/UFC_280)
+- [ ] **champ-fac-021** — Quel champion des poids lourds de l'UFC était aussi pompier dans l'Ohio ?
+  - ✓ Stipe Miocic  ✗ Cain Velasquez · Daniel Cormier · Francis Ngannou
+  - Stipe Miocic, champion des lourds à deux reprises, a continué d'exercer comme pompier près de Cleveland. [source](https://en.wikipedia.org/wiki/Stipe_Miocic)
+- [ ] **champ-fac-022** — Quel combattant surnommé « Suga » a remporté la ceinture des poids coqs en 2023 ?
+  - ✓ Sean O'Malley  ✗ Aljamain Sterling · Merab Dvalishvili · Petr Yan
+  - Sean « Suga » O'Malley a battu Aljamain Sterling à l'UFC 292 en août 2023 pour devenir champion des coqs. [source](https://en.wikipedia.org/wiki/UFC_292)
+- [ ] **champ-fac-023** — Quel Britannique a pris la ceinture des welters à Kamaru Usman grâce à un high kick en 2022 ?
+  - ✓ Leon Edwards  ✗ Colby Covington · Gilbert Burns · Belal Muhammad
+  - Leon Edwards a mis Kamaru Usman K.-O. d'un high kick dans le dernier round de l'UFC 278, en août 2022. [source](https://en.wikipedia.org/wiki/UFC_278)
+- [ ] **champ-fac-024** — Qui est devenue en 2019 la première championne chinoise de l'histoire de l'UFC ?
+  - ✓ Zhang Weili  ✗ Yan Xiaonan · Rose Namajunas · Joanna Jędrzejczyk
+  - Zhang Weili a battu Jéssica Andrade à Shenzhen en août 2019 pour devenir la première championne chinoise de l'UFC. [source](https://en.wikipedia.org/wiki/Zhang_Weili)
 - [ ] **champ-moy-001** — Contre qui Alex Pereira a-t-il récupéré la ceinture des mi-lourds en octobre 2025 ?
   - ✓ Magomed Ankalaev  ✗ Jiří Procházka · Jamahal Hill · Khalil Rountree
   - Battu par Magomed Ankalaev en mars 2025, Alex Pereira l'a mis K.-O. dès le 1er round de leur revanche à l'UFC 320. [source](https://en.wikipedia.org/wiki/UFC_320)
@@ -750,9 +982,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-moy-008** — Qui est devenu le premier champion des poids mouches de l'UFC, en 2012 ?
   - ✓ Demetrious Johnson  ✗ Joseph Benavidez · John Dodson · Ian McCall
   - Demetrious Johnson a battu Joseph Benavidez en finale du tournoi inaugural, à l'UFC 152 en septembre 2012. [source](https://en.wikipedia.org/wiki/UFC_152)
-- [ ] **champ-moy-009** — Contre qui Tony Ferguson a-t-il remporté la ceinture intérimaire des poids légers en 2017 ?
-  - ✓ Kevin Lee  ✗ Edson Barboza · Rafael dos Anjos · Anthony Pettis
-  - Tony Ferguson a soumis Kevin Lee par triangle au 3e round de l'UFC 216, en octobre 2017. [source](https://en.wikipedia.org/wiki/UFC_216)
 - [ ] **champ-moy-010** — Contre qui Ciryl Gane a-t-il disputé un combat d'unification de la ceinture des lourds en janvier 2022 ?
   - ✓ Francis Ngannou  ✗ Stipe Miocic · Derrick Lewis · Curtis Blaydes
   - À l'UFC 270, le champion Francis Ngannou a battu le champion intérimaire Ciryl Gane par décision unanime. [source](https://en.wikipedia.org/wiki/UFC_270)
@@ -765,9 +994,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-moy-013** — Contre qui Islam Makhachev a-t-il remporté la ceinture des poids welters en novembre 2025 ?
   - ✓ Jack Della Maddalena  ✗ Belal Muhammad · Shavkat Rakhmonov · Leon Edwards
   - Islam Makhachev a battu Jack Della Maddalena aux points à l'UFC 322, au Madison Square Garden. [source](https://en.wikipedia.org/wiki/UFC_322)
-- [ ] **champ-moy-014** — Contre qui Ronda Rousey a-t-elle disputé son dernier combat, pour la ceinture des coqs fin 2016 ?
-  - ✓ Amanda Nunes  ✗ Holly Holm · Miesha Tate · Cat Zingano
-  - Ronda Rousey a perdu en 48 secondes face à la championne Amanda Nunes à l'UFC 207, en décembre 2016. [source](https://en.wikipedia.org/wiki/UFC_207)
 - [ ] **champ-moy-015** — Qui a pris la ceinture des poids pailles à Zhang Weili en avril 2021 ?
   - ✓ Rose Namajunas  ✗ Carla Esparza · Joanna Jędrzejczyk · Tatiana Suarez
   - Rose Namajunas a mis Zhang Weili K.-O. d'un high kick dès le 1er round de l'UFC 261, en avril 2021. [source](https://en.wikipedia.org/wiki/UFC_261)
@@ -804,86 +1030,112 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 
 ### Records & stats
 
-- [ ] **rec-moy-012** — Avec quel bilan Amanda Nunes a-t-elle annoncé sa retraite après l'UFC 289 en 2023 ?
-  - ✓ 23-5  ✗ 22-5 · 23-4 · 21-5
-  - Après sa victoire contre Irene Aldana, Nunes s'est retirée avec 23 victoires et 5 défaites, double championne en titre. [source](https://en.wikipedia.org/wiki/Amanda_Nunes)
-  - ⚑ Nunes est revenue en 2026 (UFC 324) : son bilan actuel diffère, la question porte bien sur sa retraite de 2023.
-- [ ] **rec-moy-023** — Quel combattant a remporté 5 combats à l'UFC en 2020, égalant le record de victoires sur une année ?
-  - ✓ Kevin Holland  ✗ Khamzat Chimaev · Neil Magny · Kamaru Usman
-  - Kevin Holland a gagné 5 fois en 2020, égalant Roger Huerta (2007) et Neil Magny (2014). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-  - ⚑ Le tableau Wikipédia « Most bouts or wins in a calendar year » est marqué « citation needed » : confirmer le 5-0 de Holland en 2020.
+- [ ] **rec-dif-001** — À l'UFC 239 en 2019, qui a battu Ben Askren par K.-O. en 5 secondes, un record de rapidité à l'UFC ?
+  - ✓ Jorge Masvidal  ✗ Kamaru Usman · Colby Covington · Leon Edwards
+  - Jorge Masvidal a mis Ben Askren K.-O. d'un coup de genou sauté dès l'ouverture du combat. [source](https://en.wikipedia.org/wiki/UFC_239)
+- [ ] **rec-dif-023** — À la fin de 2025, quel champion détenait le plus long règne unique chez les poids légers de l'UFC ?
+  - ✓ Khabib Nurmagomedov  ✗ Islam Makhachev · B.J. Penn · Frankie Edgar
+  - Khabib a régné 1 077 jours, d'avril 2018 à sa renonciation au titre en 2021. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-002** — Quelle combattante a soumis Cat Zingano en 14 secondes à l'UFC 184 en 2015 ?
+  - ✓ Ronda Rousey  ✗ Miesha Tate · Holly Holm · Amanda Nunes
+  - Ronda Rousey l'a soumise par clé de bras en 14 secondes, la soumission la plus rapide d'un combat de titre de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-004** — Quel champion a battu le record de défenses de titre consécutives en 2017, avec une 11e défense ?
+  - ✓ Demetrious Johnson  ✗ Anderson Silva · Georges St-Pierre · Jon Jones
+  - En battant Ray Borg à l'UFC 216, Demetrious Johnson a dépassé les 10 défenses consécutives d'Anderson Silva. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-005** — À la fin de 2024, qui détenait le record de victoires consécutives à l'UFC, avec 16 succès ?
+  - ✓ Anderson Silva  ✗ Kamaru Usman · Khabib Nurmagomedov · Georges St-Pierre
+  - Anderson Silva a enchaîné 16 victoires entre 2006 et 2013 ; Islam Makhachev l'a égalé en novembre 2025. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-007** — Dans quel pays s'est tenu l'UFC 243 en 2019, record d'affluence de l'UFC avec 57 127 spectateurs ?
+  - ✓ Australie  ✗ Canada · Brésil · États-Unis
+  - Whittaker contre Adesanya a réuni 57 127 spectateurs au Marvel Stadium de Melbourne, en Australie. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-008** — En 2025, quel combattant détenait le record de victoires en combat de titre à l'UFC, avec 16 ?
+  - ✓ Jon Jones  ✗ Georges St-Pierre · Demetrious Johnson · Anderson Silva
+  - Jon Jones comptait 16 victoires en combat de titre (14 chez les mi-lourds, 2 chez les lourds), devant GSP (13). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-009** — En 2025, quel combattant détenait le record de victoires par soumission à l'UFC ?
+  - ✓ Charles Oliveira  ✗ Jim Miller · Demian Maia · Royce Gracie
+  - Charles Oliveira est le recordman des soumissions à l'UFC, nettement devant Jim Miller. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-010** — En 2025, quel combattant détenait le record de victoires par K.-O. à l'UFC ?
+  - ✓ Derrick Lewis  ✗ Matt Brown · Vitor Belfort · Francis Ngannou
+  - Le poids lourd Derrick Lewis détient le record de K.-O. de l'UFC, devant Matt Brown. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-012** — En 2025, quel combattant détenait le record de frappes significatives portées en carrière à l'UFC ?
+  - ✓ Max Holloway  ✗ Sean Strickland · Alexander Volkanovski · Frankie Edgar
+  - Max Holloway est de loin le recordman des frappes significatives portées à l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-013** — En 2025, quel combattant détenait le record d'amenées au sol réussies en carrière à l'UFC ?
+  - ✓ Merab Dvalishvili  ✗ Georges St-Pierre · Khabib Nurmagomedov · Demetrious Johnson
+  - Merab Dvalishvili a dépassé Georges St-Pierre et a été le premier à franchir la barre des 100 amenées au sol à l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-014** — À 43 ans, quel vétéran est redevenu champion des lourds en battant Tim Sylvia à l'UFC 68 en 2007 ?
+  - ✓ Randy Couture  ✗ Chuck Liddell · Dan Henderson · Ken Shamrock
+  - Randy Couture, né en 1963, a repris la ceinture des lourds à 43 ans, ce qui en fait le plus vieux champion de l'UFC. [source](https://en.wikipedia.org/wiki/Randy_Couture)
+- [ ] **rec-fac-015** — Qui a mis K.-O. Cris Cyborg en 51 secondes à l'UFC 232 en 2018 ?
+  - ✓ Amanda Nunes  ✗ Holly Holm · Germaine de Randamie · Ronda Rousey
+  - Amanda Nunes a battu Cyborg en 51 secondes pour prendre la ceinture des poids plumes féminines. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-016** — En 2025, quel combattant détenait le record de victoires consécutives chez les welters de l'UFC, avec 15 ?
+  - ✓ Kamaru Usman  ✗ Georges St-Pierre · Belal Muhammad · Leon Edwards
+  - Kamaru Usman a enchaîné 15 victoires chez les welters entre 2015 et 2021, record de la catégorie. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-017** — Qui a mis fin en 2021 à la série de 12 victoires consécutives d'Amanda Nunes ?
+  - ✓ Julianna Peña  ✗ Holly Holm · Valentina Shevchenko · Germaine de Randamie
+  - Julianna Peña a soumis Amanda Nunes à l'UFC 269 en décembre 2021, l'une des plus grosses surprises de l'histoire de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-018** — En 2009, contre qui Jon Jones a-t-il été disqualifié pour des coups de coude interdits ?
+  - ✓ Matt Hamill  ✗ Stephan Bonnar · Brandon Vera · Vladimir Matyushenko
+  - Jones dominait Matt Hamill mais a été disqualifié pour des coups de coude illégaux : la seule défaite de son bilan à sa retraite en 2025. [source](https://en.wikipedia.org/wiki/Jon_Jones)
+- [ ] **rec-fac-021** — En 2025, quel combattant détenait le record du plus grand nombre de combats disputés à l'UFC ?
+  - ✓ Jim Miller  ✗ Donald Cerrone · Andrei Arlovski · Clay Guida
+  - Jim Miller est devenu en 2022 le premier combattant à atteindre 40 combats à l'UFC et a continué d'allonger ce record. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
+- [ ] **rec-fac-023** — Qui a été le premier à mettre Max Holloway K.-O., à l'UFC 308 en 2024 ?
+  - ✓ Ilia Topuria  ✗ Alexander Volkanovski · Dustin Poirier · Justin Gaethje
+  - Ilia Topuria a infligé à Holloway le premier K.-O. de sa carrière, au 3e round, pour conserver le titre des poids plumes. [source](https://en.wikipedia.org/wiki/Max_Holloway)
+- [ ] **rec-fac-025** — Quel champion des mi-lourds a enchaîné 7 victoires consécutives par K.-O. à l'UFC entre 2004 et 2006 ?
+  - ✓ Chuck Liddell  ✗ Tito Ortiz · Randy Couture · Quinton Jackson
+  - Chuck Liddell a aligné 7 victoires de suite par K.-O. entre 2004 et 2006, au sommet de son règne chez les mi-lourds. [source](https://en.wikipedia.org/wiki/Chuck_Liddell)
 - [ ] **rec-moy-001** — Avec quel bilan Khabib Nurmagomedov a-t-il pris sa retraite en 2020 ?
-  - ✓ 29-0  ✗ 28-0 · 30-0 · 29-1
+  - ✓ 29-0  ✗ 30-0 · 31-0 · 30-1
   - Khabib a pris sa retraite invaincu après sa victoire contre Justin Gaethje à l'UFC 254, en octobre 2020. [source](https://fr.wikipedia.org/wiki/Khabib_Nurmagomedov)
-- [ ] **rec-moy-002** — Qui partageait le record de victoires de l'UFC (23) avant d'être soumis par Jim Miller à l'UFC 276 en 2022 ?
-  - ✓ Donald Cerrone  ✗ Demian Maia · Michael Bisping · Andrei Arlovski
-  - En soumettant Donald Cerrone, Jim Miller a signé sa 24e victoire et est devenu seul détenteur du record de victoires à l'UFC. [source](https://en.wikipedia.org/wiki/Jim_Miller_(fighter))
 - [ ] **rec-moy-003** — En 2025, quel combattant détenait le record de bonus Performance of the Night à l'UFC ?
   - ✓ Charles Oliveira  ✗ Kevin Holland · Conor McGregor · Paul Craig
   - Charles Oliveira est aussi le combattant le plus primé de l'UFC, avec le plus de bonus Performance of the Night. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-moy-004** — En battant Francis Ngannou en 2018, quel champion est devenu le premier à défendre trois fois de suite la ceinture des lourds ?
   - ✓ Stipe Miocic  ✗ Cain Velasquez · Brock Lesnar · Fabrício Werdum
   - Après Overeem et dos Santos, Stipe Miocic a battu Ngannou à l'UFC 220 pour une 3e défense consécutive, record des lourds. [source](https://en.wikipedia.org/wiki/Stipe_Miocic)
-- [ ] **rec-moy-005** — En 2025, quelle combattante détenait le record de victoires chez les femmes à l'UFC ?
-  - ✓ Jéssica Andrade  ✗ Amanda Nunes · Valentina Shevchenko · Joanna Jędrzejczyk
-  - Jéssica Andrade a dépassé Amanda Nunes à l'UFC 300 en 2024 en signant sa 17e victoire à l'UFC. [source](https://en.wikipedia.org/wiki/J%C3%A9ssica_Andrade)
-- [ ] **rec-moy-006** — Combien de tournois de l'UFC Royce Gracie a-t-il remportés dans les années 1990, un record ?
-  - ✓ 3  ✗ 2 · 4 · 5
-  - Royce Gracie a remporté trois tournois de l'UFC entre 1993 et 1994, un total qu'aucun autre combattant n'a égalé. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-007** — Avec quel bilan professionnel Ronda Rousey a-t-elle mis fin à sa carrière de MMA ?
-  - ✓ 12-2  ✗ 12-1 · 13-2 · 11-2
-  - Ronda Rousey a terminé avec 12 victoires et 2 défaites, deux revers subis consécutivement en 2015 et 2016. [source](https://en.wikipedia.org/wiki/Ronda_Rousey)
 - [ ] **rec-moy-008** — Qui a mis fin en 2020 à la série de 12 victoires consécutives de Tony Ferguson à l'UFC ?
   - ✓ Justin Gaethje  ✗ Charles Oliveira · Michael Chandler · Beneil Dariush
   - Justin Gaethje a battu Ferguson par arrêt au 5e round à l'UFC 249 pour le titre intérimaire des légers. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-009** — Quel combattant a mis K.-O. Mark Hominick en 7 secondes à l'UFC 140 en 2011 ?
-  - ✓ Chan Sung Jung  ✗ Dong Hyun Kim · Doo Ho Choi · Kang Kyung-ho
-  - « The Korean Zombie » a signé en 7 secondes le K.-O. le plus rapide de l'histoire des poids plumes de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-010** — Combien de fois Max Holloway a-t-il défendu la ceinture des plumes après l'avoir unifiée en 2017 ?
-  - ✓ 3  ✗ 2 · 4 · 5
-  - Max Holloway a défendu son titre contre José Aldo, Brian Ortega et Frankie Edgar avant de le perdre fin 2019. [source](https://en.wikipedia.org/wiki/Max_Holloway)
-- [ ] **rec-moy-011** — Combien de fois Matt Hughes a-t-il défendu la ceinture des welters lors de son premier règne, entre 2001 et 2004 ?
-  - ✓ 5  ✗ 3 · 4 · 6
-  - Matt Hughes a battu Sakurai, Newton, Castillo, Sherk et Trigg avant de perdre son titre en janvier 2004. [source](https://en.wikipedia.org/wiki/Matt_Hughes_(fighter))
-- [ ] **rec-moy-013** — Combien de fois Aljamain Sterling a-t-il défendu la ceinture des coqs entre 2022 et 2023 ?
-  - ✓ 3  ✗ 1 · 2 · 4
-  - Aljamain Sterling a défendu son titre contre Petr Yan, T.J. Dillashaw puis Henry Cejudo. [source](https://en.wikipedia.org/wiki/Aljamain_Sterling)
 - [ ] **rec-moy-014** — En juin 2026, quel combattant a infligé à Ilia Topuria, alors invaincu en 17 combats, sa première défaite ?
   - ✓ Justin Gaethje  ✗ Charles Oliveira · Islam Makhachev · Arman Tsarukyan
   - Le coin d'Ilia Topuria a arrêté le combat après le 4e round face à Justin Gaethje, mettant fin à sa série de 17 victoires. [source](https://en.wikipedia.org/wiki/UFC_Freedom_250)
 - [ ] **rec-moy-015** — En 2025, quelle combattante détenait le record de défenses de titre consécutives chez les femmes, avec 7 ?
   - ✓ Valentina Shevchenko  ✗ Ronda Rousey · Amanda Nunes · Joanna Jędrzejczyk
   - Valentina Shevchenko a défendu 7 fois de suite la ceinture des poids mouches entre 2018 et 2022, devant Rousey (6). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-016** — Combien de défenses du titre des légers Islam Makhachev a-t-il réussies avant de laisser sa ceinture en 2025 ?
-  - ✓ 4  ✗ 3 · 5 · 6
-  - Makhachev a battu Volkanovski deux fois, Poirier et Moicano : 4 défenses, record de la catégorie des légers. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-017** — Combien de fois Khabib Nurmagomedov a-t-il défendu son titre des légers avant sa retraite ?
-  - ✓ 3  ✗ 2 · 4 · 5
-  - Khabib a défendu sa ceinture contre Conor McGregor, Dustin Poirier et Justin Gaethje. [source](https://en.wikipedia.org/wiki/Khabib_Nurmagomedov)
 - [ ] **rec-moy-018** — Contre qui Max Holloway a-t-il porté le record de 445 frappes significatives en un combat, en 2021 ?
   - ✓ Calvin Kattar  ✗ Yair Rodríguez · Arnold Allen · Frankie Edgar
   - En janvier 2021 à Abou Dhabi, Holloway a porté 445 frappes significatives à Calvin Kattar, record de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-moy-019** — En 2025, dans quelle salle l'UFC détenait-elle son record d'affluence aux États-Unis ?
   - ✓ Le Madison Square Garden  ✗ La T-Mobile Arena · Le United Center · L'American Airlines Center
   - L'UFC 281 (Adesanya contre Pereira) a réuni 20 845 spectateurs au Madison Square Garden de New York en 2022. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-020** — Avec quel bilan Daniel Cormier a-t-il pris sa retraite en 2020 ?
-  - ✓ 22-3 (1 NC)  ✗ 21-3 (1 NC) · 22-2 (1 NC) · 23-3 (1 NC)
-  - Cormier n'a perdu que contre Jon Jones et Stipe Miocic ; sa 2e défaite contre Jones a été changée en sans décision. [source](https://en.wikipedia.org/wiki/Daniel_Cormier)
 - [ ] **rec-moy-021** — Quel combattant a obtenu en 2025 son 14e bonus en seulement 14 combats à l'UFC ?
   - ✓ Justin Gaethje  ✗ Dustin Poirier · Max Holloway · Charles Oliveira
   - Après sa victoire contre Rafael Fiziev à l'UFC 313, Gaethje comptait 14 bonus pour 14 combats à l'UFC. [source](https://cagesidepress.com/2025/03/09/justin-gaethje-pockets-14th-post-fight-bonus-in-14th-ufc-fight)
-- [ ] **rec-moy-022** — Combien de fois Israel Adesanya a-t-il défendu la ceinture des moyens lors de son premier règne ?
-  - ✓ 5  ✗ 3 · 4 · 6
-  - De 2020 à 2022, Adesanya a battu Romero, Costa, Vettori, Whittaker et Cannonier. [source](https://en.wikipedia.org/wiki/Israel_Adesanya)
 - [ ] **rec-moy-024** — Contre qui Merab Dvalishvili a-t-il réussi 20 amenées au sol en 2025, un record pour un combat de titre ?
   - ✓ Cory Sandhagen  ✗ Umar Nurmagomedov · Sean O'Malley · Petr Yan
   - À l'UFC 320, Merab a réussi 20 amenées au sol contre Sandhagen, battant les 16 de Sean Sherk en combat de titre. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-moy-025** — En 2022, quel combattant a dépassé Georges St-Pierre au record de victoires chez les poids mi-moyens ?
-  - ✓ Neil Magny  ✗ Kamaru Usman · Matt Brown · Robbie Lawler
-  - En battant Daniel Rodriguez en novembre 2022, Neil Magny a signé sa 20e victoire chez les mi-moyens, une de plus que GSP. [source](https://en.wikipedia.org/wiki/Neil_Magny)
 
 ### Règles, techniques & événements
 
+- [ ] **regl-dif-025** — Dans quel coin de l'Octogone se place généralement le champion ou le combattant le mieux classé ?
+  - ✓ Le coin rouge  ✗ Le coin bleu · Le coin blanc · Le coin noir
+  - Par convention, le champion ou le combattant favori occupe le coin rouge, et son adversaire le coin bleu. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts)
+  - ⚑ Convention bien établie mais source Wikipédia générale : vérifier qu'elle mentionne bien les coins rouge et bleu.
+- [ ] **regl-dif-019** — Lors d'un combat pour le titre, que se passe-t-il si le résultat est un match nul ?
+  - ✓ Le champion garde sa ceinture  ✗ La ceinture devient vacante · Un round de plus est disputé · Le défi est rejoué sous 30 jours
+  - En cas de match nul, le titre n'est pas perdu : le champion conserve sa ceinture. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
+- [ ] **regl-dif-022** — Quel équipementier a fourni les tenues de combat de l'UFC de 2015 à 2021, avant Venum ?
+  - ✓ Reebok  ✗ Nike · Under Armour · Adidas
+  - Reebok a habillé les combattants de l'UFC de 2015 à mars 2021 ; Venum a pris le relais en avril 2021. [source](https://en.wikipedia.org/wiki/Venum)
+- [ ] **regl-fac-009** — Comment appelle-t-on la position où le combattant sur le dos croise les jambes autour de la taille de l'adversaire ?
+  - ✓ La garde fermée  ✗ La montée · Le contrôle latéral · La garde papillon
+  - En garde fermée, le combattant au sol verrouille ses chevilles dans le dos de l'adversaire pour le contrôler. [source](https://en.wikipedia.org/wiki/Guard_(grappling))
+- [ ] **regl-fac-014** — Quel étranglement s'effectue en enserrant la tête et un bras de l'adversaire avec ses jambes ?
+  - ✓ Le triangle  ✗ La guillotine · La kimura · L'étranglement arrière
+  - Le triangle se forme avec les jambes autour du cou et d'un bras de l'adversaire, dessinant un triangle. [source](https://en.wikipedia.org/wiki/Triangle_choke)
 - [ ] **regl-moy-001** — Comment appelle-t-on une décision où deux juges désignent un vainqueur et le troisième juge l'autre combattant ?
   - ✓ Décision partagée  ✗ Décision unanime · Décision majoritaire · Décision technique
   - Une décision partagée (split decision) survient quand les juges sont divisés à deux contre un. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
@@ -902,15 +1154,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-moy-006** — Quelle zone de la tête est interdite de frapper selon les règles unifiées du MMA ?
   - ✓ L'arrière du crâne  ✗ La tempe · Le menton · Le front
   - Les frappes à l'arrière de la tête, comme celles à la colonne vertébrale, figurent parmi les fautes des règles unifiées. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
-- [ ] **regl-moy-007** — Quelle est la limite de poids de la catégorie des poids plumes à l'UFC ?
-  - ✓ 145 livres (65,8 kg)  ✗ 135 livres (61,2 kg) · 155 livres (70,3 kg) · 140 livres (63,5 kg)
-  - Les poids plumes (featherweight) combattent jusqu'à 145 livres, soit 65,8 kg. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
-- [ ] **regl-moy-008** — Quelle est la limite de poids de la catégorie des poids welters à l'UFC ?
-  - ✓ 170 livres (77,1 kg)  ✗ 160 livres (72,6 kg) · 185 livres (83,9 kg) · 155 livres (70,3 kg)
-  - Les poids welters (welterweight) combattent jusqu'à 170 livres, soit 77,1 kg. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
-- [ ] **regl-moy-009** — Quelle est la limite de poids de la catégorie des poids mouches à l'UFC ?
-  - ✓ 125 livres (56,7 kg)  ✗ 115 livres (52,2 kg) · 120 livres (54,4 kg) · 135 livres (61,2 kg)
-  - Les poids mouches (flyweight) combattent jusqu'à 125 livres, soit 56,7 kg. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
 - [ ] **regl-moy-010** — Comment appelle-t-on la position où l'on se colle au dos de l'adversaire, les jambes en crochets autour de sa taille ?
   - ✓ Le contrôle du dos  ✗ La montée · La garde fermée · Le contrôle latéral
   - Le contrôle du dos (back control), crochets placés, est la position idéale pour tenter un étranglement. [source](https://en.wikipedia.org/wiki/Back_mount)
@@ -929,9 +1172,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-moy-015** — Comment appelle-t-on le coup de pied bas qui vise le mollet de l'adversaire ?
   - ✓ Le calf kick  ✗ Le head kick · Le front kick · Le body kick
   - Le calf kick est un low kick qui cible le mollet ; il s'est beaucoup répandu à l'UFC au début des années 2020. [source](https://en.wikipedia.org/wiki/Low_kick)
-- [ ] **regl-moy-016** — Comment appelle-t-on la position de corps-à-corps debout où les deux combattants s'agrippent ?
-  - ✓ Le clinch  ✗ Le sprawl · La garde · Le mount
-  - Le clinch est le combat rapproché debout, souvent contre la cage, où l'on frappe et tente des projections. [source](https://en.wikipedia.org/wiki/Clinch_fighting)
 - [ ] **regl-moy-017** — Quelle position au sol consiste à contrôler l'adversaire allongé sur le dos, perpendiculaire à lui, torse contre torse ?
   - ✓ Le contrôle latéral  ✗ La montée (mount) · La garde fermée · Le contrôle du dos
   - Le contrôle latéral (side control) place le combattant en travers du torse de l'adversaire, hors de sa garde. [source](https://en.wikipedia.org/wiki/Side_control)
@@ -953,23 +1193,104 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-moy-023** — Quelle émission, lancée en 2017, offre des contrats UFC aux combattants les plus impressionnants de chaque soirée ?
   - ✓ Dana White's Contender Series  ✗ The Ultimate Fighter · UFC Next Generation · Road to the Octagon
   - Lancé en 2017, le Dana White's Contender Series permet à des espoirs de décrocher un contrat UFC à l'issue de leur combat. [source](https://en.wikipedia.org/wiki/Dana_White%27s_Contender_Series)
-- [ ] **regl-moy-024** — Combien pèsent généralement les gants portés par les combattants de l'UFC ?
-  - ✓ 4 onces  ✗ 8 onces · 10 onces · 16 onces
-  - Les gants de l'UFC pèsent environ 4 onces (113 g), bien moins que les gants de boxe de 8 à 10 onces. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts)
-- [ ] **regl-moy-025** — En 2025, combien de catégories de poids masculines comptait l'UFC ?
-  - ✓ 8  ✗ 7 · 9 · 10
-  - Des mouches aux lourds, l'UFC comptait 8 catégories masculines en 2025. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_weight_classes)
 
-## Facile (100)
+### CV des combattants
+
+- [ ] **cv-sport-018** — Quel art martial Lyoto Machida a-t-il appris dès l'âge de 3 ans auprès de son père, maître japonais ?
+  - ✓ Karaté  ✗ Taekwondo · Boxe · Kung-fu
+  - Fils d'un maître de karaté Shotokan, Lyoto Machida a commencé le karaté à 3 ans et était ceinture noire à 13 ans. [source](https://en.wikipedia.org/wiki/Lyoto_Machida)
+- [ ] **cv-sport-019** — Dans quel sport Yoel Romero a-t-il remporté la médaille d'argent olympique en 2000 avec Cuba ?
+  - ✓ Lutte  ✗ Boxe · Judo · Haltérophilie
+  - Yoel Romero, champion du monde de lutte libre en 1999, a pris l'argent aux JO de Sydney en 2000. [source](https://en.wikipedia.org/wiki/Yoel_Romero)
+- [ ] **cv-sport-020** — Dans quel sport Kamaru Usman a-t-il été champion universitaire NCAA (Division II) en 2010 ?
+  - ✓ Lutte  ✗ Football américain · Athlétisme · Boxe
+  - Kamaru Usman a été champion NCAA Division II de lutte en 2010, et trois fois All-American. [source](https://en.wikipedia.org/wiki/Kamaru_Usman)
+- [ ] **cv-sport-021** — Avant le MMA, quel sport Cain Velasquez pratiquait-il à l'université d'Arizona State ?
+  - ✓ Lutte  ✗ Boxe · Judo · Haltérophilie
+  - Cain Velasquez a lutté trois saisons pour Arizona State, terminant 5e puis 4e du championnat national. [source](https://en.wikipedia.org/wiki/Cain_Velasquez)
+- [ ] **cv-sport-022** — Dans quelle discipline Zhang Weili a-t-elle été plusieurs fois championne de sa province du Hebei ?
+  - ✓ Sanda  ✗ Taekwondo · Judo · Karaté
+  - Entrée à 12 ans dans une école d'arts martiaux, Zhang Weili a remporté plusieurs titres de sanda dans le Hebei. [source](https://en.wikipedia.org/wiki/Zhang_Weili)
+- [ ] **cv-sport-023** — Avant de briller en MMA, dans quel sport Mirko Cro Cop s'est-il fait un nom au K-1 ?
+  - ✓ Kickboxing  ✗ Boxe · Judo · Lutte
+  - Mirko Cro Cop est considéré comme l'un des meilleurs kickboxeurs poids lourds de l'histoire du K-1. [source](https://en.wikipedia.org/wiki/Mirko_Cro_Cop)
+- [ ] **cv-sport-024** — Quel champion de l'UFC a été sacré champion du monde de sambo de combat en 2016 ?
+  - ✓ Islam Makhachev  ✗ Charles Oliveira · Justin Gaethje · Dustin Poirier
+  - Islam Makhachev a remporté l'or aux championnats du monde de sambo de combat FIAS en novembre 2016. [source](https://en.wikipedia.org/wiki/Islam_Makhachev)
+- [ ] **cv-sport-025** — Dans quel sport Khamzat Chimaev a-t-il été trois fois champion de Suède avant le MMA ?
+  - ✓ Lutte  ✗ Judo · Boxe · Sambo
+  - Khamzat Chimaev a été trois fois champion de Suède de lutte libre (2016, 2017 et 2018). [source](https://en.wikipedia.org/wiki/Khamzat_Chimaev)
+- [ ] **cv-sport-026** — Dans quel sport Petr Yan a-t-il obtenu le titre de maître des sports en Russie avant le MMA ?
+  - ✓ Boxe  ✗ Sambo · Lutte · Judo
+  - Petr Yan s'est entraîné huit ans en boxe et a obtenu le rang de maître des sports dans la catégorie des 64 kg. [source](https://en.wikipedia.org/wiki/Petr_Yan)
+- [ ] **cv-sport-027** — Dans quel sport Joanna Jędrzejczyk a-t-elle été plusieurs fois championne du monde amateur IFMA ?
+  - ✓ Muay-thaï  ✗ Judo · Boxe · Lutte
+  - Joanna Jędrzejczyk a remporté cinq titres mondiaux IFMA de muay-thaï consécutifs, de 2009 à 2013. [source](https://en.wikipedia.org/wiki/Joanna_J%C4%99drzejczyk)
+- [ ] **cv-sport-028** — Quel art martial Yair Rodríguez a-t-il commencé à l'âge de 5 ans au Mexique ?
+  - ✓ Taekwondo  ✗ Karaté · Boxe · Lutte
+  - Yair Rodríguez a débuté le taekwondo à cinq ans à Parral, dans l'État de Chihuahua. [source](https://en.wikipedia.org/wiki/Yair_Rodr%C3%ADguez)
+- [ ] **cv-sport-029** — Quel sport de combat Edson Barboza a-t-il pratiqué dès 8 ans, avant de rejoindre l'UFC ?
+  - ✓ Muay-thaï  ✗ Taekwondo · Capoeira · Karaté
+  - Edson Barboza a commencé le muay-thaï à 8 ans et y affiche un bilan professionnel de 25 victoires pour 3 défaites. [source](https://en.wikipedia.org/wiki/Edson_Barboza)
+- [ ] **cv-sport-030** — Le père de Stephen « Wonderboy » Thompson dirige une école de quel art martial ?
+  - ✓ Karaté  ✗ Taekwondo · Judo · Kung-fu
+  - Ray Thompson tient l'école Upstate Karate, où son fils a commencé à s'entraîner dès l'âge de 3 ans. [source](https://en.wikipedia.org/wiki/Stephen_Thompson_(fighter))
+- [ ] **cv-sport-031** — Quel combattant de l'UFC a été triple champion NCAA de lutte avec Penn State ?
+  - ✓ Bo Nickal  ✗ Ikram Aliskerov · Brendan Allen · Paulo Costa
+  - Bo Nickal a été trois fois champion NCAA Division I de lutte avec l'université Penn State. [source](https://en.wikipedia.org/wiki/Bo_Nickal)
+- [ ] **cv-sport-032** — Quel ancien champion des welters de l'UFC a été double All-American en lutte à l'université du Missouri ?
+  - ✓ Tyron Woodley  ✗ Robbie Lawler · Johny Hendricks · Carlos Condit
+  - Tyron Woodley a été All-American en lutte en 2003 et 2005 avec les Missouri Tigers. [source](https://en.wikipedia.org/wiki/Tyron_Woodley)
+- [ ] **cv-sport-033** — Dans quel sport Justin Gaethje a-t-il été All-American en NCAA Division I avec Northern Colorado ?
+  - ✓ Lutte  ✗ Boxe · Judo · Rugby
+  - Justin Gaethje a terminé 7e du championnat NCAA de lutte en 2010, devenant All-American. [source](https://en.wikipedia.org/wiki/Justin_Gaethje)
+- [ ] **cv-sport-034** — Quel combattant de l'UFC a été All-American en lutte à l'université d'Oregon State ?
+  - ✓ Colby Covington  ✗ Jorge Masvidal · Leon Edwards · Gilbert Burns
+  - Colby Covington a été All-American et double champion de la conférence Pac-10 en lutte avec Oregon State. [source](https://en.wikipedia.org/wiki/Colby_Covington)
+- [ ] **cv-sport-035** — Avant de devenir un welter de premier plan à l'UFC, dans quelle discipline Gilbert Burns a-t-il été champion du monde ?
+  - ✓ Jiu-jitsu brésilien  ✗ Judo · Lutte · Muay-thaï
+  - Gilbert Burns est champion du monde IBJJF de jiu-jitsu brésilien, en kimono et sans kimono. [source](https://en.wikipedia.org/wiki/Gilbert_Burns)
+- [ ] **cv-sport-036** — Quelle combattante des poids pailles de l'UFC est une ancienne championne du monde de jiu-jitsu brésilien ?
+  - ✓ Mackenzie Dern  ✗ Zhang Weili · Rose Namajunas · Tatiana Suarez
+  - Mackenzie Dern a été championne du monde de jiu-jitsu brésilien en ceinture noire avant de passer au MMA. [source](https://en.wikipedia.org/wiki/Mackenzie_Dern)
+- [ ] **cv-sport-037** — Avant le MMA, dans quel sport de combat Ciryl Gane a-t-il fait ses débuts professionnels ?
+  - ✓ Muay-thaï  ✗ Boxe · Judo · Karaté
+  - Ciryl Gane a découvert le muay-thaï à Paris et a remporté un titre national dès son premier combat professionnel. [source](https://en.wikipedia.org/wiki/Ciryl_Gane)
+- [ ] **cv-sport-038** — Grand spécialiste du sol à l'UFC, Demian Maia a remporté la Coupe du monde de quelle discipline ?
+  - ✓ Jiu-jitsu brésilien  ✗ Lutte gréco-romaine · Luta livre · Judo
+  - Demian Maia a remporté la Coupe du monde de jiu-jitsu et l'ADCC, et a défié pour le titre UFC en 2010 et 2017. [source](https://en.wikipedia.org/wiki/Demian_Maia)
+- [ ] **cv-sport-039** — Quel champion du monde de jiu-jitsu brésilien a soumis Cain Velasquez en 2015 pour unifier le titre poids lourd ?
+  - ✓ Fabrício Werdum  ✗ Junior dos Santos · Stipe Miocic · Frank Mir
+  - Champion du monde IBJJF en 2004, Werdum a soumis Velasquez par guillotine à l'UFC 188 à Mexico. [source](https://en.wikipedia.org/wiki/Fabr%C3%ADcio_Werdum)
+- [ ] **cv-sport-040** — Dans quel sport Tai Tuivasa avait-il signé chez les Sydney Roosters avant de se lancer dans le MMA ?
+  - ✓ Rugby à XIII  ✗ Rugby à XV · Football australien · Football
+  - Tai Tuivasa a été recruté par le club de rugby à XIII des Sydney Roosters en 2010 avant d'abandonner ce sport. [source](https://en.wikipedia.org/wiki/Tai_Tuivasa)
+- [ ] **cv-sport-041** — Dans quel sport Greg Hardy a-t-il joué six saisons en professionnel avant le MMA ?
+  - ✓ Football américain  ✗ Basket-ball · Baseball · Hockey sur glace
+  - Greg Hardy a joué six saisons en NFL, principalement comme defensive end des Carolina Panthers. [source](https://en.wikipedia.org/wiki/Greg_Hardy)
+- [ ] **cv-sport-042** — En 2012, dans quel sport Dricus du Plessis a-t-il décroché l'or aux championnats du monde WAKO ?
+  - ✓ Kickboxing  ✗ Judo · Lutte · Boxe
+  - À 17 ans, Dricus du Plessis a remporté l'or en kickboxing K-1 aux Mondiaux WAKO, une première pour l'Afrique du Sud. [source](https://en.wikipedia.org/wiki/Dricus_du_Plessis)
+- [ ] **cv-sport-044** — Randy Couture a été trois fois remplaçant de l'équipe olympique américaine dans quel sport ?
+  - ✓ Lutte  ✗ Judo · Boxe · Haltérophilie
+  - Randy Couture a été remplaçant de l'équipe olympique de lutte en 1988, 1992 et 1996. [source](https://en.wikipedia.org/wiki/Randy_Couture)
+- [ ] **cv-sport-045** — Avant le MMA, dans quel sport Matt Hughes a-t-il été double All-American à Eastern Illinois ?
+  - ✓ Lutte  ✗ Boxe · Judo · Basket-ball
+  - Matt Hughes a été deux fois All-American en lutte NCAA Division I avec Eastern Illinois (1996 et 1997). [source](https://en.wikipedia.org/wiki/Matt_Hughes_(fighter))
+- [ ] **cv-sport-046** — Avant de défier Anderson Silva, dans quel sport Chael Sonnen a-t-il été All-American à l'université d'Oregon ?
+  - ✓ Lutte  ✗ Boxe · Judo · Sambo
+  - Chael Sonnen a été All-American en lutte NCAA Division I avec l'université d'Oregon en 1998. [source](https://en.wikipedia.org/wiki/Chael_Sonnen)
+- [ ] **cv-sport-047** — Dans quel sport Aljamain Sterling a-t-il été double All-American (Division III) à Cortland ?
+  - ✓ Lutte  ✗ Boxe · Kickboxing · Judo
+  - Aljamain Sterling a été deux fois All-American de lutte en NCAA Division III avec Cortland. [source](https://en.wikipedia.org/wiki/Aljamain_Sterling)
+
+## Facile (74)
 
 ### Histoire & légendes
 
 - [ ] **hist-fac-001** — Quel dirigeant est devenu président de l'UFC lors de son rachat par Zuffa ?
   - ✓ Dana White  ✗ Joe Rogan · Bruce Buffer · Ari Emanuel
   - Dana White a pris la présidence de l'UFC en 2001, au moment du rachat par Zuffa, et en est devenu le visage. [source](https://en.wikipedia.org/wiki/Dana_White)
-- [ ] **hist-fac-002** — Quelle famille brésilienne de jiu-jitsu est à l'origine de la création de l'UFC en 1993 ?
-  - ✓ Les Gracie  ✗ Les Machida · Les Nogueira · Les Silva
-  - Rorion Gracie a cofondé l'UFC avec Art Davie pour démontrer l'efficacité du jiu-jitsu de sa famille. [source](https://en.wikipedia.org/wiki/UFC_1)
 - [ ] **hist-fac-003** — Après sa carrière à l'UFC, quelle ancienne championne est devenue une star du catch à la WWE en 2018 ?
   - ✓ Ronda Rousey  ✗ Miesha Tate · Holly Holm · Cris Cyborg
   - Ronda Rousey a fait ses débuts à la WWE lors du Royal Rumble de janvier 2018. [source](https://en.wikipedia.org/wiki/Ronda_Rousey)
@@ -988,27 +1309,12 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-fac-008** — Quel couvre-chef traditionnel du Caucase Khabib Nurmagomedov portait-il lors de ses entrées dans l'Octogone ?
   - ✓ Une papakha  ✗ Un turban · Une kippa · Un fez
   - Khabib entrait coiffé d'une papakha, le bonnet en laine de mouton porté traditionnellement au Daghestan. [source](https://en.wikipedia.org/wiki/Khabib_Nurmagomedov)
-- [ ] **hist-fac-009** — Quelle organisation japonaise de MMA a été rachetée par les propriétaires de l'UFC en 2007 ?
-  - ✓ Pride  ✗ K-1 · Dream · Shooto
-  - Les frères Fertitta, propriétaires de l'UFC, ont racheté Pride en 2007 ; l'organisation a cessé ses activités peu après. [source](https://en.wikipedia.org/wiki/Pride_Fighting_Championships)
 - [ ] **hist-fac-010** — Quel commentateur emblématique de l'UFC est aussi célèbre pour son podcast ?
   - ✓ Joe Rogan  ✗ Bruce Buffer · Mike Goldberg · Dana White
   - Joe Rogan commente les combats de l'UFC depuis des décennies et anime le podcast The Joe Rogan Experience. [source](https://en.wikipedia.org/wiki/Joe_Rogan)
 - [ ] **hist-fac-011** — Quel annonceur de l'UFC est célèbre pour son cri « It's time! » avant les combats ?
   - ✓ Bruce Buffer  ✗ Michael Buffer · Joe Rogan · Jon Anik
   - Bruce Buffer, voix officielle de l'Octogone depuis les années 1990, lance chaque combat principal par « It's time! ». [source](https://en.wikipedia.org/wiki/Bruce_Buffer)
-- [ ] **hist-fac-012** — Quel combattant américain de Louisiane est surnommé « The Diamond » ?
-  - ✓ Dustin Poirier  ✗ Justin Gaethje · Michael Chandler · Tony Ferguson
-  - Dustin Poirier, né à Lafayette en Louisiane, combat sous le surnom « The Diamond ». [source](https://en.wikipedia.org/wiki/Dustin_Poirier)
-- [ ] **hist-fac-013** — Quel combattant, champion chez les lourds et les mi-lourds, était surnommé « The Natural » ?
-  - ✓ Randy Couture  ✗ Chuck Liddell · Frank Mir · Tito Ortiz
-  - Randy Couture, surnommé « The Natural », a été champion de l'UFC chez les poids lourds et les mi-lourds. [source](https://en.wikipedia.org/wiki/Randy_Couture)
-- [ ] **hist-fac-014** — Quelle combattante brésilienne est surnommée « The Lioness » ?
-  - ✓ Amanda Nunes  ✗ Cris Cyborg · Jéssica Andrade · Mackenzie Dern
-  - Amanda Nunes est surnommée « The Lioness » (« la Lionne »). [source](https://en.wikipedia.org/wiki/Amanda_Nunes)
-- [ ] **hist-fac-015** — Comment s'appelle le frère aîné de Nate Diaz, lui aussi combattant de l'UFC ?
-  - ✓ Nick Diaz  ✗ Mike Diaz · Tony Diaz · Ray Diaz
-  - Nick Diaz, l'aîné de la fratrie, a combattu à l'UFC comme son frère cadet Nate. [source](https://en.wikipedia.org/wiki/Nick_Diaz)
 - [ ] **hist-fac-016** — Dans quelle ville se trouve le siège de l'UFC ?
   - ✓ Las Vegas  ✗ Los Angeles · New York · Miami
   - L'UFC a son siège à Las Vegas, dans le Nevada, où se trouve aussi l'UFC Apex. [source](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
@@ -1039,6 +1345,9 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **hist-fac-025** — Quel combattant canadien, double champion de l'UFC, est surnommé « Rush » ?
   - ✓ Georges St-Pierre  ✗ Rory MacDonald · Patrick Côté · Denis Kang
   - Georges St-Pierre, surnommé « Rush », a été champion des mi-moyens puis des poids moyens de l'UFC. [source](https://en.wikipedia.org/wiki/Georges_St-Pierre)
+- [ ] **hist-moy-023** — Quel combattant a mis Conor McGregor K.-O. en janvier 2021 à l'UFC 257 ?
+  - ✓ Dustin Poirier  ✗ Justin Gaethje · Michael Chandler · Charles Oliveira
+  - Dustin Poirier a pris sa revanche sur McGregor en le mettant K.-O. au 2e round de l'UFC 257, à Abu Dhabi. [source](https://en.wikipedia.org/wiki/UFC_257)
 
 ### Champions & ceintures
 
@@ -1048,9 +1357,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-fac-002** — Quel est le surnom de Jon Jones, double champion de l'UFC ?
   - ✓ Bones  ✗ Rush · Poatan · The Eagle
   - Jon Jones est surnommé « Bones » (« les os ») depuis ses débuts, en raison de sa silhouette longiligne. [source](https://en.wikipedia.org/wiki/Jon_Jones)
-- [ ] **champ-fac-003** — Qui a pris la ceinture des poids moyens à Dricus du Plessis en août 2025 ?
-  - ✓ Khamzat Chimaev  ✗ Israel Adesanya · Sean Strickland · Nassourdine Imavov
-  - Khamzat Chimaev a dominé Dricus du Plessis aux points à l'UFC 319, à Chicago, pour devenir champion des moyens. [source](https://en.wikipedia.org/wiki/UFC_319)
 - [ ] **champ-fac-004** — Qui fut la toute première championne de l'histoire de l'UFC, en 2012 ?
   - ✓ Ronda Rousey  ✗ Miesha Tate · Holly Holm · Cris Cyborg
   - Ronda Rousey a été couronnée première championne des poids coqs femmes de l'UFC en décembre 2012. [source](https://en.wikipedia.org/wiki/Ronda_Rousey)
@@ -1060,141 +1366,45 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **champ-fac-006** — Quel combattant né au Cameroun a remporté la ceinture des poids lourds en 2021 ?
   - ✓ Francis Ngannou  ✗ Stipe Miocic · Ciryl Gane · Derrick Lewis
   - Francis Ngannou, né au Cameroun, a pris la ceinture des poids lourds à Stipe Miocic à l'UFC 260 en mars 2021. [source](https://en.wikipedia.org/wiki/Francis_Ngannou)
-- [ ] **champ-fac-007** — Quelle championne de l'UFC avait auparavant remporté deux titres olympiques en judo ?
-  - ✓ Kayla Harrison  ✗ Ronda Rousey · Julianna Peña · Raquel Pennington
-  - Double championne olympique de judo (2012, 2016), Kayla Harrison a pris la ceinture des coqs à l'UFC 316 en 2025. [source](https://en.wikipedia.org/wiki/Kayla_Harrison)
 - [ ] **champ-fac-008** — Quel est le surnom d'Alex Pereira, champion des poids moyens puis des mi-lourds ?
   - ✓ Poatan  ✗ Bones · The Spider · Bullet
   - Alex Pereira est surnommé « Poatan », qui signifie « mains de pierre » dans la langue de ses ancêtres indigènes. [source](https://en.wikipedia.org/wiki/Alex_Pereira)
 - [ ] **champ-fac-009** — Quel Français est devenu champion intérimaire des poids lourds de l'UFC en 2021 ?
   - ✓ Ciryl Gane  ✗ Benoît Saint Denis · Nassourdine Imavov · Morgan Charrière
   - Ciryl Gane a remporté la ceinture intérimaire des lourds en battant Derrick Lewis à l'UFC 265 en août 2021. [source](https://en.wikipedia.org/wiki/UFC_265)
-- [ ] **champ-fac-010** — Quel Anglais est devenu champion des poids lourds de l'UFC en 2025, après la retraite de Jon Jones ?
-  - ✓ Tom Aspinall  ✗ Curtis Blaydes · Ciryl Gane · Sergei Pavlovich
-  - Champion intérimaire depuis 2023, Tom Aspinall a été promu champion incontesté en juin 2025. [source](https://en.wikipedia.org/wiki/Tom_Aspinall)
 - [ ] **champ-fac-011** — Quel est le surnom de Khabib Nurmagomedov, ancien champion des poids légers ?
   - ✓ The Eagle  ✗ The Predator · Rush · The Great
   - Khabib Nurmagomedov est surnommé « The Eagle » (« l'Aigle »). [source](https://en.wikipedia.org/wiki/Khabib_Nurmagomedov)
 - [ ] **champ-fac-012** — Quel ancien catcheur de la WWE est devenu champion des poids lourds de l'UFC en 2008 ?
   - ✓ Brock Lesnar  ✗ CM Punk · Bobby Lashley · Matt Riddle
   - Brock Lesnar a battu Randy Couture à l'UFC 91 en novembre 2008 pour devenir champion des lourds. [source](https://en.wikipedia.org/wiki/Brock_Lesnar)
-- [ ] **champ-fac-013** — Quel ancien champion des plumes a conquis la ceinture des poids légers en juin 2025 ?
-  - ✓ Ilia Topuria  ✗ Alexander Volkanovski · Max Holloway · Brian Ortega
-  - Ilia Topuria a mis Charles Oliveira K.-O. au 1er round de l'UFC 317 pour remporter la ceinture vacante des légers. [source](https://en.wikipedia.org/wiki/UFC_317)
 - [ ] **champ-fac-014** — Dans quelles catégories Conor McGregor a-t-il été double champion de l'UFC ?
   - ✓ Plumes et légers  ✗ Légers et welters · Coqs et plumes · Plumes et welters
   - Conor McGregor a détenu les ceintures des poids plumes et des poids légers en 2016. [source](https://en.wikipedia.org/wiki/Conor_McGregor)
-- [ ] **champ-fac-015** — Quel futur champion de l'UFC a été sacré champion olympique de lutte libre à Pékin, en 2008 ?
-  - ✓ Henry Cejudo  ✗ Daniel Cormier · Ben Askren · Yoel Romero
-  - Henry Cejudo a gagné l'or olympique de lutte libre en 2008, avant de devenir champion de l'UFC. [source](https://en.wikipedia.org/wiki/Henry_Cejudo)
-- [ ] **champ-fac-016** — Quel est le surnom de l'Australien Alexander Volkanovski, champion des poids plumes ?
-  - ✓ The Great  ✗ Blessed · The Korean Zombie · El Matador
-  - Alexander Volkanovski est surnommé « The Great », en clin d'œil à Alexandre le Grand. [source](https://en.wikipedia.org/wiki/Alexander_Volkanovski)
-- [ ] **champ-fac-017** — Quel champion des poids mi-lourds à la crête iroquoise était surnommé « The Iceman » ?
-  - ✓ Chuck Liddell  ✗ Tito Ortiz · Randy Couture · Quinton Jackson
-  - Chuck Liddell, champion des mi-lourds de 2005 à 2007, était surnommé « The Iceman ». [source](https://en.wikipedia.org/wiki/Chuck_Liddell)
-- [ ] **champ-fac-018** — Quel est le surnom de Demetrious Johnson, longtemps champion des poids mouches ?
-  - ✓ Mighty Mouse  ✗ Triple C · Deus da Guerra · The Assassin Baby
-  - Demetrious Johnson est surnommé « Mighty Mouse », en référence au super-héros souris des dessins animés. [source](https://en.wikipedia.org/wiki/Demetrious_Johnson)
-- [ ] **champ-fac-019** — Quel ami et partenaire d'entraînement de Khabib a remporté la ceinture des poids légers en 2022 ?
-  - ✓ Islam Makhachev  ✗ Charles Oliveira · Justin Gaethje · Dustin Poirier
-  - Islam Makhachev a soumis Charles Oliveira à l'UFC 280 en octobre 2022 pour devenir champion des légers. [source](https://en.wikipedia.org/wiki/UFC_280)
 - [ ] **champ-fac-020** — Qui a battu Ronda Rousey par K.-O. en 2015 pour lui prendre la ceinture des poids coqs ?
   - ✓ Holly Holm  ✗ Miesha Tate · Cat Zingano · Bethe Correia
   - Holly Holm a mis Ronda Rousey K.-O. d'un high kick à l'UFC 193, en novembre 2015 à Melbourne. [source](https://en.wikipedia.org/wiki/UFC_193)
-- [ ] **champ-fac-021** — Quel champion des poids lourds de l'UFC était aussi pompier dans l'Ohio ?
-  - ✓ Stipe Miocic  ✗ Cain Velasquez · Daniel Cormier · Francis Ngannou
-  - Stipe Miocic, champion des lourds à deux reprises, a continué d'exercer comme pompier près de Cleveland. [source](https://en.wikipedia.org/wiki/Stipe_Miocic)
-- [ ] **champ-fac-022** — Quel combattant surnommé « Suga » a remporté la ceinture des poids coqs en 2023 ?
-  - ✓ Sean O'Malley  ✗ Aljamain Sterling · Merab Dvalishvili · Petr Yan
-  - Sean « Suga » O'Malley a battu Aljamain Sterling à l'UFC 292 en août 2023 pour devenir champion des coqs. [source](https://en.wikipedia.org/wiki/UFC_292)
-- [ ] **champ-fac-023** — Quel Britannique a pris la ceinture des welters à Kamaru Usman grâce à un high kick en 2022 ?
-  - ✓ Leon Edwards  ✗ Colby Covington · Gilbert Burns · Belal Muhammad
-  - Leon Edwards a mis Kamaru Usman K.-O. d'un high kick dans le dernier round de l'UFC 278, en août 2022. [source](https://en.wikipedia.org/wiki/UFC_278)
-- [ ] **champ-fac-024** — Qui est devenue en 2019 la première championne chinoise de l'histoire de l'UFC ?
-  - ✓ Zhang Weili  ✗ Yan Xiaonan · Rose Namajunas · Joanna Jędrzejczyk
-  - Zhang Weili a battu Jéssica Andrade à Shenzhen en août 2019 pour devenir la première championne chinoise de l'UFC. [source](https://en.wikipedia.org/wiki/Zhang_Weili)
 - [ ] **champ-fac-025** — Quel Brésilien a pris la ceinture des poids moyens à Israel Adesanya en novembre 2022 ?
   - ✓ Alex Pereira  ✗ Paulo Costa · Anderson Silva · Vitor Belfort
   - Alex Pereira a battu Israel Adesanya par arrêt de l'arbitre au 5e round de l'UFC 281, en novembre 2022. [source](https://en.wikipedia.org/wiki/UFC_281)
+- [ ] **champ-moy-014** — Contre qui Ronda Rousey a-t-elle disputé son dernier combat, pour la ceinture des coqs fin 2016 ?
+  - ✓ Amanda Nunes  ✗ Holly Holm · Miesha Tate · Cat Zingano
+  - Ronda Rousey a perdu en 48 secondes face à la championne Amanda Nunes à l'UFC 207, en décembre 2016. [source](https://en.wikipedia.org/wiki/UFC_207)
 
 ### Records & stats
 
 - [ ] **rec-fac-001** — En 2015 à l'UFC 194, qui a mis K.-O. José Aldo en seulement 13 secondes ?
   - ✓ Conor McGregor  ✗ Max Holloway · Frankie Edgar · Chad Mendes
   - Conor McGregor a battu Aldo en 13 secondes, le K.-O. le plus rapide de l'histoire d'un combat de titre à l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-002** — Quelle combattante a soumis Cat Zingano en 14 secondes à l'UFC 184 en 2015 ?
-  - ✓ Ronda Rousey  ✗ Miesha Tate · Holly Holm · Amanda Nunes
-  - Ronda Rousey l'a soumise par clé de bras en 14 secondes, la soumission la plus rapide d'un combat de titre de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-fac-003** — Qui est devenu en 2011, à 23 ans, le plus jeune champion de l'histoire de l'UFC ?
   - ✓ Jon Jones  ✗ José Aldo · Cain Velasquez · Junior dos Santos
   - Jon Jones a battu Maurício Rua à l'UFC 128 pour devenir champion des mi-lourds à 23 ans. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-004** — Quel champion a battu le record de défenses de titre consécutives en 2017, avec une 11e défense ?
-  - ✓ Demetrious Johnson  ✗ Anderson Silva · Georges St-Pierre · Jon Jones
-  - En battant Ray Borg à l'UFC 216, Demetrious Johnson a dépassé les 10 défenses consécutives d'Anderson Silva. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-005** — À la fin de 2024, qui détenait le record de victoires consécutives à l'UFC, avec 16 succès ?
-  - ✓ Anderson Silva  ✗ Kamaru Usman · Khabib Nurmagomedov · Georges St-Pierre
-  - Anderson Silva a enchaîné 16 victoires entre 2006 et 2013 ; Islam Makhachev l'a égalé en novembre 2025. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
 - [ ] **rec-fac-006** — Quel combat détient le record de ventes en pay-per-view de l'UFC, avec environ 2,4 millions d'achats ?
   - ✓ Khabib vs McGregor  ✗ McGregor vs Diaz 2 · Lesnar vs Mir 2 · Jones vs Cormier 2
   - L'UFC 229 entre Khabib Nurmagomedov et Conor McGregor, en 2018, a généré environ 2,4 millions d'achats en PPV. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-007** — Dans quel pays s'est tenu l'UFC 243 en 2019, record d'affluence de l'UFC avec 57 127 spectateurs ?
-  - ✓ Australie  ✗ Canada · Brésil · États-Unis
-  - Whittaker contre Adesanya a réuni 57 127 spectateurs au Marvel Stadium de Melbourne, en Australie. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-008** — En 2025, quel combattant détenait le record de victoires en combat de titre à l'UFC, avec 16 ?
-  - ✓ Jon Jones  ✗ Georges St-Pierre · Demetrious Johnson · Anderson Silva
-  - Jon Jones comptait 16 victoires en combat de titre (14 chez les mi-lourds, 2 chez les lourds), devant GSP (13). [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-009** — En 2025, quel combattant détenait le record de victoires par soumission à l'UFC ?
-  - ✓ Charles Oliveira  ✗ Jim Miller · Demian Maia · Royce Gracie
-  - Charles Oliveira est le recordman des soumissions à l'UFC, nettement devant Jim Miller. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-010** — En 2025, quel combattant détenait le record de victoires par K.-O. à l'UFC ?
-  - ✓ Derrick Lewis  ✗ Matt Brown · Vitor Belfort · Francis Ngannou
-  - Le poids lourd Derrick Lewis détient le record de K.-O. de l'UFC, devant Matt Brown. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-011** — À l'UFC 300 en 2024, combien de secondes restait-il quand Max Holloway a mis K.-O. Justin Gaethje ?
-  - ✓ 1 seconde  ✗ 5 secondes · 10 secondes · 30 secondes
-  - Holloway a mis Gaethje K.-O. à 4 min 59 du 5e round, à une seconde de la fin du combat. [source](https://en.wikipedia.org/wiki/UFC_300)
-- [ ] **rec-fac-012** — En 2025, quel combattant détenait le record de frappes significatives portées en carrière à l'UFC ?
-  - ✓ Max Holloway  ✗ Sean Strickland · Alexander Volkanovski · Frankie Edgar
-  - Max Holloway est de loin le recordman des frappes significatives portées à l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-013** — En 2025, quel combattant détenait le record d'amenées au sol réussies en carrière à l'UFC ?
-  - ✓ Merab Dvalishvili  ✗ Georges St-Pierre · Khabib Nurmagomedov · Demetrious Johnson
-  - Merab Dvalishvili a dépassé Georges St-Pierre et a été le premier à franchir la barre des 100 amenées au sol à l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-014** — À 43 ans, quel vétéran est redevenu champion des lourds en battant Tim Sylvia à l'UFC 68 en 2007 ?
-  - ✓ Randy Couture  ✗ Chuck Liddell · Dan Henderson · Ken Shamrock
-  - Randy Couture, né en 1963, a repris la ceinture des lourds à 43 ans, ce qui en fait le plus vieux champion de l'UFC. [source](https://en.wikipedia.org/wiki/Randy_Couture)
-- [ ] **rec-fac-015** — Qui a mis K.-O. Cris Cyborg en 51 secondes à l'UFC 232 en 2018 ?
-  - ✓ Amanda Nunes  ✗ Holly Holm · Germaine de Randamie · Ronda Rousey
-  - Amanda Nunes a battu Cyborg en 51 secondes pour prendre la ceinture des poids plumes féminines. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-016** — En 2025, quel combattant détenait le record de victoires consécutives chez les welters de l'UFC, avec 15 ?
-  - ✓ Kamaru Usman  ✗ Georges St-Pierre · Belal Muhammad · Leon Edwards
-  - Kamaru Usman a enchaîné 15 victoires chez les welters entre 2015 et 2021, record de la catégorie. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-017** — Qui a mis fin en 2021 à la série de 12 victoires consécutives d'Amanda Nunes ?
-  - ✓ Julianna Peña  ✗ Holly Holm · Valentina Shevchenko · Germaine de Randamie
-  - Julianna Peña a soumis Amanda Nunes à l'UFC 269 en décembre 2021, l'une des plus grosses surprises de l'histoire de l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-018** — En 2009, contre qui Jon Jones a-t-il été disqualifié pour des coups de coude interdits ?
-  - ✓ Matt Hamill  ✗ Stephan Bonnar · Brandon Vera · Vladimir Matyushenko
-  - Jones dominait Matt Hamill mais a été disqualifié pour des coups de coude illégaux : la seule défaite de son bilan à sa retraite en 2025. [source](https://en.wikipedia.org/wiki/Jon_Jones)
-- [ ] **rec-fac-019** — Combien de fois Ronda Rousey a-t-elle défendu son titre des poids coqs à l'UFC ?
-  - ✓ 6  ✗ 4 · 5 · 7
-  - Rousey a défendu sa ceinture 6 fois (Carmouche, Tate, McMann, Davis, Zingano, Correia) avant de la perdre contre Holly Holm. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-020** — Avec quel bilan professionnel Georges St-Pierre a-t-il pris sa retraite en 2019 ?
-  - ✓ 26-2  ✗ 25-2 · 26-3 · 27-1
-  - GSP a pris sa retraite avec 26 victoires et 2 défaites, deux revers (Hughes, Serra) qu'il a ensuite vengés. [source](https://en.wikipedia.org/wiki/Georges_St-Pierre)
-- [ ] **rec-fac-021** — En 2025, quel combattant détenait le record du plus grand nombre de combats disputés à l'UFC ?
-  - ✓ Jim Miller  ✗ Donald Cerrone · Andrei Arlovski · Clay Guida
-  - Jim Miller est devenu en 2022 le premier combattant à atteindre 40 combats à l'UFC et a continué d'allonger ce record. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-022** — Quel événement de 2009, avec Brock Lesnar contre Frank Mir, a dépassé 1,6 million d'achats en pay-per-view ?
-  - ✓ UFC 100  ✗ UFC 91 · UFC 92 · UFC 116
-  - L'UFC 100, en juillet 2009, a atteint environ 1,6 million d'achats, un record à l'époque. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-023** — Qui a été le premier à mettre Max Holloway K.-O., à l'UFC 308 en 2024 ?
-  - ✓ Ilia Topuria  ✗ Alexander Volkanovski · Dustin Poirier · Justin Gaethje
-  - Ilia Topuria a infligé à Holloway le premier K.-O. de sa carrière, au 3e round, pour conserver le titre des poids plumes. [source](https://en.wikipedia.org/wiki/Max_Holloway)
 - [ ] **rec-fac-024** — Qui a réussi 21 amenées au sol contre Abel Trujillo en 2013, un record pour un combat de l'UFC ?
   - ✓ Khabib Nurmagomedov  ✗ Georges St-Pierre · Islam Makhachev · Merab Dvalishvili
   - À l'UFC 160, Khabib Nurmagomedov a réussi 21 amenées au sol en trois rounds, le record d'un combat à l'UFC. [source](https://en.wikipedia.org/wiki/List_of_UFC_records)
-- [ ] **rec-fac-025** — Quel champion des mi-lourds a enchaîné 7 victoires consécutives par K.-O. à l'UFC entre 2004 et 2006 ?
-  - ✓ Chuck Liddell  ✗ Tito Ortiz · Randy Couture · Quinton Jackson
-  - Chuck Liddell a aligné 7 victoires de suite par K.-O. entre 2004 et 2006, au sommet de son règne chez les mi-lourds. [source](https://en.wikipedia.org/wiki/Chuck_Liddell)
 
 ### Règles, techniques & événements
 
@@ -1205,7 +1415,7 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
   - ✓ 5 minutes  ✗ 3 minutes · 4 minutes · 10 minutes
   - Selon les règles unifiées du MMA, chaque round dure 5 minutes, avec 1 minute de repos entre deux rounds. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
 - [ ] **regl-fac-003** — En combien de rounds se dispute un combat pour une ceinture à l'UFC ?
-  - ✓ 5 rounds  ✗ 3 rounds · 4 rounds · 12 rounds
+  - ✓ 5 rounds  ✗ 3 rounds · 7 rounds · 12 rounds
   - Les combats pour un titre se disputent en 5 rounds de 5 minutes ; la plupart des autres combats en 3. [source](https://en.wikipedia.org/wiki/Unified_Rules_of_Mixed_Martial_Arts)
 - [ ] **regl-fac-004** — Laquelle de ces frappes est interdite à l'UFC ?
   - ✓ Un coup à l'entrejambe  ✗ Un coup de pied au corps · Un coup de genou au corps · Un coup de poing au visage
@@ -1222,9 +1432,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-fac-008** — Outre l'arbitre, qui peut faire arrêter un combat de l'UFC, par exemple à cause d'une coupure ?
   - ✓ Le médecin  ✗ Le président de l'UFC · Le commentateur · Le chronométreur
   - Le médecin examine les blessures à la demande de l'arbitre et peut faire arrêter le combat. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts_rules)
-- [ ] **regl-fac-009** — Comment appelle-t-on la position où le combattant sur le dos croise les jambes autour de la taille de l'adversaire ?
-  - ✓ La garde fermée  ✗ La montée · Le contrôle latéral · La garde papillon
-  - En garde fermée, le combattant au sol verrouille ses chevilles dans le dos de l'adversaire pour le contrôler. [source](https://en.wikipedia.org/wiki/Guard_(grappling))
 - [ ] **regl-fac-010** — Par quel geste un combattant signale-t-il qu'il abandonne sur une soumission ?
   - ✓ Il tape sur l'adversaire ou le tapis  ✗ Il lève le bras · Il croise les bras · Il touche ses gants
   - Taper plusieurs fois sur l'adversaire ou le tapis, le fameux « tap out », signifie l'abandon ; un abandon verbal est aussi valable. [source](https://en.wikipedia.org/wiki/Submission_(combat_sports))
@@ -1237,9 +1444,6 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-fac-013** — Comment appelle-t-on la soumission qui force le coude de l'adversaire en hyperextension ?
   - ✓ La clé de bras (armbar)  ✗ La clé de cheville · Le heel hook · La guillotine
   - La clé de bras, ou armbar, tend le bras de l'adversaire au-delà de son amplitude au niveau du coude. [source](https://en.wikipedia.org/wiki/Armlock)
-- [ ] **regl-fac-014** — Quel étranglement s'effectue en enserrant la tête et un bras de l'adversaire avec ses jambes ?
-  - ✓ Le triangle  ✗ La guillotine · La kimura · L'étranglement arrière
-  - Le triangle se forme avec les jambes autour du cou et d'un bras de l'adversaire, dessinant un triangle. [source](https://en.wikipedia.org/wiki/Triangle_choke)
 - [ ] **regl-fac-015** — Comment appelle-t-on l'action d'amener l'adversaire au sol, par exemple en saisissant ses jambes ?
   - ✓ Un takedown  ✗ Un clinch · Un sprawl · Un uppercut
   - Le takedown (amenée au sol) permet de faire passer le combat debout au combat au sol. [source](https://en.wikipedia.org/wiki/Takedown_(grappling))
@@ -1273,3 +1477,48 @@ Les 6278 questions de `data/questions-generees.json` sont tirées automatiquemen
 - [ ] **regl-fac-025** — Qu'est-ce qui distingue les gants utilisés à l'UFC des gants de boxe ?
   - ✓ Ils laissent les doigts libres  ✗ Ils sont plus lourds · Ils couvrent l'avant-bras · Ils sont lacés
   - Les gants de MMA, légers et ouverts, laissent les doigts libres pour permettre les saisies et les soumissions. [source](https://en.wikipedia.org/wiki/Mixed_martial_arts)
+- [ ] **regl-moy-016** — Comment appelle-t-on la position de corps-à-corps debout où les deux combattants s'agrippent ?
+  - ✓ Le clinch  ✗ Le sprawl · La garde · Le mount
+  - Le clinch est le combat rapproché debout, souvent contre la cage, où l'on frappe et tente des projections. [source](https://en.wikipedia.org/wiki/Clinch_fighting)
+
+### CV des combattants
+
+- [ ] **cv-sport-002** — Dans quelle discipline Khabib Nurmagomedov a-t-il été deux fois champion du monde avant de régner à l'UFC ?
+  - ✓ Sambo de combat  ✗ Judo · Lutte gréco-romaine · Kickboxing
+  - Khabib Nurmagomedov est double champion du monde de sambo de combat. [source](https://en.wikipedia.org/wiki/Khabib_Nurmagomedov)
+- [ ] **cv-sport-003** — Quel art martial Georges St-Pierre a-t-il commencé à 7 ans pour se défendre face à un harceleur ?
+  - ✓ Karaté  ✗ Judo · Boxe · Taekwondo
+  - GSP a débuté le karaté Kyokushin à sept ans et était déjà ceinture noire 2e dan à 12 ans. [source](https://en.wikipedia.org/wiki/Georges_St-Pierre)
+- [ ] **cv-sport-004** — Avant le MMA, quel sport Francis Ngannou a-t-il commencé à pratiquer à 22 ans au Cameroun ?
+  - ✓ Boxe  ✗ Football · Lutte · Kickboxing
+  - Francis Ngannou a commencé la boxe à 22 ans malgré les réticences de sa famille, avant de bifurquer vers le MMA. [source](https://en.wikipedia.org/wiki/Francis_Ngannou)
+- [ ] **cv-sport-005** — Dans quel sport Israel Adesanya a-t-il disputé un titre chez Glory avant de rejoindre l'UFC ?
+  - ✓ Kickboxing  ✗ Boxe · Taekwondo · Lutte
+  - Israel Adesanya a mené une longue carrière en kickboxing et a défié pour le titre des moyens de Glory. [source](https://en.wikipedia.org/wiki/Israel_Adesanya)
+- [ ] **cv-sport-006** — Dans quel sport Alex Pereira a-t-il été champion de Glory dans deux catégories avant de briller à l'UFC ?
+  - ✓ Kickboxing  ✗ Boxe · Judo · Karaté
+  - Alex Pereira a été champion de Glory chez les moyens et les mi-lourds en kickboxing. [source](https://en.wikipedia.org/wiki/Alex_Pereira)
+- [ ] **cv-sport-007** — Quel combattant a battu Israel Adesanya à deux reprises en kickboxing, bien avant de l'affronter à l'UFC ?
+  - ✓ Alex Pereira  ✗ Robert Whittaker · Dricus du Plessis · Sean Strickland
+  - Alex Pereira a battu Adesanya deux fois en kickboxing, dont une fois par KO, avant de le détrôner à l'UFC 281. [source](https://en.wikipedia.org/wiki/Alex_Pereira)
+- [ ] **cv-sport-008** — Avant la WWE et l'UFC, dans quel sport Brock Lesnar a-t-il été champion universitaire NCAA en 2000 ?
+  - ✓ Lutte  ✗ Football américain · Haltérophilie · Boxe
+  - Brock Lesnar a remporté le titre NCAA Division I de lutte en 2000 avec l'université du Minnesota. [source](https://en.wikipedia.org/wiki/Brock_Lesnar)
+- [ ] **cv-sport-010** — Dans quel sport Daniel Cormier a-t-il représenté les États-Unis aux Jeux olympiques d'Athènes en 2004 ?
+  - ✓ Lutte  ✗ Judo · Boxe · Haltérophilie
+  - Daniel Cormier a terminé 4e en lutte libre aux JO 2004, avant de devenir champion dans deux catégories à l'UFC. [source](https://en.wikipedia.org/wiki/Daniel_Cormier)
+- [ ] **cv-sport-011** — Avant le MMA, dans quel sport Holly Holm a-t-elle été championne du monde dans trois catégories de poids ?
+  - ✓ Boxe  ✗ Judo · Taekwondo · Lutte
+  - Holly Holm a été plusieurs fois championne du monde de boxe, avec 18 défenses de titre dans trois catégories. [source](https://en.wikipedia.org/wiki/Holly_Holm)
+- [ ] **cv-sport-012** — Dans quel sport Jon Jones a-t-il été champion national universitaire (junior college) en 2006 ?
+  - ✓ Lutte  ✗ Football américain · Boxe · Judo
+  - Jon Jones a été champion national NJCAA de lutte en 2006 avec Iowa Central Community College. [source](https://en.wikipedia.org/wiki/Jon_Jones)
+- [ ] **cv-sport-014** — Quel ancien catcheur star de la WWE s'est incliné face à Mickey Gall pour son premier combat à l'UFC, en 2016 ?
+  - ✓ CM Punk  ✗ Greg Hardy · Sage Northcutt · Mike Perry
+  - CM Punk, star du catch à la WWE, a perdu par soumission face à Mickey Gall à l'UFC 203 en 2016. [source](https://en.wikipedia.org/wiki/CM_Punk)
+- [ ] **cv-sport-015** — Avant de se consacrer au MMA, quel sport Alexander Volkanovski pratiquait-il en semi-professionnel ?
+  - ✓ Rugby à XIII  ✗ Rugby à XV · Football australien · Cricket
+  - Volkanovski jouait pilier en rugby à XIII chez les Warilla Gorillas et fut élu meilleur joueur de sa ligue en 2010. [source](https://en.wikipedia.org/wiki/Alexander_Volkanovski)
+- [ ] **cv-sport-016** — Avant de dominer les poids mouches de l'UFC, dans quel sport Valentina Shevchenko a-t-elle été championne ?
+  - ✓ Muay-thaï  ✗ Judo · Lutte · Boxe
+  - Valentina Shevchenko a remporté des titres en muay-thaï, discipline dans laquelle sa mère fut aussi championne. [source](https://en.wikipedia.org/wiki/Valentina_Shevchenko)
